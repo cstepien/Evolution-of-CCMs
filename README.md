@@ -8,4 +8,4 @@ Our goal is to understand how Carbon Concentrating Mechanisms (CCMs) in red seaw
 
 ## License
 
-The content of this project itself is licensed under the [Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0/), and the code used to analyze and visualize data is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php).
+The content of this project itself is licensed under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/), and the code used to analyze and visualize data is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php).
