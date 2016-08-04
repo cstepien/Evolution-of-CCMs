@@ -1,0 +1,38 @@
+---
+title: "Basic Dataset Stats"
+author: "Courtney Stepien"
+date: "August 4, 2016"
+output: 
+ html_document:
+    toc: true
+    number_sections: true
+    theme: cerulean
+    highlight: pygments
+    fig_caption: yes
+    self_contained: false
+---
+
+# File goals
+
+Goals of this file are to get basic statistics on the dataset that we used to search for sequence data. Initial goals include number and names of genera with:
+
+* only 1 representative in the dataset
+* 2 representatives in the dataset
+* 3 representatives in the datset
+* 4 representatives in the dataset
+* 5 representatives in the dataset
+
+This information will help us ID taxa who lack DNA sequence but are monotypic genera in this dataset. These taxa are candidates for using congeneric DNA sequence to represent them at the genus level in our phylogeny. 
+
+Additionally:
+
+* histogram of taxa by genus
+* histogram of taxa by family
+
+```{r}
+summary(cars)
+```
+
+```{r, echo=FALSE}
+plot(cars)
+```
