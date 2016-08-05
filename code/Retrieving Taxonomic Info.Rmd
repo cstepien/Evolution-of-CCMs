@@ -1,0 +1,52 @@
+---
+title: "Retrieving Taxonomic Info"
+author: "Courtney Stepien"
+date: "August 4, 2016"
+output: 
+ html_document:
+    toc: true
+    number_sections: true
+    theme: cerulean
+    highlight: pygments
+    fig_caption: yes
+    self_contained: false
+---
+
+# File goals
+
+We will use the packages taxize and myTAI to get higher-level taxonomy for my genera, so we can table basic stats about the number of taxa per family, order and class. 
+
+We will use a number of different taxonomy databases: 
+
+* Barcode of Life Data Systems (BOLD) <- taxize package
+* Encyclopedia of Life (EOL) <- taxize package
+* Integrated Taxonomic Information Service (ITIS) <- taxize package
+* National Center for Biotechnology Information (NCBI) <- taxize package
+* World Register of Marine Species (WoRMS) <- taxizesoap package
+
+[taxize package github link](https://github.com/ropensci/taxize) for tutorials
+
+[taxizesoap package github link](https://github.com/ropensci/taxizesoap) for tutorials
+
+# Next steps
+
+Next steps are:
+
+1. load the dataset
+2. get a genus list
+3. figure out how to use taxise and taxisesoap to get higher-level taxonomy info 
+
+# Analysis
+
+## Data setup and packages
+
+```{r, message=FALSE, warning=FALSE}
+library(taxize)
+library(taxizesoap)
+library(dplyr)
+#data <- read.csv("../data/input_filename.csv")
+```
+
+```{r, echo=FALSE}
+
+```

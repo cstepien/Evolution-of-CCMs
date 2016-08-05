@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="author" content="Courtney Stepien" />
+
+
+<title>Retrieving Taxonomic Info</title>
+
+<script src="Retrieving_Taxonomic_Info_files/jquery-1.11.0/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="Retrieving_Taxonomic_Info_files/bootstrap-3.3.1/css/cerulean.min.css" rel="stylesheet" />
+<script src="Retrieving_Taxonomic_Info_files/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+<script src="Retrieving_Taxonomic_Info_files/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
+<script src="Retrieving_Taxonomic_Info_files/bootstrap-3.3.1/shim/respond.min.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img { 
+  max-width:100%; 
+  height: auto; 
+}
+</style>
+<div class="container-fluid main-container">
+
+
+<div id="header">
+<h1 class="title">Retrieving Taxonomic Info</h1>
+<h4 class="author"><em>Courtney Stepien</em></h4>
+<h4 class="date"><em>August 4, 2016</em></h4>
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#file-goals"><span class="toc-section-number">1</span> File goals</a></li>
+<li><a href="#next-steps"><span class="toc-section-number">2</span> Next steps</a></li>
+<li><a href="#analysis"><span class="toc-section-number">3</span> Analysis</a><ul>
+<li><a href="#data-setup-and-packages"><span class="toc-section-number">3.1</span> Data setup and packages</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="file-goals" class="section level1">
+<h1><span class="header-section-number">1</span> File goals</h1>
+<p>We will use the packages taxize and myTAI to get higher-level taxonomy for my genera, so we can table basic stats about the number of taxa per family, order and class.</p>
+<p>We will use a number of different taxonomy databases:</p>
+<ul>
+<li>Barcode of Life Data Systems (BOLD) &lt;- taxize package</li>
+<li>Encyclopedia of Life (EOL) &lt;- taxize package</li>
+<li>Integrated Taxonomic Information Service (ITIS) &lt;- taxize package</li>
+<li>National Center for Biotechnology Information (NCBI) &lt;- taxize package</li>
+<li>World Register of Marine Species (WoRMS) &lt;- taxizesoap package</li>
+</ul>
+<p><a href="https://github.com/ropensci/taxize">taxize package github link</a> for tutorials</p>
+<p><a href="https://github.com/ropensci/taxizesoap">taxizesoap package github link</a> for tutorials</p>
+</div>
+<div id="next-steps" class="section level1">
+<h1><span class="header-section-number">2</span> Next steps</h1>
+<p>Next steps are:</p>
+<ol style="list-style-type: decimal">
+<li>load the dataset</li>
+<li>get a genus list</li>
+<li>figure out how to use taxise and taxisesoap to get higher-level taxonomy info</li>
+</ol>
+</div>
+<div id="analysis" class="section level1">
+<h1><span class="header-section-number">3</span> Analysis</h1>
+<div id="data-setup-and-packages" class="section level2">
+<h2><span class="header-section-number">3.1</span> Data setup and packages</h2>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(taxize)
+<span class="kw">library</span>(taxizesoap)
+<span class="kw">library</span>(dplyr)
+<span class="co">#data &lt;- read.csv(&quot;../data/input_filename.csv&quot;)</span></code></pre>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
