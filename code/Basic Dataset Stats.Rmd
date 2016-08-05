@@ -28,6 +28,10 @@ Additionally:
 
 * histogram of taxa by genus
 * histogram of taxa by family
+* histogram of taxa by order
+* histogram of taxa by class
+
+Class, Order and Family data will be reported using 5 different taxonomy sources: BOLD, NCBI, EOL, WoRMS, and ITIS.
 
 ```{r}
 summary(cars)
