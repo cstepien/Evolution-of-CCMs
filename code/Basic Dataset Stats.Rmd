@@ -14,13 +14,7 @@ output:
 
 # File goals
 
-Goals of this file are to get basic statistics on the dataset that we used to search for sequence data. Initial goals include number and names of genera with:
-
-* only 1 representative in the dataset
-* 2 representatives in the dataset
-* 3 representatives in the datset
-* 4 representatives in the dataset
-* 5 representatives in the dataset
+Goals of this file are to get basic statistics on the dataset that we used to search for sequence data. Initial goals include number and names of genera with only 1 representative in the dataset.
 
 This information will help us ID taxa who lack DNA sequence but are monotypic genera in this dataset. These taxa are candidates for using congeneric DNA sequence to represent them at the genus level in our phylogeny. 
 
@@ -33,10 +27,57 @@ Additionally:
 
 Class, Order and Family data will be reported using 5 different taxonomy sources: BOLD, NCBI, EOL, WoRMS, and ITIS.
 
-```{r}
-summary(cars)
+# Next steps
+
+Next steps are:
+
+1. load the dataset
+2. make a genus histogram
+3. get a list of genera with 1 through 5 representatives in the dataset
+
+# Analysis
+
+## Data setup and packages
+
+```{r, message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(grid)
+data <- read.csv("../data/mean_13c_per_species.csv")
 ```
 
-```{r, echo=FALSE}
-plot(cars)
+## Genus Counts
+
+### Histogram of taxa count by genus in the dataset
+```{r}
+genus_count <- data %>% group_by(genus) %>% summarize(n())
+genus_count <- data.frame(genus_count)
+colnames(genus_count) <- c("genus", "n_taxa")
+genus_hist <- genus_count %>% group_by(n_taxa) %>% summarize(n())
+genus_hist <- data.frame(genus_hist)
+colnames(genus_hist) <- c("n_taxa", "genera_with_n_taxa")
+```
+
+There are `r nrow(genus_count)` genera in the dataset, with `r min(genus_hist$n_taxa)` to `r max(genus_hist$n_taxa)` taxa in each genus. `r genus_hist[which(genus_hist$n_taxa == 1), 2]` genera have only 1 species in the dataset, while the remaining `r nrow(genus_count) - genus_hist[which(genus_hist$n_taxa == 1), 2]` genera have 2 to `r max(genus_hist$n_taxa)` species per genus (see distribution in the table below).
+
+```{r, echo = FALSE}
+genus_hist
+```
+
+```{r}
+ggplot(data=genus_count, aes(genus_count$n_taxa)) + geom_histogram(bins = max(genus_count$n_taxa), binwidth = 1) +
+  xlab("\ntaxa in each genus in dataset") + ylab("count of genera with x taxa (in dataset)") +
+  theme(axis.title.y = element_text(size=20, face = "bold"), panel.background = element_blank(), 
+        plot.title=element_text(size=20), axis.title.x = element_text(size=20, face = "bold"), 
+        axis.text.x = element_text(size=20, color="black"), 
+        plot.margin = unit(c(1.2,1.2,1,1),"cm"), 
+        axis.text.y=element_text(size=20, color="black"), strip.text.x = element_text(size = 20), 
+        axis.line=element_line(), panel.border = element_rect(fill = NA, color = "black"))
+```
+
+## List of genera with only 1 representative in the dataset
+
+```{r}
+congener_candidates <- filter(genus_count, n_taxa == 1) %>% select(genus)
+write.csv(congener_candidates, file = "../data/taxa names for sequence search/congener_candidates.csv", row.names = FALSE)
 ```

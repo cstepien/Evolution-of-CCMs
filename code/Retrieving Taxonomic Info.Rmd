@@ -32,9 +32,8 @@ We will use a number of different taxonomy databases:
 
 Next steps are:
 
-1. load the dataset
-2. get a genus list
-3. figure out how to use taxise and taxisesoap to get higher-level taxonomy info 
+1. get a genus list
+2. figure out how to use taxise and taxisesoap to get higher-level taxonomy info 
 
 # Analysis
 
@@ -44,9 +43,11 @@ Next steps are:
 library(taxize)
 library(taxizesoap)
 library(dplyr)
-#data <- read.csv("../data/input_filename.csv")
+data <- read.csv("../data/mean_13c_per_species.csv")
 ```
 
-```{r, echo=FALSE}
+## 
+
+```{r, message=FALSE, warning=FALSE}
 
 ```
