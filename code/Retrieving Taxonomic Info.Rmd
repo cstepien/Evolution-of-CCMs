@@ -32,7 +32,7 @@ We will use a number of different taxonomy databases:
 
 Next steps are:
 
-1. get a genus list
+1. get a genus list (use code from previous page)
 2. figure out how to use taxise and taxisesoap to get higher-level taxonomy info 
 
 # Analysis

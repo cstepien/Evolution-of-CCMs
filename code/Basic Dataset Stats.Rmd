@@ -31,9 +31,9 @@ Class, Order and Family data will be reported using 5 different taxonomy sources
 
 Next steps are:
 
-1. load the dataset
-2. make a genus histogram
-3. get a list of genera with 1 through 5 representatives in the dataset
+1. wait on family, order, class data from taxize to calculate histogram by these data
+2. Create a table of how many family, orders and classes are represented
+3. Determine total number of families, orders and classes in Rhodophyta so I can see our coverage
 
 # Analysis
 
@@ -75,9 +75,15 @@ ggplot(data=genus_count, aes(genus_count$n_taxa)) + geom_histogram(bins = max(ge
         axis.line=element_line(), panel.border = element_rect(fill = NA, color = "black"))
 ```
 
-## List of genera with only 1 representative in the dataset
+### List of genera with only 1 representative in the dataset
 
 ```{r}
 congener_candidates <- filter(genus_count, n_taxa == 1) %>% select(genus)
 write.csv(congener_candidates, file = "../data/taxa names for sequence search/congener_candidates.csv", row.names = FALSE)
+congener_list <- as.character(congener_candidates$genus)
 ```
+
+
+Below is the list of the `r genus_hist[which(genus_hist$n_taxa == 1), 2]` genera in the dataset with only 1 species:
+
+`r congener_list`

@@ -85,22 +85,15 @@ img {
 <li><a href="#data-setup-and-packages"><span class="toc-section-number">3.1</span> Data setup and packages</a></li>
 <li><a href="#genus-counts"><span class="toc-section-number">3.2</span> Genus Counts</a><ul>
 <li><a href="#histogram-of-taxa-count-by-genus-in-the-dataset"><span class="toc-section-number">3.2.1</span> Histogram of taxa count by genus in the dataset</a></li>
-<li><a href="#list-of-genera-with-1-5-representatives-in-the-dataset"><span class="toc-section-number">3.2.2</span> List of genera with 1-5 representatives in the dataset</a></li>
 </ul></li>
+<li><a href="#list-of-genera-with-only-1-representative-in-the-dataset"><span class="toc-section-number">3.3</span> List of genera with only 1 representative in the dataset</a></li>
 </ul></li>
 </ul>
 </div>
 
 <div id="file-goals" class="section level1">
 <h1><span class="header-section-number">1</span> File goals</h1>
-<p>Goals of this file are to get basic statistics on the dataset that we used to search for sequence data. Initial goals include number and names of genera with:</p>
-<ul>
-<li>only 1 representative in the dataset</li>
-<li>2 representatives in the dataset</li>
-<li>3 representatives in the datset</li>
-<li>4 representatives in the dataset</li>
-<li>5 representatives in the dataset</li>
-</ul>
+<p>Goals of this file are to get basic statistics on the dataset that we used to search for sequence data. Initial goals include number and names of genera with only 1 representative in the dataset.</p>
 <p>This information will help us ID taxa who lack DNA sequence but are monotypic genera in this dataset. These taxa are candidates for using congeneric DNA sequence to represent them at the genus level in our phylogeny.</p>
 <p>Additionally:</p>
 <ul>
@@ -160,161 +153,14 @@ genus_hist &lt;-<span class="st"> </span><span class="kw">data.frame</span>(genu
         <span class="dt">axis.line=</span><span class="kw">element_line</span>(), <span class="dt">panel.border =</span> <span class="kw">element_rect</span>(<span class="dt">fill =</span> <span class="ot">NA</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>))</code></pre>
 <p><img src="Basic_Dataset_Stats_files/figure-html/unnamed-chunk-4-1.png" /><!-- --></p>
 </div>
-<div id="list-of-genera-with-1-5-representatives-in-the-dataset" class="section level3">
-<h3><span class="header-section-number">3.2.2</span> List of genera with 1-5 representatives in the dataset</h3>
-<pre class="sourceCode r"><code class="sourceCode r">genus_count</code></pre>
-<pre><code>##               genus n_taxa
-## 1      Acanthophora      1
-## 2        Acrosorium      1
-## 3         Acrotylus      1
-## 4     Actinotrichia      1
-## 5     Aglaothamnion      1
-## 6         Ahnfeltia      1
-## 7           Amansia      1
-## 8          Amphiroa      2
-## 9       Anotrichium      1
-## 10        Apophlaea      1
-## 11     Asparagopsis      2
-## 12      Audouinella      1
-## 13           Ballia      1
-## 14         Bellotia      1
-## 15    Bonnemaisonia      1
-## 16         Bornetia      1
-## 17       Bostrychia      2
-## 18     Botryocladia      1
-## 19   Brongniartella      2
-## 20    Callithamnion      3
-## 21      Callophycus      2
-## 22     Callophyllis      7
-## 23        Catenella      1
-## 24         Ceramium      2
-## 25          Champia      1
-## 26   Chondracanthus      2
-## 27         Chondria      2
-## 28         Chondrus      2
-## 29      Chylocladia      1
-## 30        Corallina      5
-## 31   Craspedocarpus      1
-## 32     Cryptopleura      2
-## 33        Cumagloia      1
-## 34          Curdiea      2
-## 35     Cystoclonium      1
-## 36            Dasya      2
-## 37       Delesseria      2
-## 38          Delisea      3
-## 39     Dichotomaria      1
-## 40      Dictyomenia      1
-## 41          Digenea      1
-## 42           Dilsea      2
-## 43         Dumontia      1
-## 44   Echinothamnion      2
-## 45       Endocladia      1
-## 46        Euptilota      2
-## 47      Furcellaria      1
-## 48        Galaxaura      2
-## 49         Gelidium      5
-## 50       Georgiella      1
-## 51       Gibsmithia      1
-## 52        Gigartina      7
-## 53      Gloiocladia      1
-## 54      Gloiopeltis      1
-## 55     Gloiosaccion      1
-## 56    Gloiosiphonia      1
-## 57       Gracilaria     11
-## 58   Gracilariopsis      1
-## 59      Grateloupia      5
-## 60     Gymnogongrus      1
-## 61        Halicnide      1
-## 62       Halopeltis      1
-## 63       Halopithys      1
-## 64        Halopitys      1
-## 65       Haloplegma      1
-## 66      Halosaccion      1
-## 67          Halurus      1
-## 68        Halymenia      3
-## 69        Hemineura      1
-## 70   Heterosiphonia      3
-## 71    Hildenbrandia      1
-## 72      Hydrolithon      1
-## 73         Hymenena      4
-## 74     Hymenocladia      1
-## 75           Hypnea      7
-## 76      Hypoglossum      2
-## 77          Iridaea      1
-## 78            Jania      4
-## 79     Jeannerettia      1
-## 80       Kallymenia      1
-## 81        Laurencia      6
-## 82          Lemanea      1
-## 83      Lenormandia      1
-## 84          Liagora      1
-## 85      Liagoropsis      1
-## 86       Lomentaria      3
-## 87      Lophocladia      1
-## 88        Martensia      1
-## 89      Mastocarpus      4
-## 90   Mastophoropsis      1
-## 91        Mazzaella      4
-## 92    Membranoptera      1
-## 93   Metamastophora      1
-## 94      Microcladia      1
-## 95         Mychodea      1
-## 96      Myriogramme      3
-## 97   Neogoniolithon      1
-## 98     Neorhodomela      1
-## 99     Neuroglossum      1
-## 100     Nitophyllum      2
-## 101      Odonthalia      1
-## 102      Opuntiella      1
-## 103      Osmundaria      1
-## 104        Osmundea      2
-## 105      Pachymenia      1
-## 106        Palisada      1
-## 107        Palmaria      2
-## 108     Parviphycus      1
-## 109    Peyssonnelia      1
-## 110   Phacelocarpus      1
-## 111       Phycodrys      2
-## 112     Phyllophora      2
-## 113   Phymatolithon      1
-## 114       Plocamium      9
-## 115        Plumaria      1
-## 116     Pollexfenia      1
-## 117      Polycoelia      1
-## 118        Polyides      1
-## 119        Polyopes      1
-## 120    Polysiphonia      7
-## 121        Porphyra      5
-## 122       Portieria      1
-## 123  Pterocladiella      1
-## 124        Ptilonia      2
-## 125      Ptilophora      1
-## 126         Ptilota      3
-## 127       Rhodomela      2
-## 128    Rhodophyllis      2
-## 129 Rhodothamniella      1
-## 130      Rhodymenia      2
-## 131      Rytiphlaea      1
-## 132     Schizoseris      1
-## 133     Schizymenia      2
-## 134       Schottera      1
-## 135         Scinaia      1
-## 136        Solieria      1
-## 137    Sonderopelta      1
-## 138   Sphaerococcus      1
-## 139   Spongoclonium      1
-## 140     Stenogramma      1
-## 141   Symphyocladia      1
-## 142   Thamnoclonium      1
-## 143   Trematocarpus      1
-## 144    Tricleocarpa      1
-## 145         Tylotus      1
-## 146      Vertebrata      1
-## 147         Weeksia      1
-## 148     Wrightiella      1
-## 149      Yamadaella      1
-## 150         Yuzurua      1</code></pre>
 </div>
+<div id="list-of-genera-with-only-1-representative-in-the-dataset" class="section level2">
+<h2><span class="header-section-number">3.3</span> List of genera with only 1 representative in the dataset</h2>
+<pre class="sourceCode r"><code class="sourceCode r">congener_candidates &lt;-<span class="st"> </span><span class="kw">filter</span>(genus_count, n_taxa ==<span class="st"> </span><span class="dv">1</span>) %&gt;%<span class="st"> </span><span class="kw">select</span>(genus)
+<span class="kw">write.csv</span>(congener_candidates, <span class="dt">file =</span> <span class="st">&quot;../data/taxa names for sequence search/congener_candidates.csv&quot;</span>, <span class="dt">row.names =</span> <span class="ot">FALSE</span>)
+congener_list &lt;-<span class="st"> </span><span class="kw">as.character</span>(congener_candidates$genus)</code></pre>
+<p>Below is the list of the 100 genera in the dataset with only 1 species:</p>
+<p>Acanthophora, Acrosorium, Acrotylus, Actinotrichia, Aglaothamnion, Ahnfeltia, Amansia, Anotrichium, Apophlaea, Audouinella, Ballia, Bellotia, Bonnemaisonia, Bornetia, Botryocladia, Catenella, Champia, Chylocladia, Craspedocarpus, Cumagloia, Cystoclonium, Dichotomaria, Dictyomenia, Digenea, Dumontia, Endocladia, Furcellaria, Georgiella, Gibsmithia, Gloiocladia, Gloiopeltis, Gloiosaccion, Gloiosiphonia, Gracilariopsis, Gymnogongrus, Halicnide, Halopeltis, Halopithys, Halopitys, Haloplegma, Halosaccion, Halurus, Hemineura, Hildenbrandia, Hydrolithon, Hymenocladia, Iridaea, Jeannerettia, Kallymenia, Lemanea, Lenormandia, Liagora, Liagoropsis, Lophocladia, Martensia, Mastophoropsis, Membranoptera, Metamastophora, Microcladia, Mychodea, Neogoniolithon, Neorhodomela, Neuroglossum, Odonthalia, Opuntiella, Osmundaria, Pachymenia, Palisada, Parviphycus, Peyssonnelia, Phacelocarpus, Phymatolithon, Plumaria, Pollexfenia, Polycoelia, Polyides, Polyopes, Portieria, Pterocladiella, Ptilophora, Rhodothamniella, Rytiphlaea, Schizoseris, Schottera, Scinaia, Solieria, Sonderopelta, Sphaerococcus, Spongoclonium, Stenogramma, Symphyocladia, Thamnoclonium, Trematocarpus, Tricleocarpa, Tylotus, Vertebrata, Weeksia, Wrightiella, Yamadaella, Yuzurua</p>
 </div>
 </div>
 
