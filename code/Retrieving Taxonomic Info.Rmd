@@ -45,8 +45,16 @@ I want to investigate the coverage our tree will have compared to all possible f
 
 Next steps are:
 
-1. Query NCBI
-2. Query BOLD (best shot is my guess)
+1. Pipeline for BOLD - 1st get genera IDs
+2. Exclude non-Protists and NAs
+3. Use IDs to get higher level taxonomy
+4. How to transform data to appropriate format...both NCBI and BOLD
+5. finding all genera in a family, all species in a genus, etc.
+
+# Last steps
+
+1. How to query NCBI
+2. How to query BOLD, set up pipeline
 
 # Analysis
 
@@ -88,14 +96,24 @@ ITIS terms:
 ```{r, message=FALSE, warning=FALSE}
 #taxreturn_s <- classification(species_list, db = 'ncbi')
 #taxreturn_g <- classification(genus_list, db = 'ncbi')
-#
+#names(which(is.na(taxreturn_g)))
+inputid <- taxreturn_g$parentid
+bold_search(id = inputid, includeTree = TRUE)
 ```
 
-The NCBI database is way better than ITIS, and returns things in the correct scheme. 
+The NCBI database is way better than ITIS, and returns things in the correct scheme. Only `r length(names(which(is.na(taxreturn_g))))` genera are missing out of `r length(genus_list)` genera for the genus level dataset - super cool!
+
+Missing red algal genera in NCBI:
+
+`r names(which(is.na(taxreturn_g)))`
+
+For species, `r length(names(which(is.na(taxreturn_s))))` genera are missing out of `r length(species_list)` genera for the genus level dataset - so clearly genus level is the way to go. 
 
 ## BOLD taxonomy
 
 ```{r, message=FALSE, warning=FALSE}
-#taxreturn_s <- classification(species_list, db = 'bold')
-#taxreturn_g <- classification(genus_list, db = 'bold')
+taxreturn_s <- bold_search(name = genus_list[1:10], includeTree = TRUE)
+taxreturn_g <- bold_search(name = genus_list, includeTree = TRUE)
 ```
+
+The BOLD database returns a dataframe initially. 
