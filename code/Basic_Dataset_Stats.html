@@ -85,8 +85,8 @@ img {
 <li><a href="#data-setup-and-packages"><span class="toc-section-number">3.1</span> Data setup and packages</a></li>
 <li><a href="#genus-counts"><span class="toc-section-number">3.2</span> Genus Counts</a><ul>
 <li><a href="#histogram-of-taxa-count-by-genus-in-the-dataset"><span class="toc-section-number">3.2.1</span> Histogram of taxa count by genus in the dataset</a></li>
+<li><a href="#list-of-genera-with-only-1-representative-in-the-dataset"><span class="toc-section-number">3.2.2</span> List of genera with only 1 representative in the dataset</a></li>
 </ul></li>
-<li><a href="#list-of-genera-with-only-1-representative-in-the-dataset"><span class="toc-section-number">3.3</span> List of genera with only 1 representative in the dataset</a></li>
 </ul></li>
 </ul>
 </div>
@@ -108,9 +108,9 @@ img {
 <h1><span class="header-section-number">2</span> Next steps</h1>
 <p>Next steps are:</p>
 <ol style="list-style-type: decimal">
-<li>load the dataset</li>
-<li>make a genus histogram</li>
-<li>get a list of genera with 1 through 5 representatives in the dataset</li>
+<li>wait on family, order, class data from taxize to calculate histogram by these data</li>
+<li>Create a table of how many family, orders and classes are represented</li>
+<li>Determine total number of families, orders and classes in Rhodophyta so I can see our coverage</li>
 </ol>
 </div>
 <div id="analysis" class="section level1">
@@ -153,14 +153,13 @@ genus_hist &lt;-<span class="st"> </span><span class="kw">data.frame</span>(genu
         <span class="dt">axis.line=</span><span class="kw">element_line</span>(), <span class="dt">panel.border =</span> <span class="kw">element_rect</span>(<span class="dt">fill =</span> <span class="ot">NA</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>))</code></pre>
 <p><img src="Basic_Dataset_Stats_files/figure-html/unnamed-chunk-4-1.png" /><!-- --></p>
 </div>
-</div>
-<div id="list-of-genera-with-only-1-representative-in-the-dataset" class="section level2">
-<h2><span class="header-section-number">3.3</span> List of genera with only 1 representative in the dataset</h2>
+<div id="list-of-genera-with-only-1-representative-in-the-dataset" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> List of genera with only 1 representative in the dataset</h3>
 <pre class="sourceCode r"><code class="sourceCode r">congener_candidates &lt;-<span class="st"> </span><span class="kw">filter</span>(genus_count, n_taxa ==<span class="st"> </span><span class="dv">1</span>) %&gt;%<span class="st"> </span><span class="kw">select</span>(genus)
-<span class="kw">write.csv</span>(congener_candidates, <span class="dt">file =</span> <span class="st">&quot;../data/taxa names for sequence search/congener_candidates.csv&quot;</span>, <span class="dt">row.names =</span> <span class="ot">FALSE</span>)
-congener_list &lt;-<span class="st"> </span><span class="kw">as.character</span>(congener_candidates$genus)</code></pre>
+<span class="kw">write.csv</span>(congener_candidates, <span class="dt">file =</span> <span class="st">&quot;../data/taxa names for sequence search/congener_candidates.csv&quot;</span>, <span class="dt">row.names =</span> <span class="ot">FALSE</span>)</code></pre>
 <p>Below is the list of the 100 genera in the dataset with only 1 species:</p>
 <p>Acanthophora, Acrosorium, Acrotylus, Actinotrichia, Aglaothamnion, Ahnfeltia, Amansia, Anotrichium, Apophlaea, Audouinella, Ballia, Bellotia, Bonnemaisonia, Bornetia, Botryocladia, Catenella, Champia, Chylocladia, Craspedocarpus, Cumagloia, Cystoclonium, Dichotomaria, Dictyomenia, Digenea, Dumontia, Endocladia, Furcellaria, Georgiella, Gibsmithia, Gloiocladia, Gloiopeltis, Gloiosaccion, Gloiosiphonia, Gracilariopsis, Gymnogongrus, Halicnide, Halopeltis, Halopithys, Halopitys, Haloplegma, Halosaccion, Halurus, Hemineura, Hildenbrandia, Hydrolithon, Hymenocladia, Iridaea, Jeannerettia, Kallymenia, Lemanea, Lenormandia, Liagora, Liagoropsis, Lophocladia, Martensia, Mastophoropsis, Membranoptera, Metamastophora, Microcladia, Mychodea, Neogoniolithon, Neorhodomela, Neuroglossum, Odonthalia, Opuntiella, Osmundaria, Pachymenia, Palisada, Parviphycus, Peyssonnelia, Phacelocarpus, Phymatolithon, Plumaria, Pollexfenia, Polycoelia, Polyides, Polyopes, Portieria, Pterocladiella, Ptilophora, Rhodothamniella, Rytiphlaea, Schizoseris, Schottera, Scinaia, Solieria, Sonderopelta, Sphaerococcus, Spongoclonium, Stenogramma, Symphyocladia, Thamnoclonium, Trematocarpus, Tricleocarpa, Tylotus, Vertebrata, Weeksia, Wrightiella, Yamadaella, Yuzurua</p>
+</div>
 </div>
 </div>
 

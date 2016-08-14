@@ -83,6 +83,7 @@ img {
 <li><a href="#next-steps"><span class="toc-section-number">2</span> Next steps</a></li>
 <li><a href="#analysis"><span class="toc-section-number">3</span> Analysis</a><ul>
 <li><a href="#data-setup-and-packages"><span class="toc-section-number">3.1</span> Data setup and packages</a></li>
+<li><a href="#genus-list"><span class="toc-section-number">3.2</span> Genus List</a></li>
 </ul></li>
 </ul>
 </div>
@@ -105,8 +106,7 @@ img {
 <h1><span class="header-section-number">2</span> Next steps</h1>
 <p>Next steps are:</p>
 <ol style="list-style-type: decimal">
-<li>load the dataset</li>
-<li>get a genus list</li>
+<li>get a genus list (use code from previous page)</li>
 <li>figure out how to use taxise and taxisesoap to get higher-level taxonomy info</li>
 </ol>
 </div>
@@ -117,7 +117,11 @@ img {
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(taxize)
 <span class="kw">library</span>(taxizesoap)
 <span class="kw">library</span>(dplyr)
-<span class="co">#data &lt;- read.csv(&quot;../data/input_filename.csv&quot;)</span></code></pre>
+data &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;../data/mean_13c_per_species.csv&quot;</span>)</code></pre>
+</div>
+<div id="genus-list" class="section level2">
+<h2><span class="header-section-number">3.2</span> Genus List</h2>
+<pre class="sourceCode r"><code class="sourceCode r">genus_list &lt;-<span class="st"> </span>data %&gt;%<span class="st"> </span><span class="kw">distinct</span>(genus) %&gt;%<span class="st"> </span><span class="kw">select</span>(genus)</code></pre>
 </div>
 </div>
 

@@ -12,28 +12,41 @@ output:
     self_contained: false
 ---
 
+# File status
+
+Current
+
 # File goals
 
-We will use the packages taxize and myTAI to get higher-level taxonomy for my genera, so we can table basic stats about the number of taxa per family, order and class. 
+In this file, I learned how to use taxize for Rhodophyta, and found that the large databases that the taxize package interfaces with were largely inaccurate for algal species with some Databases. I am using both higher taxonomy data from AlgaeBase and Class/Order/Family data from the better databases with taxize (BOLD and NCBI) to compare and see how different each of them are. 
 
-We will use a number of different taxonomy databases: 
+
+## Learning to use Taxize
+
+Learn how to use the packages taxize and myTAI to get higher-level taxonomy for my genera, so we can table basic stats about the number of taxa per family, order and class. 
+
+I explored a number of different taxonomy databases: 
 
 * Barcode of Life Data Systems (BOLD) <- taxize package
 * Encyclopedia of Life (EOL) <- taxize package
-* Integrated Taxonomic Information Service (ITIS) <- taxize package
-* National Center for Biotechnology Information (NCBI) <- taxize package
-* World Register of Marine Species (WoRMS) <- taxizesoap package
+* incomplete: Integrated Taxonomic Information Service (ITIS) <- taxize package
+* incomplete: National Center for Biotechnology Information (NCBI) <- taxize package
+* too outdated: World Register of Marine Species (WoRMS) <- taxizesoap package 
 
-[taxize package github link](https://github.com/ropensci/taxize) for tutorials
+[taxize package github link](https://github.com/ropensci/taxize) for tutorials and source code
 
-[taxizesoap package github link](https://github.com/ropensci/taxizesoap) for tutorials
+[taxizesoap package github link](https://github.com/ropensci/taxizesoap) for tutorials and source code
+
+## How many Families per Order
+
+I want to investigate the coverage our tree will have compared to all possible families and orders (maybe genera too)
 
 # Next steps
 
 Next steps are:
 
-1. get a genus list (use code from previous page)
-2. figure out how to use taxise and taxisesoap to get higher-level taxonomy info 
+1. Query NCBI
+2. Query BOLD (best shot is my guess)
 
 # Analysis
 
@@ -46,8 +59,43 @@ library(dplyr)
 data <- read.csv("../data/mean_13c_per_species.csv")
 ```
 
-## 
+## Genus List and Species List
 
 ```{r, message=FALSE, warning=FALSE}
+genus_list <- data %>% distinct(genus) %>% select(genus)
+genus_list <- as.character(genus_list$genus)
 
+species_list <- data %>% distinct(truetaxa) %>% select(truetaxa)
+species_list <- as.character(species_list$truetaxa)
+```
+
+## ITIS taxonomy - inadequate
+
+```{r, message=FALSE, warning=FALSE}
+#taxreturn_s <- classification(species_list, db = 'itis')
+#taxreturn_g <- classification(genus_list, db = 'itis')
+```
+
+Querying ITIS at the species level leaves the majority of taxa unidentified because there are very few seaweed species in the database. Querying at the genus level is also dodgy - and the reported results aren't consistent (the list returned has incorrect names connected to certain taxa search - eg taxonomy for Ballia, but it is linked to Bostrychia in the returned data)
+
+ITIS terms:
+
+* Accepted = Plantae, Chromista and Fungi taxa name (pick this one!)
+* Valid = Animalia, Protozoa, Bacteria or Archaea taxa name (don't pick this one!)
+
+## NCBI taxonomy - better than ITIS
+
+```{r, message=FALSE, warning=FALSE}
+#taxreturn_s <- classification(species_list, db = 'ncbi')
+#taxreturn_g <- classification(genus_list, db = 'ncbi')
+#
+```
+
+The NCBI database is way better than ITIS, and returns things in the correct scheme. 
+
+## BOLD taxonomy
+
+```{r, message=FALSE, warning=FALSE}
+#taxreturn_s <- classification(species_list, db = 'bold')
+#taxreturn_g <- classification(genus_list, db = 'bold')
 ```

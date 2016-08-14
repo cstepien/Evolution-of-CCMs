@@ -12,6 +12,10 @@ output:
     self_contained: false
 ---
 
+# File status
+
+Current
+
 # File goals
 
 Goals of this file are to get basic statistics on the dataset that we used to search for sequence data. Initial goals include number and names of genera with only 1 representative in the dataset.
@@ -80,10 +84,11 @@ ggplot(data=genus_count, aes(genus_count$n_taxa)) + geom_histogram(bins = max(ge
 ```{r}
 congener_candidates <- filter(genus_count, n_taxa == 1) %>% select(genus)
 write.csv(congener_candidates, file = "../data/taxa names for sequence search/congener_candidates.csv", row.names = FALSE)
-congener_list <- as.character(congener_candidates$genus)
 ```
 
 
 Below is the list of the `r genus_hist[which(genus_hist$n_taxa == 1), 2]` genera in the dataset with only 1 species:
 
-`r congener_list`
+`r congener_candidates$genus`
+
+
