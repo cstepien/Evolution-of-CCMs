@@ -62,6 +62,13 @@ Next steps are:
 5. reformat taxonomy data in BOLD. BOLD is easier to recast the data
 6. finding all genera in a family, all species in a genus, etc.
 
+## Improving functions
+
+My functions work but are clunky - fix the following functions:
+
+1. tax_bins - could use aggregate to make it better, apply over a list
+2. ncbi_downstream - make it generalizable to any level taxonomy, enter taxonomy name and level (eg. "Rhodomelaceae", "order") and it will return every taxa downstream of that, down to species
+
 # Last steps
 
 Function for getting genera per family, family per order, etc. in the dataset
@@ -69,6 +76,7 @@ Function for reformatting NCBI list data as dataframe
 How to transform data to appropriate format - making function in NCBI
 Exclude non-Protists and NAs in BOLD system
 Reporting results for BOLD (this many genera missing - only 2 I think)
+
 
 
 # Analysis
@@ -177,7 +185,7 @@ The below table gives the results of how many classes, orders, families, genera 
 
 Now let's see how many data points for each lineage I have.
 
-First let's make a function to determine the number of x in higher taxonomy y in the dataset z. 
+Let's make a function to determine the number of x in higher taxonomy y in the dataset z. I chose to use the dplyr package, but I also could have made a function with aggregate, aggregating by different taxonomy levels (by a list of taxonomy levels to automate it) and then binding those data frames together. This way I learned some new things about dplyr - notably the underscored group_by, which is used when you have variable inputs. 
 
 ```{r}
 tax_bins <- function(x,y,z){
@@ -192,6 +200,7 @@ tax_bins <- function(x,y,z){
 
 #Example usage: tax_bins("order", "class", tax_ncbi) would give classes PER order in the dataset tax_ncbi
 ```
+
 
 First, Orders, Families and Genera per Class
 ```{r}
@@ -221,11 +230,71 @@ tax_bins("species", "family", data_ncbi)
 family_children_dataset <- cbind(genus_per_family, n_species = species_per_family$n_species)
 ```
 
-### How many children total (globally) from each taxonomy level
+### How many children total (globally) in Florideophyceae from each taxonomy level
 
-Here I'm getting the total number of children for each Class, Order, Family and Genus. This way we can determine how much coverage we have over all families - for example, do we have 100% sampling at the Order level, 80% coverage at the Family level? 60% at the genus level? 
+Here I'm getting the total number of children for each Class, Order, Family and Genus. This way we can determine how much coverage we have over all families - for example, do we have 100% sampling at the Order level, 80% coverage at the Family level? 60% at the genus level? How representative is our phylogeny and our isotope dataset?
 
+*clean this function up to use apply* - I could use apply, start with any taxa, just enter the taxa, and the taxa rank as the arguments, then I can get everything downstream. 
 
+```{r}
+
+#ncbi_downstream <- function(startertaxa){
+  df <- ncbi_children(name = startertaxa, ancestor = "Rhodophyta")[1][[1]] %>% filter(childtaxa_rank == "order") %>% arrange(childtaxa_name)
+  df$parent <- startertaxa
+  df$parent_rank <- "class"
+  print(df)
+  df_c2f <- df
+  
+  for (i in 1:nrow(df)){
+    family <- ncbi_children(name = df$childtaxa_name[i], ancestor = "Rhodophyta")[1][[1]] #%>% filter(childtaxa_rank == "family")
+    family$parent <- df$childtaxa_name[i]
+    family$parent_rank <- "order"
+    print(family)
+    df_c2f <- rbind(df_c2f, family)
+  }
+  
+  ncbi_order <- filter(df_c2f, childtaxa_rank == "order") %>% arrange(childtaxa_name)
+  
+  ncbi_family <- filter(df_c2f, childtaxa_rank == "family") %>% arrange(childtaxa_name)
+  
+  df_c2g <- df_c2f
+  missing_families <- c()
+  
+  for (j in 1:nrow(ncbi_family)){
+    genus <- ncbi_children(name = ncbi_family$childtaxa_name[j], ancestor = "Florideophyceae")[1][[1]] #%>% filter(childtaxa_rank == "genus")
+    if (nrow(genus) > 0) {
+      genus$parent <- ncbi_family$childtaxa_name[j]
+      genus$parent_rank <- "family"
+      print(genus)
+      df_c2g <- rbind(df_c2g, genus) 
+    }
+    else {
+      missing_families <- append(missing_families, ncbi_family$childtaxa_name[j])
+      print(paste("Missing ", as.character(ncbi_family$childtaxa_name[j]), " family children due to API query error", sep= ""))
+    }
+  }
+  
+  ncbi_genus <<- filter(df_c2g, childtaxa_rank == "genus") %>% arrange(childtaxa_name)
+  
+  df_c2s <- df_c2g
+  missing_genera <- c()
+  
+  for (k in 1:nrow(ncbi_genus)){
+  species <- ncbi_children(name = ncbi_genus$childtaxa_name[k], ancestor = "Florideophyceae")[1][[1]] #%>% filter(childtaxa_rank == "genus")
+    if (nrow(species) > 0) {
+      species$parent <- ncbi_genus$childtaxa_name[k]
+      species$parent_rank <- "genus"
+      print(species)
+      df_c2s <- rbind(df_c2s, species)
+    }
+    else {
+      missing_genera <- append(missing_genera, ncbi_genus$childtaxa_name[k])
+      print(paste("Missing ", as.character(ncbi_genus$childtaxa_name[k]), " genus children due to API query error", sep= ""))
+    }
+  }
+  
+  ncbi_species <<- filter(df_c2s, childtaxa_rank == "species") %>% arrange(childtaxa_name)
+```
 
 ## BOLD taxonomy
 
