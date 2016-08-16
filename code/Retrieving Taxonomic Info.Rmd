@@ -88,6 +88,7 @@ data <- read.csv("../data/mean_13c_per_species.csv")
 ```{r, message=FALSE, warning=FALSE}
 genus_list <- data %>% distinct(genus) %>% select(genus)
 genus_list <- as.character(genus_list$genus)
+genus_count <- data.frame(data %>% group_by(genus) %>% summarize(taxa = n()))
 
 species_list <- data %>% distinct(truetaxa) %>% select(truetaxa)
 species_list <- as.character(species_list$truetaxa)
@@ -135,7 +136,16 @@ taxreturn_s <- classification(species_list, db = 'ncbi')
 
 Like ITIS, you must choose the correct genus if there are multiple taxa with the same genus name (red algae and insect taxa frequently share the same genus name), so assessing the API response must be manually updated (below). But the interface for choosing which taxa is the correct one is much better in NCBI vs ITIS, mostly because NCBI actually gives you the taxa division membership to help you choose (red algae, stick insect, etc.). This still means that the process can't be done completely automatically, as the user must choose everytime there is a problem. 
 
-### Species and Genus Coverage from BOLD
+### Add higher taxonomy information to isotope dataset
+
+```{r}
+data_ncbi <- data
+data_ncbi$class <- tax_ncbi$class[match(data_ncbi$genus, tax_ncbi$genus)]
+data_ncbi$order <- tax_ncbi$order[match(data_ncbi$genus, tax_ncbi$genus)]
+data_ncbi$family <- tax_ncbi$family[match(data_ncbi$genus, tax_ncbi$genus)]
+```
+
+### Species and Genus Coverage from NCBI
 
 The NCBI database is way better than ITIS, and returns things in the correct scheme. Only 7 genera are missing out of 149 genera for the genus level dataset as of last query on Sun Aug 14 2016, a 95% coverage rate - super cool! There is also one genus missing family-level data - Opuntiella family membership is listed as 'no rank', 'unclassified Gigartinales'
 
@@ -152,18 +162,18 @@ Missing red algal genera in NCBI:
 
 For species, `r length(names(which(is.na(taxreturn_s))))` species are missing out of `r length(species_list)` genera for the genus level dataset. ` r 100*length(names(which(!is.na(taxreturn_s))))/length(species_list)`% species coverage in NCBI, so clearly genus level is the way to go.
 
-### How many Orders, Families and Genera total
+### How many Orders, Families and Genera total from Dataset
 
 ```{r}
 tax_ncbi <- read.csv("../data/ncbi_taxonomy.csv")
 tax_summary_ncbi <- apply(tax_ncbi, 2, function(x)length(unique(x)))
 ```
 
-The below table gives the results of how many classes, orders, families and genera are in the dataset (excluding the 7 genera in the previous section that NCBI doesn't have complete taxonomy data on).
+The below table gives the results of how many classes, orders, families, genera and species are in the dataset (excluding the 7 genera in the previous section that NCBI doesn't have complete taxonomy data on).
 
 `r tax_summary_ncbi`
 
-### Genera per Family, Families per Order, Orders per Class
+### Genera per Family, Families per Order, Orders per Class from Dataset
 
 Now let's see how many data points for each lineage I have.
 
@@ -171,11 +181,11 @@ First let's make a function to determine the number of x in higher taxonomy y in
 
 ```{r}
 tax_bins <- function(x,y,z){
-  data <- data.frame(z %>% group_by_(y) %>% summarize_(n_uniq=interp(~n_distinct(v), v = as.name(x))))
-  print(data)
-  colnames(data) <- c(as.character(y), paste("n_", as.name(x), "_dataset", sep = ""))
-  print(colnames(data))
-  print(data)
+  data <- data.frame(z %>% filter(!is.na(class)) %>% group_by_(y) %>% summarize_(n_uniq=interp(~n_distinct(v), v = as.name(x))))
+  #print(data)
+  colnames(data) <- c(as.character(y), paste("n_", as.name(x), sep = ""))
+  #print(colnames(data))
+  #print(data)
   assign(paste(as.name(x), "_per_", as.name(y), sep = ""), data, envir = .GlobalEnv)
   print(paste(as.name(x), "_per_", as.name(y), sep = ""))
 }
@@ -183,36 +193,39 @@ tax_bins <- function(x,y,z){
 #Example usage: tax_bins("order", "class", tax_ncbi) would give classes PER order in the dataset tax_ncbi
 ```
 
-
-
 First, Orders, Families and Genera per Class
 ```{r}
-OperC <- data.frame(tax_ncbi %>% group_by(class) %>% summarize(n_distinct(order)))
-colnames(OperC) <- c("class", "n_orders_dataset")
+tax_bins("order", "class", data_ncbi)
+tax_bins("family", "class", data_ncbi)
+tax_bins("genus", "class", data_ncbi)
+tax_bins("species", "class", data_ncbi)
 
-FperC <- data.frame(tax_ncbi %>% group_by(class) %>% summarize(n_distinct(family)))
-colnames(FperC) <- c("class", "n_families_dataset")
-
-GperC <- data.frame(tax_ncbi %>% group_by(class) %>% summarize(n_distinct(genus)))
-colnames(GperC) <- c("class", "n_genera_dataset")
+class_children_dataset <- cbind(order_per_class, n_family = family_per_class$n_family, n_genus = genus_per_class$n_genus, n_species = species_per_class$n_species)
 ```
 
 
 Next, Families and Genera per Order
 ```{r}
-FperO <- data.frame(tax_ncbi %>% group_by(class) %>% summarize(n_distinct(order)))
-colnames(FperO) <- c("class", "n_orders_dataset")
+tax_bins("family", "order", data_ncbi)
+tax_bins("genus", "order", data_ncbi)
+tax_bins("species", "order", data_ncbi)
 
-GperO <- data.frame(tax_ncbi %>% group_by(class) %>% summarize(n_distinct(family)))
-colnames(GperO) <- c("class", "n_families_dataset")
+order_children_dataset <- cbind(family_per_order, n_genus = genus_per_order$n_genus, n_species = species_per_order$n_species)
 ```
 
 
 Finally, Genera per Family
 ```{r}
-GperF <- data.frame(tax_ncbi %>% group_by(family) %>% summarize(n_distinct(genus)))
-colnames(GperF) <- c("family", "n_genera_dataset")
+tax_bins("genus", "family", data_ncbi)
+tax_bins("species", "family", data_ncbi)
+family_children_dataset <- cbind(genus_per_family, n_species = species_per_family$n_species)
 ```
+
+### How many children total (globally) from each taxonomy level
+
+Here I'm getting the total number of children for each Class, Order, Family and Genus. This way we can determine how much coverage we have over all families - for example, do we have 100% sampling at the Order level, 80% coverage at the Family level? 60% at the genus level? 
+
+
 
 ## BOLD taxonomy
 
