@@ -20,41 +20,56 @@ Current
 
 In this file, I learned how to use taxize for Rhodophyta, and found that the large databases that the taxize package interfaces with were largely inaccurate for algal species with some Databases. I am using both higher taxonomy data from AlgaeBase and Class/Order/Family data from the better databases with taxize (BOLD and NCBI) to compare and see how different each of them are. 
 
+I also want to determine how many Orders, Families and Genera there are (and Families/Order, Genera/Family) so we can generate a table of how our dataset sampling compares to overall diversity levels in Florideophyceae. 
+
 
 ## Learning to use Taxize
 
 Learn how to use the packages taxize and myTAI to get higher-level taxonomy for my genera, so we can table basic stats about the number of taxa per family, order and class. 
 
-I explored a number of different taxonomy databases: 
-
-* Barcode of Life Data Systems (BOLD) <- taxize package
-* Encyclopedia of Life (EOL) <- taxize package
-* incomplete: Integrated Taxonomic Information Service (ITIS) <- taxize package
-* incomplete: National Center for Biotechnology Information (NCBI) <- taxize package
-* too outdated: World Register of Marine Species (WoRMS) <- taxizesoap package 
-
 [taxize package github link](https://github.com/ropensci/taxize) for tutorials and source code
 
 [taxizesoap package github link](https://github.com/ropensci/taxizesoap) for tutorials and source code
+
+## Assessing the response of various APIs
+
+I want so see which databases have the best red algal coverage. 
+
+There are a number of different taxonomy databases: 
+
+* high coverage: Barcode of Life Data Systems (BOLD) <- taxize package
+* not yet assessed: Encyclopedia of Life (EOL) <- taxize package
+* incomplete: Integrated Taxonomic Information Service (ITIS) <- taxize package
+* high coverage: National Center for Biotechnology Information (NCBI) <- taxize package
+* too outdated: World Register of Marine Species (WoRMS) <- taxizesoap package 
 
 ## How many Families per Order
 
 I want to investigate the coverage our tree will have compared to all possible families and orders (maybe genera too)
 
+## Comparing AlgaeBase, NCBI, and BOLD
+
+Lastly, I want to compare these different databases to see what kinds of differences there are in taxonomy - Rhodophyta is constantly changing taxonomy. 
+
 # Next steps
 
 Next steps are:
 
-1. Pipeline for BOLD - 1st get genera IDs
-2. Exclude non-Protists and NAs
-3. Use IDs to get higher level taxonomy
-4. How to transform data to appropriate format...both NCBI and BOLD
-5. finding all genera in a family, all species in a genus, etc.
+1. Evaluate functions in reformatted NCBI taxonomy dataset - genera per family, family per order, etc.
+2. Get all children for each Class, Order, Family, Genus in NCBI
+3. Pipeline for BOLD - 1st get genera IDs
+4. Use IDs to get higher level taxonomy from BOLD
+5. reformat taxonomy data in BOLD. BOLD is easier to recast the data
+6. finding all genera in a family, all species in a genus, etc.
 
 # Last steps
 
-1. How to query NCBI
-2. How to query BOLD, set up pipeline
+Function for getting genera per family, family per order, etc. in the dataset
+Function for reformatting NCBI list data as dataframe
+How to transform data to appropriate format - making function in NCBI
+Exclude non-Protists and NAs in BOLD system
+Reporting results for BOLD (this many genera missing - only 2 I think)
+
 
 # Analysis
 
@@ -64,6 +79,7 @@ Next steps are:
 library(taxize)
 library(taxizesoap)
 library(dplyr)
+library(lazyeval)
 data <- read.csv("../data/mean_13c_per_species.csv")
 ```
 
@@ -84,36 +100,151 @@ species_list <- as.character(species_list$truetaxa)
 #taxreturn_g <- classification(genus_list, db = 'itis')
 ```
 
-Querying ITIS at the species level leaves the majority of taxa unidentified because there are very few seaweed species in the database. Querying at the genus level is also dodgy - and the reported results aren't consistent (the list returned has incorrect names connected to certain taxa search - eg taxonomy for Ballia, but it is linked to Bostrychia in the returned data)
+Querying ITIS at the species level leaves the majority of taxa unidentified because there are very few seaweed species in the database. Querying at the genus level is also dodgy - and the reported results aren't consistent (the list returned has incorrect names connected to certain taxa search - eg taxonomy for Ballia, but it is linked to Bostrychia in the returned data). You also must choose the correct taxa if there are multiple taxa with the same genus name (red algae and insect taxa frequently share the same genus name), and there is no information about which Acanthophora is the red algae and which is the invert, other than "accepted" versus "valid." 
 
 ITIS terms:
 
 * Accepted = Plantae, Chromista and Fungi taxa name (pick this one!)
 * Valid = Animalia, Protozoa, Bacteria or Archaea taxa name (don't pick this one!)
 
+
 ## NCBI taxonomy - better than ITIS
 
+### Initial query at genus and species level
+
 ```{r, message=FALSE, warning=FALSE}
-#taxreturn_s <- classification(species_list, db = 'ncbi')
+taxreturn_s <- classification(species_list, db = 'ncbi')
 #taxreturn_g <- classification(genus_list, db = 'ncbi')
-#names(which(is.na(taxreturn_g)))
-inputid <- taxreturn_g$parentid
-bold_search(id = inputid, includeTree = TRUE)
+
+#tax_ncbi <- data.frame(class = character(), order = character(), family = character(), genus = character(), rownames <- c(), #stringsAsFactors = FALSE)
+
+#format_ncbi <- function(x){
+#  for (j in 1:length(x)){
+#    if (!is.na(x[j])){
+#      if (length(which(x[j][[1]]$rank %in% c("class", "order", "family", "genus"))) == 4) {
+#             tax_ncbi <<- rbind(tax_ncbi, data.frame(setNames(as.list(x[j][[1]]$name[which(x[j][[1]]$rank %in% c("class", #"order", "family", "genus"))]), names(tax_ncbi)))) 
+#      }
+#    }
+#  }
+#  rownames(tax_ncbi) <- c()
+#}
+
+#write.csv(tax_ncbi, file = "../data/ncbi_taxonomy.csv", row.names = FALSE)
+
 ```
 
-The NCBI database is way better than ITIS, and returns things in the correct scheme. Only `r length(names(which(is.na(taxreturn_g))))` genera are missing out of `r length(genus_list)` genera for the genus level dataset - super cool!
+Like ITIS, you must choose the correct genus if there are multiple taxa with the same genus name (red algae and insect taxa frequently share the same genus name), so assessing the API response must be manually updated (below). But the interface for choosing which taxa is the correct one is much better in NCBI vs ITIS, mostly because NCBI actually gives you the taxa division membership to help you choose (red algae, stick insect, etc.). This still means that the process can't be done completely automatically, as the user must choose everytime there is a problem. 
+
+### Species and Genus Coverage from BOLD
+
+The NCBI database is way better than ITIS, and returns things in the correct scheme. Only 7 genera are missing out of 149 genera for the genus level dataset as of last query on Sun Aug 14 2016, a 95% coverage rate - super cool! There is also one genus missing family-level data - Opuntiella family membership is listed as 'no rank', 'unclassified Gigartinales'
 
 Missing red algal genera in NCBI:
 
-`r names(which(is.na(taxreturn_g)))`
+"Bonnemaisonia"
+"Bornetia"
+"Dictyomenia"
+"Echinothamnion"
+"Halicnide"
+"Halopitys"
+"Jeannerettia"
+"Opuntiella" <- missing family ('unclassified Gigartinales')
 
-For species, `r length(names(which(is.na(taxreturn_s))))` genera are missing out of `r length(species_list)` genera for the genus level dataset - so clearly genus level is the way to go. 
+For species, `r length(names(which(is.na(taxreturn_s))))` species are missing out of `r length(species_list)` genera for the genus level dataset. ` r 100*length(names(which(!is.na(taxreturn_s))))/length(species_list)`% species coverage in NCBI, so clearly genus level is the way to go.
+
+### How many Orders, Families and Genera total
+
+```{r}
+tax_ncbi <- read.csv("../data/ncbi_taxonomy.csv")
+tax_summary_ncbi <- apply(tax_ncbi, 2, function(x)length(unique(x)))
+```
+
+The below table gives the results of how many classes, orders, families and genera are in the dataset (excluding the 7 genera in the previous section that NCBI doesn't have complete taxonomy data on).
+
+`r tax_summary_ncbi`
+
+### Genera per Family, Families per Order, Orders per Class
+
+Now let's see how many data points for each lineage I have.
+
+First let's make a function to determine the number of x in higher taxonomy y in the dataset z. 
+
+```{r}
+tax_bins <- function(x,y,z){
+  data <- data.frame(z %>% group_by_(y) %>% summarize_(n_uniq=interp(~n_distinct(v), v = as.name(x))))
+  print(data)
+  colnames(data) <- c(as.character(y), paste("n_", as.name(x), "_dataset", sep = ""))
+  print(colnames(data))
+  print(data)
+  assign(paste(as.name(x), "_per_", as.name(y), sep = ""), data, envir = .GlobalEnv)
+  print(paste(as.name(x), "_per_", as.name(y), sep = ""))
+}
+
+#Example usage: tax_bins("order", "class", tax_ncbi) would give classes PER order in the dataset tax_ncbi
+```
+
+
+
+First, Orders, Families and Genera per Class
+```{r}
+OperC <- data.frame(tax_ncbi %>% group_by(class) %>% summarize(n_distinct(order)))
+colnames(OperC) <- c("class", "n_orders_dataset")
+
+FperC <- data.frame(tax_ncbi %>% group_by(class) %>% summarize(n_distinct(family)))
+colnames(FperC) <- c("class", "n_families_dataset")
+
+GperC <- data.frame(tax_ncbi %>% group_by(class) %>% summarize(n_distinct(genus)))
+colnames(GperC) <- c("class", "n_genera_dataset")
+```
+
+
+Next, Families and Genera per Order
+```{r}
+FperO <- data.frame(tax_ncbi %>% group_by(class) %>% summarize(n_distinct(order)))
+colnames(FperO) <- c("class", "n_orders_dataset")
+
+GperO <- data.frame(tax_ncbi %>% group_by(class) %>% summarize(n_distinct(family)))
+colnames(GperO) <- c("class", "n_families_dataset")
+```
+
+
+Finally, Genera per Family
+```{r}
+GperF <- data.frame(tax_ncbi %>% group_by(family) %>% summarize(n_distinct(genus)))
+colnames(GperF) <- c("family", "n_genera_dataset")
+```
 
 ## BOLD taxonomy
 
+### Initial query at genus and species level
+
 ```{r, message=FALSE, warning=FALSE}
-taxreturn_s <- bold_search(name = genus_list[1:10], includeTree = TRUE)
+taxreturn_s <- bold_search(name = species_list, includeTree = TRUE)
 taxreturn_g <- bold_search(name = genus_list, includeTree = TRUE)
 ```
 
-The BOLD database returns a dataframe initially. 
+The BOLD database returns a dataframe initially, as opposed to a list of dataframes from the ITIS and NCBI databases. It also doesn't require choosing the correct taxa if there are multiple taxa with the same genus name (red algae and insect taxa frequently share the same genus name), but rather just reports them both. This means we can filter out the non-algal taxa easily with dplyr. 
+
+### Filter out non-algal taxa at Genus Level
+
+```{r}
+taxreturn <- taxreturn_g %>% filter(tax_division == "Protists", !is.na(taxon))
+```
+
+### Species and Genus Coverage from BOLD
+
+Only `r length(which(is.na(taxreturn_g$taxon)))` genera are missing out of `r length(genus_list)` genera for the genus level dataset - super cool! ` r 100*nrow(taxreturn)/length(genus_list)`% genus coverage in BOLD. 
+
+Missing red algal genera in BOLD:
+
+`r taxreturn_g$input[(which(is.na(taxreturn_g$taxon)))]`
+
+For species, `r length(which(is.na(taxreturn_s$taxon)))` species are missing out of `r length(species_list)` genera for the genus level dataset -` r 100*length(which(!is.na(taxreturn_s$taxon)))/length(species_list)`% species coverage in BOLD. So clearly genus level is the way to go. 
+
+
+### Get higher taxonomy info by ID
+
+```{r}
+
+
+```
