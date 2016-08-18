@@ -62,12 +62,13 @@ Next steps are:
 5. reformat taxonomy data in BOLD. BOLD is easier to recast the data
 6. finding all genera in a family, all species in a genus, etc.
 
-## Improving functions
+## Improving functions and code
 
 My functions work but are clunky - fix the following functions:
 
 1. tax_bins - could use aggregate to make it better, apply over a list
 2. ncbi_downstream - make it generalizable to any level taxonomy, enter taxonomy name and level (eg. "Rhodomelaceae", "order") and it will return every taxa downstream of that, down to species
+3. Adding new lines before and after print statements (especially "Missing Ballia genera children due to ...")
 
 # Last steps
 
@@ -236,7 +237,7 @@ Here I'm getting the total number of children for each Class, Order, Family and 
 
 *clean this function up to use apply* - I could use apply, start with any taxa, just enter the taxa, and the taxa rank as the arguments, then I can get everything downstream. 
 
-```{r}
+```{r, eval = FALSE}
 
 #ncbi_downstream <- function(startertaxa){
   df <- ncbi_children(name = startertaxa, ancestor = "Rhodophyta")[1][[1]] %>% filter(childtaxa_rank == "order") %>% arrange(childtaxa_name)
@@ -294,6 +295,15 @@ Here I'm getting the total number of children for each Class, Order, Family and 
   }
   
   ncbi_species <<- filter(df_c2s, childtaxa_rank == "species") %>% arrange(childtaxa_name)
+  
+write.csv(df_c2s, file = "../data/ncbi_global_Rhodophyta_tax.csv")
+```
+
+Putting the dataset together at from Order to Genus
+
+```{r}
+
+  
 ```
 
 ## BOLD taxonomy
