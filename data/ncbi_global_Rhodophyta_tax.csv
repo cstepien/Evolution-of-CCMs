@@ -1,0 +1,2891 @@
+childtaxa_id,childtaxa_name,childtaxa_rank,parent,parent_rank,source
+31355,Acrochaetiales,order,Florideophyceae,class,ncbi
+369754,Acrosymphytales,order,Florideophyceae,class,ncbi
+31361,Ahnfeltiales,order,Florideophyceae,class,ncbi
+111859,Balbianiales,order,Florideophyceae,class,ncbi
+123989,Balliales,order,Florideophyceae,class,ncbi
+31370,Batrachospermales,order,Florideophyceae,class,ncbi
+31364,Bonnemaisoniales,order,Florideophyceae,class,ncbi
+2802,Ceramiales,order,Florideophyceae,class,ncbi
+658648,Colaconematales,order,Florideophyceae,class,ncbi
+1405800,Entwisleiales,order,Florideophyceae,class,ncbi
+31399,Gelidiales,order,Florideophyceae,class,ncbi
+28017,Gigartinales,order,Florideophyceae,class,ncbi
+31468,Gracilariales,order,Florideophyceae,class,ncbi
+50289,Halymeniales,order,Florideophyceae,class,ncbi
+1705611,Hapalidiales,order,Florideophyceae,class,ncbi
+31477,Hildenbrandiales,order,Florideophyceae,class,ncbi
+2807,Nemaliales,order,Florideophyceae,class,ncbi
+199699,Nemastomatales,order,Florideophyceae,class,ncbi
+2819,Palmariales,order,Florideophyceae,class,ncbi
+244123,Pihiellales,order,Florideophyceae,class,ncbi
+35203,Plocamiales,order,Florideophyceae,class,ncbi
+498764,Rhodachlyales,order,Florideophyceae,class,ncbi
+29247,Rhodymeniales,order,Florideophyceae,class,ncbi
+369753,Sebdeniales,order,Florideophyceae,class,ncbi
+891383,Thoreales,order,Florideophyceae,class,ncbi
+31356,Acrochaetiaceae,family,Acrochaetiales,order,ncbi
+142495,Acrosymphytaceae,family,Acrosymphytales,order,ncbi
+31356,Acrochaetiaceae,family,Acrochaetiales,order,ncbi
+142495,Acrosymphytaceae,family,Acrosymphytales,order,ncbi
+31362,Ahnfeltiaceae,family,Ahnfeltiales,order,ncbi
+173442,Balbianiaceae,family,Balbianiales,order,ncbi
+123990,Balliaceae,family,Balliales,order,ncbi
+177372,Balliopsis,genus,Batrachospermales,order,ncbi
+67901,Psilosiphonaceae,family,Batrachospermales,order,ncbi
+31374,Lemaneaceae,family,Batrachospermales,order,ncbi
+31371,Batrachospermaceae,family,Batrachospermales,order,ncbi
+173448,Naccariaceae,family,Bonnemaisoniales,order,ncbi
+31365,Bonnemaisoniaceae,family,Bonnemaisoniales,order,ncbi
+998122,Sarcomeniaceae,family,Ceramiales,order,ncbi
+756396,Wrangeliaceae,family,Ceramiales,order,ncbi
+35164,Dasyaceae,family,Ceramiales,order,ncbi
+31386,Delesseriaceae,family,Ceramiales,order,ncbi
+31377,Ceramiaceae,family,Ceramiales,order,ncbi
+2803,Rhodomelaceae,family,Ceramiales,order,ncbi
+658649,Colaconemataceae,family,Colaconematales,order,ncbi
+1405801,Entwisleiaceae,family,Entwisleiales,order,ncbi
+436067,Aphanta,genus,Gelidiales,order,ncbi
+2808,Gelidiaceae,family,Gelidiales,order,ncbi
+1848510,Catenellopsidaceae,family,Gigartinales,order,ncbi
+1819309,Etheliaceae,family,Gigartinales,order,ncbi
+1405792,Chondrymeniaceae,family,Gigartinales,order,ncbi
+1037068,Crossocarpaceae,family,Gigartinales,order,ncbi
+867921,Haemeschariaceae,family,Gigartinales,order,ncbi
+282346,Choreocolacaceae,family,Gigartinales,order,ncbi
+257613,Areschougiaceae,family,Gigartinales,order,ncbi
+257601,Wurdemanniaceae,family,Gigartinales,order,ncbi
+257593,Rissoellaceae,family,Gigartinales,order,ncbi
+257590,Pseudoanemoniaceae,family,Gigartinales,order,ncbi
+257583,Mychodeophyllaceae,family,Gigartinales,order,ncbi
+257562,Cubiculosporaceae,family,Gigartinales,order,ncbi
+257559,Cruoriaceae,family,Gigartinales,order,ncbi
+257552,Corynocystaceae,family,Gigartinales,order,ncbi
+257543,Acrotylaceae,family,Gigartinales,order,ncbi
+239158,Corynomorphaceae,family,Gigartinales,order,ncbi
+239142,Dicranemataceae,family,Gigartinales,order,ncbi
+173469,Calosiphoniaceae,family,Gigartinales,order,ncbi
+173455,Peyssonneliaceae,family,Gigartinales,order,ncbi
+142503,Gainiaceae,family,Gigartinales,order,ncbi
+50886,Mychodeaceae,family,Gigartinales,order,ncbi
+38385,Tichocarpaceae,family,Gigartinales,order,ncbi
+38384,Caulacanthaceae,family,Gigartinales,order,ncbi
+35196,Phacelocarpaceae,family,Gigartinales,order,ncbi
+35193,Nizymeniaceae,family,Gigartinales,order,ncbi
+31465,Sphaerococcaceae,family,Gigartinales,order,ncbi
+31462,Rhizophyllidaceae,family,Gigartinales,order,ncbi
+31459,Polyideaceae,family,Gigartinales,order,ncbi
+31441,Solieriaceae,family,Gigartinales,order,ncbi
+31430,Kallymeniaceae,family,Gigartinales,order,ncbi
+31427,Hypneaceae,family,Gigartinales,order,ncbi
+31424,Gloiosiphoniaceae,family,Gigartinales,order,ncbi
+31415,Dumontiaceae,family,Gigartinales,order,ncbi
+31412,Cystocloniaceae,family,Gigartinales,order,ncbi
+29217,Gigartinaceae,family,Gigartinales,order,ncbi
+28021,Phyllophoraceae,family,Gigartinales,order,ncbi
+28018,Furcellariaceae,family,Gigartinales,order,ncbi
+2814,Endocladiaceae,family,Gigartinales,order,ncbi
+282358,Pterocladiophilaceae,family,Gracilariales,order,ncbi
+31469,Gracilariaceae,family,Gracilariales,order,ncbi
+199491,Tsengiaceae,family,Halymeniales,order,ncbi
+31453,Halymeniaceae,family,Halymeniales,order,ncbi
+227970,Hapalidiaceae,family,Hapalidiales,order,ncbi
+31478,Hildenbrandiaceae,family,Hildenbrandiales,order,ncbi
+268579,Scinaiaceae,family,Nemaliales,order,ncbi
+73096,Galaxauraceae,family,Nemaliales,order,ncbi
+31484,Liagoraceae,family,Nemaliales,order,ncbi
+173458,Nemastomataceae,family,Nemastomatales,order,ncbi
+42185,Schizymeniaceae,family,Nemastomatales,order,ncbi
+909750,Meiodiscaceae,family,Palmariales,order,ncbi
+39579,Rhodothamniellaceae,family,Palmariales,order,ncbi
+39570,Rhodophysemataceae,family,Palmariales,order,ncbi
+2820,Palmariaceae,family,Palmariales,order,ncbi
+244124,Pihiellaceae,family,Pihiellales,order,ncbi
+38556,Sarcodiaceae,family,Plocamiales,order,ncbi
+31450,Plocamiaceae,family,Plocamiales,order,ncbi
+498765,Rhodachlyaceae,family,Rhodachlyales,order,ncbi
+1827019,Minium,genus,Rhodymeniales,order,ncbi
+748726,Hymenocladiaceae,family,Rhodymeniales,order,ncbi
+748682,Fryeellaceae,family,Rhodymeniales,order,ncbi
+81601,Faucheaceae,family,Rhodymeniales,order,ncbi
+31501,Rhodymeniaceae,family,Rhodymeniales,order,ncbi
+31498,Lomentariaceae,family,Rhodymeniales,order,ncbi
+31497,Champiaceae,family,Rhodymeniales,order,ncbi
+50885,Sebdeniaceae,family,Sebdeniales,order,ncbi
+67959,Thoreaceae,family,Thoreales,order,ncbi
+525894,Grania,genus,Acrochaetiaceae,family,ncbi
+257599,Schmitziella,genus,Acrochaetiaceae,family,ncbi
+39575,Rhodochorton,genus,Acrochaetiaceae,family,ncbi
+31359,Audouinella,genus,Acrochaetiaceae,family,ncbi
+31357,Acrochaetium,genus,Acrochaetiaceae,family,ncbi
+525894,Grania,genus,Acrochaetiaceae,family,ncbi
+257599,Schmitziella,genus,Acrochaetiaceae,family,ncbi
+39575,Rhodochorton,genus,Acrochaetiaceae,family,ncbi
+31359,Audouinella,genus,Acrochaetiaceae,family,ncbi
+31357,Acrochaetium,genus,Acrochaetiaceae,family,ncbi
+142496,Acrosymphyton,genus,Acrosymphytaceae,family,ncbi
+142496,Acrosymphyton,genus,Acrosymphytaceae,family,ncbi
+259824,Hennedya,genus,Acrotylaceae,family,ncbi
+257550,Claviclonium,genus,Acrotylaceae,family,ncbi
+257548,Antrocentrum,genus,Acrotylaceae,family,ncbi
+257546,Amphiplexia,genus,Acrotylaceae,family,ncbi
+257544,Acrotylus,genus,Acrotylaceae,family,ncbi
+28022,Ahnfeltia,genus,Ahnfeltiaceae,family,ncbi
+257614,Tikvahiella,genus,Areschougiaceae,family,ncbi
+88418,Rhabdonia,genus,Areschougiaceae,family,ncbi
+88416,Erythroclonium,genus,Areschougiaceae,family,ncbi
+111860,Balbiania,genus,Balbianiaceae,family,ncbi
+67957,Rhododraparnaldia,genus,Balbianiaceae,family,ncbi
+122416,Ballia,genus,Balliaceae,family,ncbi
+1884863,Setacea,genus,Batrachospermaceae,family,ncbi
+1866279,Nocturama,genus,Batrachospermaceae,family,ncbi
+1486645,Sheathia,genus,Batrachospermaceae,family,ncbi
+644269,Kumanoa,genus,Batrachospermaceae,family,ncbi
+320782,Petrohua,genus,Batrachospermaceae,family,ncbi
+109051,Chantransia,genus,Batrachospermaceae,family,ncbi
+67915,Tuomeya,genus,Batrachospermaceae,family,ncbi
+67912,Sirodotia,genus,Batrachospermaceae,family,ncbi
+39573,Nothocladus,genus,Batrachospermaceae,family,ncbi
+2809,Batrachospermum,genus,Batrachospermaceae,family,ncbi
+680464,Leptophyllis,genus,Bonnemaisoniaceae,family,ncbi
+38530,Delisea,genus,Bonnemaisoniaceae,family,ncbi
+38528,Ptilonia,genus,Bonnemaisoniaceae,family,ncbi
+31368,Bonnemaisonia,genus,Bonnemaisoniaceae,family,ncbi
+31366,Asparagopsis,genus,Bonnemaisoniaceae,family,ncbi
+173470,Schmitzia,genus,Calosiphoniaceae,family,ncbi
+1848511,Catenellopsis,genus,Catenellopsidaceae,family,ncbi
+1269972,Sterrocladia,genus,Caulacanthaceae,family,ncbi
+196370,Catenella,genus,Caulacanthaceae,family,ncbi
+38381,Montemaria,genus,Caulacanthaceae,family,ncbi
+38379,Heringia,genus,Caulacanthaceae,family,ncbi
+31410,Caulacanthus,genus,Caulacanthaceae,family,ncbi
+1310126,Gulsonia,genus,Ceramiaceae,family,ncbi
+998129,Perikladosporon,genus,Ceramiaceae,family,ncbi
+997574,Balliella,genus,Ceramiaceae,family,ncbi
+756383,Acrothamnion,genus,Ceramiaceae,family,ncbi
+710540,Hollenbergia,genus,Ceramiaceae,family,ncbi
+710538,Gayliella,genus,Ceramiaceae,family,ncbi
+645528,Irtugovia,genus,Ceramiaceae,family,ncbi
+536899,Tetrathamnion,genus,Ceramiaceae,family,ncbi
+536896,Heterothamnion,genus,Ceramiaceae,family,ncbi
+536615,Dasythamniella,genus,Ceramiaceae,family,ncbi
+536612,Warrenia,genus,Ceramiaceae,family,ncbi
+536608,Shepleya,genus,Ceramiaceae,family,ncbi
+536602,Muellerena,genus,Ceramiaceae,family,ncbi
+536600,Monosporus,genus,Ceramiaceae,family,ncbi
+536598,Lejolisia,genus,Ceramiaceae,family,ncbi
+536596,Involucrana,genus,Ceramiaceae,family,ncbi
+536592,Dasyphila,genus,Ceramiaceae,family,ncbi
+536590,Compsothamnion,genus,Ceramiaceae,family,ncbi
+460886,Pleonosporium,genus,Ceramiaceae,family,ncbi
+439552,Euptilocladia,genus,Ceramiaceae,family,ncbi
+439545,Wrangelia,genus,Ceramiaceae,family,ncbi
+397060,Spongoclonium,genus,Ceramiaceae,family,ncbi
+332499,Sciurothamnion,genus,Ceramiaceae,family,ncbi
+332496,Carpothamnion,genus,Ceramiaceae,family,ncbi
+332494,Heteroptilon,genus,Ceramiaceae,family,ncbi
+332492,Aristoptilon,genus,Ceramiaceae,family,ncbi
+332490,Diapse,genus,Ceramiaceae,family,ncbi
+332488,Georgiella,genus,Ceramiaceae,family,ncbi
+332486,Falklandiella,genus,Ceramiaceae,family,ncbi
+332482,Ptilocladia,genus,Ceramiaceae,family,ncbi
+326258,Herpochondria,genus,Ceramiaceae,family,ncbi
+326256,Microcladia,genus,Ceramiaceae,family,ncbi
+326254,Corallophila,genus,Ceramiaceae,family,ncbi
+326252,Carpoblepharis,genus,Ceramiaceae,family,ncbi
+326250,Scagelia,genus,Ceramiaceae,family,ncbi
+320443,Psilothallia,genus,Ceramiaceae,family,ncbi
+320439,Neoptilota,genus,Ceramiaceae,family,ncbi
+218450,Reinboldiella,genus,Ceramiaceae,family,ncbi
+218444,Campylaephora,genus,Ceramiaceae,family,ncbi
+193185,Sphondylothamnion,genus,Ceramiaceae,family,ncbi
+193183,Seirospora,genus,Ceramiaceae,family,ncbi
+193181,Gymnothamnion,genus,Ceramiaceae,family,ncbi
+189643,Rhodocallis,genus,Ceramiaceae,family,ncbi
+189641,Plumaria,genus,Ceramiaceae,family,ncbi
+189637,Halurus,genus,Ceramiaceae,family,ncbi
+179282,Platythamnion,genus,Ceramiaceae,family,ncbi
+173461,Pterothamnion,genus,Ceramiaceae,family,ncbi
+159509,Euptilota,genus,Ceramiaceae,family,ncbi
+159502,Centroceras,genus,Ceramiaceae,family,ncbi
+123986,Inkyuleea,genus,Ceramiaceae,family,ncbi
+122414,Antithamnionella,genus,Ceramiaceae,family,ncbi
+110474,Ptilota,genus,Ceramiaceae,family,ncbi
+42001,Crouania,genus,Ceramiaceae,family,ncbi
+41998,Anotrichium,genus,Ceramiaceae,family,ncbi
+35158,Griffithsia,genus,Ceramiaceae,family,ncbi
+31384,Spyridia,genus,Ceramiaceae,family,ncbi
+31382,Spermothamnion,genus,Ceramiaceae,family,ncbi
+31380,Ceramium,genus,Ceramiaceae,family,ncbi
+31378,Callithamnion,genus,Ceramiaceae,family,ncbi
+2766,Antithamnion,genus,Ceramiaceae,family,ncbi
+2764,Aglaothamnion,genus,Ceramiaceae,family,ncbi
+1852974,Coeloseira,genus,Champiaceae,family,ncbi
+1583062,Neogastroclonium,genus,Champiaceae,family,ncbi
+479264,Coelothrix,genus,Champiaceae,family,ncbi
+81597,Dictyothamnion,genus,Champiaceae,family,ncbi
+81593,Chylocladia,genus,Champiaceae,family,ncbi
+39625,Champia,genus,Champiaceae,family,ncbi
+2772,Gastroclonium,genus,Champiaceae,family,ncbi
+1405794,Dissimularia,genus,Chondrymeniaceae,family,ncbi
+1405793,Crebradomus,genus,Chondrymeniaceae,family,ncbi
+1293579,Chondrymenia,genus,Chondrymeniaceae,family,ncbi
+282356,Leachiella,genus,Choreocolacaceae,family,ncbi
+282354,Harveyella,genus,Choreocolacaceae,family,ncbi
+282352,Dawsoniocolax,genus,Choreocolacaceae,family,ncbi
+282350,Choreocolax,genus,Choreocolacaceae,family,ncbi
+282347,Bostrychiocolax,genus,Choreocolacaceae,family,ncbi
+173032,Colaconema,genus,Colaconemataceae,family,ncbi
+257553,Corynocystis,genus,Corynocystaceae,family,ncbi
+239159,Corynomorpha,genus,Corynomorphaceae,family,ncbi
+1037069,Beringia,no rank,Crossocarpaceae,family,ncbi
+1313214,Pseudopolyides,genus,Cruoriaceae,family,ncbi
+257560,Cruoria,genus,Cruoriaceae,family,ncbi
+257563,Cubiculosporum,genus,Cubiculosporaceae,family,ncbi
+997930,Hypneocolax,genus,Cystocloniaceae,family,ncbi
+259826,Erythronaema,genus,Cystocloniaceae,family,ncbi
+257576,Gloiophyllis,genus,Cystocloniaceae,family,ncbi
+257574,Fimbrifolium,genus,Cystocloniaceae,family,ncbi
+257570,Cystoclonium,genus,Cystocloniaceae,family,ncbi
+257565,Austroclonium,genus,Cystocloniaceae,family,ncbi
+163332,Stictosporum,genus,Cystocloniaceae,family,ncbi
+163330,Rhodophyllis,genus,Cystocloniaceae,family,ncbi
+163326,Craspedocarpus,genus,Cystocloniaceae,family,ncbi
+31413,Calliblepharis,genus,Cystocloniaceae,family,ncbi
+672022,Dipterocladia,genus,Dasyaceae,family,ncbi
+189651,Halydictyon,genus,Dasyaceae,family,ncbi
+189647,Thuretia,genus,Dasyaceae,family,ncbi
+189645,Rhodoptilum,genus,Dasyaceae,family,ncbi
+189635,Dictyurus,genus,Dasyaceae,family,ncbi
+189633,Dasysiphonia,genus,Dasyaceae,family,ncbi
+94296,Heterosiphonia,genus,Dasyaceae,family,ncbi
+94294,Eupogodon,genus,Dasyaceae,family,ncbi
+35165,Dasya,genus,Dasyaceae,family,ncbi
+1627866,Tsengiella,genus,Delesseriaceae,family,ncbi
+1206315,Pantoneura,genus,Delesseriaceae,family,ncbi
+1204432,Cumathamnion,genus,Delesseriaceae,family,ncbi
+756403,Tokidadendron,genus,Delesseriaceae,family,ncbi
+298870,Augophyllum,genus,Delesseriaceae,family,ncbi
+282362,Gonimophyllum,genus,Delesseriaceae,family,ncbi
+210851,Taenioma,genus,Delesseriaceae,family,ncbi
+189639,Platysiphonia,genus,Delesseriaceae,family,ncbi
+167975,Apoglossum,genus,Delesseriaceae,family,ncbi
+159504,Cladhymenia,genus,Delesseriaceae,family,ncbi
+158711,Phitymophora,genus,Delesseriaceae,family,ncbi
+158709,Patulophycus,genus,Delesseriaceae,family,ncbi
+158707,Paraglossum,genus,Delesseriaceae,family,ncbi
+158705,Opephyllum,genus,Delesseriaceae,family,ncbi
+158703,Nitophyllum,genus,Delesseriaceae,family,ncbi
+158701,Neuroglossum,genus,Delesseriaceae,family,ncbi
+158699,Myriogramme,genus,Delesseriaceae,family,ncbi
+158697,Membranoptera,genus,Delesseriaceae,family,ncbi
+158695,Martensia,genus,Delesseriaceae,family,ncbi
+158693,Marionella,genus,Delesseriaceae,family,ncbi
+158691,Loranthophycus,genus,Delesseriaceae,family,ncbi
+158689,Laingia,genus,Delesseriaceae,family,ncbi
+158680,Zellera,genus,Delesseriaceae,family,ncbi
+158678,Womersleya,genus,Delesseriaceae,family,ncbi
+158676,Vanvoorstia,genus,Delesseriaceae,family,ncbi
+158674,Valeriemaya,genus,Delesseriaceae,family,ncbi
+158666,Schizoseris,genus,Delesseriaceae,family,ncbi
+158664,Sarcomenia,genus,Delesseriaceae,family,ncbi
+158661,Pseudophycodrys,genus,Delesseriaceae,family,ncbi
+158659,Polyneuropsis,genus,Delesseriaceae,family,ncbi
+158657,Pollexfenia,genus,Delesseriaceae,family,ncbi
+158655,Platyclinia,genus,Delesseriaceae,family,ncbi
+136792,Nienburgia,genus,Delesseriaceae,family,ncbi
+136790,Erythroglossum,genus,Delesseriaceae,family,ncbi
+136788,Asterocolax,genus,Delesseriaceae,family,ncbi
+136786,Anisocladella,genus,Delesseriaceae,family,ncbi
+131102,Botryoglossum,genus,Delesseriaceae,family,ncbi
+131098,Claudea,genus,Delesseriaceae,family,ncbi
+131069,Heterodoxia,genus,Delesseriaceae,family,ncbi
+131067,Hemineura,genus,Delesseriaceae,family,ncbi
+131065,Haraldiophyllum,genus,Delesseriaceae,family,ncbi
+131063,Grinnellia,genus,Delesseriaceae,family,ncbi
+131061,Drachiella,genus,Delesseriaceae,family,ncbi
+131059,Delesseria,genus,Delesseriaceae,family,ncbi
+131057,Cryptopleura,genus,Delesseriaceae,family,ncbi
+131055,Cladodonta,genus,Delesseriaceae,family,ncbi
+131053,Chauviniella,genus,Delesseriaceae,family,ncbi
+131051,Calonitophyllum,genus,Delesseriaceae,family,ncbi
+131049,Branchioglossum,genus,Delesseriaceae,family,ncbi
+131047,Botryocarpa,genus,Delesseriaceae,family,ncbi
+131045,Bartoniella,genus,Delesseriaceae,family,ncbi
+131041,Acrosorium,genus,Delesseriaceae,family,ncbi
+131039,Abroteia,genus,Delesseriaceae,family,ncbi
+130877,Holmesia,genus,Delesseriaceae,family,ncbi
+128538,Hymenena,genus,Delesseriaceae,family,ncbi
+66381,Sorella,genus,Delesseriaceae,family,ncbi
+35160,Phycodrys,genus,Delesseriaceae,family,ncbi
+31390,Polyneura,genus,Delesseriaceae,family,ncbi
+31389,Hypoglossum,genus,Delesseriaceae,family,ncbi
+31388,Caloglossa,genus,Delesseriaceae,family,ncbi
+1398151,Reptataxis,genus,Dicranemataceae,family,ncbi
+367117,Pinnatiphycus,genus,Dicranemataceae,family,ncbi
+367114,Tylotus,genus,Dicranemataceae,family,ncbi
+239143,Dicranema,genus,Dicranemataceae,family,ncbi
+1819325,Thuretellopsis,genus,Dumontiaceae,family,ncbi
+1819323,Waernia,genus,Dumontiaceae,family,ncbi
+142517,Pikea,genus,Dumontiaceae,family,ncbi
+142515,Orculifilum,genus,Dumontiaceae,family,ncbi
+142513,Neodilsea,genus,Dumontiaceae,family,ncbi
+142511,Kraftia,genus,Dumontiaceae,family,ncbi
+142509,Hyalosiphonia,genus,Dumontiaceae,family,ncbi
+142506,Gibsmithia,genus,Dumontiaceae,family,ncbi
+142501,Cryptosiphonia,genus,Dumontiaceae,family,ncbi
+142498,Constantinea,genus,Dumontiaceae,family,ncbi
+87833,Weeksia,genus,Dumontiaceae,family,ncbi
+42015,Farlowia,genus,Dumontiaceae,family,ncbi
+40403,Rhodopeltis,genus,Dumontiaceae,family,ncbi
+38552,Dudresnaya,genus,Dumontiaceae,family,ncbi
+38513,Dumontia,genus,Dumontiaceae,family,ncbi
+35172,Dasyphloea,genus,Dumontiaceae,family,ncbi
+31418,Leptocladia,genus,Dumontiaceae,family,ncbi
+31416,Dilsea,genus,Dumontiaceae,family,ncbi
+31420,Endocladia,genus,Endocladiaceae,family,ncbi
+2823,Gloiopeltis,genus,Endocladiaceae,family,ncbi
+1405802,Entwisleia,genus,Entwisleiaceae,family,ncbi
+1819310,Ethelia,genus,Etheliaceae,family,ncbi
+397495,Gloiocladia,genus,Faucheaceae,family,ncbi
+319518,Leptofauchea,genus,Faucheaceae,family,ncbi
+81618,Webervanbossea,genus,Faucheaceae,family,ncbi
+81602,Faucheopsis,genus,Faucheaceae,family,ncbi
+42018,Gloioderma,genus,Faucheaceae,family,ncbi
+748683,Pseudohalopeltis,genus,Fryeellaceae,family,ncbi
+81604,Fryeella,genus,Fryeellaceae,family,ncbi
+38332,Hymenocladiopsis,genus,Fryeellaceae,family,ncbi
+1647382,Perplexiramosus,genus,Furcellariaceae,family,ncbi
+1550534,Neurocaulon,genus,Furcellariaceae,family,ncbi
+31422,Halarachnion,genus,Furcellariaceae,family,ncbi
+28019,Furcellaria,genus,Furcellariaceae,family,ncbi
+142504,Gainia,genus,Gainiaceae,family,ncbi
+915458,Whidbeyella,genus,Galaxauraceae,family,ncbi
+268571,Tricleocarpa,genus,Galaxauraceae,family,ncbi
+268565,Dichotomaria,genus,Galaxauraceae,family,ncbi
+268561,Actinotrichia,genus,Galaxauraceae,family,ncbi
+60690,Galaxaura,genus,Galaxauraceae,family,ncbi
+1785972,Gelidiophycus,genus,Gelidiaceae,family,ncbi
+417196,Parviphycus,genus,Gelidiaceae,family,ncbi
+252156,Beckerella,genus,Gelidiaceae,family,ncbi
+82845,Yatabella,genus,Gelidiaceae,family,ncbi
+82842,Acanthopeltis,genus,Gelidiaceae,family,ncbi
+70837,Pterocladiella,genus,Gelidiaceae,family,ncbi
+37203,Ptilophora,genus,Gelidiaceae,family,ncbi
+28866,Gelidiella,genus,Gelidiaceae,family,ncbi
+28864,Capreolia,genus,Gelidiaceae,family,ncbi
+28859,Pterocladia,genus,Gelidiaceae,family,ncbi
+28857,Onikusa,genus,Gelidiaceae,family,ncbi
+2811,Gelidium,genus,Gelidiaceae,family,ncbi
+168819,Iridophycus,genus,Gigartinaceae,family,ncbi
+38337,Ostiophyllum,genus,Gigartinaceae,family,ncbi
+33664,Gigartina,genus,Gigartinaceae,family,ncbi
+29242,Sarcothalia,genus,Gigartinaceae,family,ncbi
+29240,Rhodoglossum,genus,Gigartinaceae,family,ncbi
+29228,Mazzaella,genus,Gigartinaceae,family,ncbi
+29224,Iridaea,genus,Gigartinaceae,family,ncbi
+29218,Chondracanthus,genus,Gigartinaceae,family,ncbi
+2768,Chondrus,genus,Gigartinaceae,family,ncbi
+998127,Peleophycus,genus,Gloiosiphoniaceae,family,ncbi
+508013,Cruoriopsis,genus,Gloiosiphoniaceae,family,ncbi
+173467,Schimmelmannia,genus,Gloiosiphoniaceae,family,ncbi
+31425,Gloiosiphonia,genus,Gloiosiphoniaceae,family,ncbi
+191045,Hydropuntia,genus,Gracilariaceae,family,ncbi
+42479,Gracilariophila,genus,Gracilariaceae,family,ncbi
+31475,Curdiea,genus,Gracilariaceae,family,ncbi
+31473,Melanthalia,genus,Gracilariaceae,family,ncbi
+2781,Gracilariopsis,genus,Gracilariaceae,family,ncbi
+2774,Gracilaria,genus,Gracilariaceae,family,ncbi
+867923,Haemescharia,genus,Haemeschariaceae,family,ncbi
+1562368,Dermocorynus,genus,Halymeniaceae,family,ncbi
+1506557,Galene,genus,Halymeniaceae,family,ncbi
+1506555,Amalthea,genus,Halymeniaceae,family,ncbi
+1503764,Acrodiscus,genus,Halymeniaceae,family,ncbi
+1399954,Kintokiocolax,genus,Halymeniaceae,family,ncbi
+1088690,Sinotubimorpha,genus,Halymeniaceae,family,ncbi
+931253,Glaphyrosiphon,genus,Halymeniaceae,family,ncbi
+796372,Codiophyllum,genus,Halymeniaceae,family,ncbi
+796369,Gelinaria,genus,Halymeniaceae,family,ncbi
+796362,Thamnoclonium,genus,Halymeniaceae,family,ncbi
+408201,Isabbottia,genus,Halymeniaceae,family,ncbi
+257606,Norrissia,genus,Halymeniaceae,family,ncbi
+257604,Epiphloea,genus,Halymeniaceae,family,ncbi
+241239,Yonagunia,genus,Halymeniaceae,family,ncbi
+197847,Zymurgia,genus,Halymeniaceae,family,ncbi
+176238,Pachymeniopsis,genus,Halymeniaceae,family,ncbi
+151736,Polyopes,genus,Halymeniaceae,family,ncbi
+42020,Halymenia,genus,Halymeniaceae,family,ncbi
+42010,Cryptonemia,genus,Halymeniaceae,family,ncbi
+38375,Aeodes,genus,Halymeniaceae,family,ncbi
+38359,Pachymenia,genus,Halymeniaceae,family,ncbi
+31456,Prionitis,genus,Halymeniaceae,family,ncbi
+31454,Grateloupia,genus,Halymeniaceae,family,ncbi
+2815,Carpopeltis,genus,Halymeniaceae,family,ncbi
+1628736,Callilithophytum,genus,Hapalidiaceae,family,ncbi
+227971,Choreonematoideae,subfamily,Hapalidiaceae,family,ncbi
+48603,Melobesioideae,subfamily,Hapalidiaceae,family,ncbi
+79258,Apophlaea,genus,Hildenbrandiaceae,family,ncbi
+31479,Hildenbrandia,genus,Hildenbrandiaceae,family,ncbi
+91059,Hymenocladia,genus,Hymenocladiaceae,family,ncbi
+81599,Erythrymenia,genus,Hymenocladiaceae,family,ncbi
+81589,Asteromenia,genus,Hymenocladiaceae,family,ncbi
+31428,Hypnea,genus,Hypneaceae,family,ncbi
+1828477,Rhytimenia,genus,Kallymeniaceae,family,ncbi
+1789649,Austropugetia,genus,Kallymeniaceae,family,ncbi
+1789646,Leniea,genus,Kallymeniaceae,family,ncbi
+1789644,Wendya,genus,Kallymeniaceae,family,ncbi
+1789642,Judithia,genus,Kallymeniaceae,family,ncbi
+1646547,Stauromenia,genus,Kallymeniaceae,family,ncbi
+1233105,Ectophora,genus,Kallymeniaceae,family,ncbi
+1233103,Polycoelia,genus,Kallymeniaceae,family,ncbi
+1230257,Austrophyllis,genus,Kallymeniaceae,family,ncbi
+1197751,Glaphyrymenia,genus,Kallymeniaceae,family,ncbi
+1111040,Salishia,genus,Kallymeniaceae,family,ncbi
+1077404,Psaromenia,genus,Kallymeniaceae,family,ncbi
+979668,Thamnophyllis,genus,Kallymeniaceae,family,ncbi
+979662,Rhizopogonia,genus,Kallymeniaceae,family,ncbi
+681549,Meredithia,genus,Kallymeniaceae,family,ncbi
+681546,Cirrulicarpus,genus,Kallymeniaceae,family,ncbi
+217485,Kallymeniopsis,genus,Kallymeniaceae,family,ncbi
+217477,Pugetia,genus,Kallymeniaceae,family,ncbi
+173451,Euthora,genus,Kallymeniaceae,family,ncbi
+128536,Erythrophyllum,genus,Kallymeniaceae,family,ncbi
+38554,Kallymenia,genus,Kallymeniaceae,family,ncbi
+31431,Callophyllis,genus,Kallymeniaceae,family,ncbi
+67899,Lemanea,genus,Lemaneaceae,family,ncbi
+31375,Paralemanea,genus,Lemaneaceae,family,ncbi
+1871496,Otohimella,genus,Liagoraceae,family,ncbi
+1653391,Liagoropsis,genus,Liagoraceae,family,ncbi
+1635107,Hommersandiophycus,genus,Liagoraceae,family,ncbi
+1635103,Gloiocallis,genus,Liagoraceae,family,ncbi
+1495609,Trichogloeopsis,genus,Liagoraceae,family,ncbi
+1364882,Yoshizakia,genus,Liagoraceae,family,ncbi
+1364880,Macrocarpus,genus,Liagoraceae,family,ncbi
+1077396,Neoizziella,genus,Liagoraceae,family,ncbi
+997601,Dermonema,genus,Liagoraceae,family,ncbi
+940127,Titanophycus,genus,Liagoraceae,family,ncbi
+285088,Akalaphycus,genus,Liagoraceae,family,ncbi
+284065,Izziella,genus,Liagoraceae,family,ncbi
+284063,Trichogloea,genus,Liagoraceae,family,ncbi
+284058,Stenopeltis,genus,Liagoraceae,family,ncbi
+268577,Patenocarpus,genus,Liagoraceae,family,ncbi
+268574,Helminthora,genus,Liagoraceae,family,ncbi
+268563,Dotyophycus,genus,Liagoraceae,family,ncbi
+260092,Helminthocladia,genus,Liagoraceae,family,ncbi
+259028,Yamadaella,genus,Liagoraceae,family,ncbi
+259026,Ganonema,genus,Liagoraceae,family,ncbi
+35199,Nemalion,genus,Liagoraceae,family,ncbi
+31487,Liagora,genus,Liagoraceae,family,ncbi
+31485,Cumagloia,genus,Liagoraceae,family,ncbi
+1582915,Binghamiopsis,genus,Lomentariaceae,family,ncbi
+406724,Stirnia,genus,Lomentariaceae,family,ncbi
+81614,Semnocarpa,genus,Lomentariaceae,family,ncbi
+81606,Gelidiopsis,genus,Lomentariaceae,family,ncbi
+38330,Ceratodictyon,genus,Lomentariaceae,family,ncbi
+31499,Lomentaria,genus,Lomentariaceae,family,ncbi
+909746,Rubrointrusa,genus,Meiodiscaceae,family,ncbi
+39571,Meiodiscus,genus,Meiodiscaceae,family,ncbi
+42022,Mychodea,genus,Mychodeaceae,family,ncbi
+257584,Mychodeophyllum,genus,Mychodeophyllaceae,family,ncbi
+367043,Reticulocaulis,genus,Naccariaceae,family,ncbi
+291392,Naccaria,genus,Naccariaceae,family,ncbi
+173449,Atractophora,genus,Naccariaceae,family,ncbi
+239168,Nemastoma,genus,Nemastomataceae,family,ncbi
+197834,Adelophycus,genus,Nemastomataceae,family,ncbi
+173459,Predaea,genus,Nemastomataceae,family,ncbi
+35194,Nizymenia,genus,Nizymeniaceae,family,ncbi
+35201,Devaleraea,genus,Palmariaceae,family,ncbi
+31489,Halosaccion,genus,Palmariaceae,family,ncbi
+2821,Palmaria,genus,Palmariaceae,family,ncbi
+1848537,Sonderophycus,genus,Peyssonneliaceae,family,ncbi
+1315255,Incendia,genus,Peyssonneliaceae,family,ncbi
+680462,Ramicrusta,genus,Peyssonneliaceae,family,ncbi
+508196,Riquetophycus,genus,Peyssonneliaceae,family,ncbi
+508032,Metapeyssonnelia,genus,Peyssonneliaceae,family,ncbi
+339602,Polystrata,genus,Peyssonneliaceae,family,ncbi
+257587,Sonderopelta,genus,Peyssonneliaceae,family,ncbi
+173456,Peyssonnelia,genus,Peyssonneliaceae,family,ncbi
+35197,Phacelocarpus,genus,Phacelocarpaceae,family,ncbi
+1874395,Asterfilopsis,genus,Phyllophoraceae,family,ncbi
+1405808,Fredericqia,genus,Phyllophoraceae,family,ncbi
+1120495,Archestenogramma,genus,Phyllophoraceae,family,ncbi
+662457,Ceratocolax,genus,Phyllophoraceae,family,ncbi
+661322,Coccotylus,genus,Phyllophoraceae,family,ncbi
+207659,Besa,genus,Phyllophoraceae,family,ncbi
+38550,Petroglossum,genus,Phyllophoraceae,family,ncbi
+38511,Schottera,genus,Phyllophoraceae,family,ncbi
+38481,Erythrodermis,genus,Phyllophoraceae,family,ncbi
+38479,Ozophora,genus,Phyllophoraceae,family,ncbi
+32601,Stenogramma,genus,Phyllophoraceae,family,ncbi
+31439,Gymnogongrus,genus,Phyllophoraceae,family,ncbi
+31437,Ahnfeltiopsis,genus,Phyllophoraceae,family,ncbi
+29238,Phyllophora,genus,Phyllophoraceae,family,ncbi
+29226,Mastocarpus,genus,Phyllophoraceae,family,ncbi
+244125,Pihiella,genus,Pihiellaceae,family,ncbi
+35205,Plocamiocolax,genus,Plocamiaceae,family,ncbi
+31451,Plocamium,genus,Plocamiaceae,family,ncbi
+31460,Polyides,genus,Polyideaceae,family,ncbi
+257591,Hummbrella,genus,Pseudoanemoniaceae,family,ncbi
+67902,Psilosiphon,genus,Psilosiphonaceae,family,ncbi
+282359,Holmsella,genus,Pterocladiophilaceae,family,ncbi
+508193,Rhizophyllis,genus,Rhizophyllidaceae,family,ncbi
+508040,Ochtodes,genus,Rhizophyllidaceae,family,ncbi
+508037,Nesophila,genus,Rhizophyllidaceae,family,ncbi
+507999,Contarinia,genus,Rhizophyllidaceae,family,ncbi
+31463,Portieria,genus,Rhizophyllidaceae,family,ncbi
+498766,Rhodachlya,genus,Rhodachlyaceae,family,ncbi
+1874780,Tayloriella,no rank,Rhodomelaceae,family,ncbi
+1563189,Amplisiphonia,genus,Rhodomelaceae,family,ncbi
+1539136,Yuzurua,genus,Rhodomelaceae,family,ncbi
+1497577,Waldoia,genus,Rhodomelaceae,family,ncbi
+1424650,Ctenosiphonia,genus,Rhodomelaceae,family,ncbi
+1424647,Aiolocolax,genus,Rhodomelaceae,family,ncbi
+1413811,Laurenciella,genus,Rhodomelaceae,family,ncbi
+1308467,Heterodasya,genus,Rhodomelaceae,family,ncbi
+1261581,Vertebrata,genus,Rhodomelaceae,family,ncbi
+1261579,Streblocladia,genus,Rhodomelaceae,family,ncbi
+1261573,Ophidocladus,genus,Rhodomelaceae,family,ncbi
+1261570,Leptosiphonia,genus,Rhodomelaceae,family,ncbi
+998140,Spirocladia,genus,Rhodomelaceae,family,ncbi
+998136,Rhodolachne,genus,Rhodomelaceae,family,ncbi
+860647,Ululania,genus,Rhodomelaceae,family,ncbi
+860645,Tolypiocladia,genus,Rhodomelaceae,family,ncbi
+860637,Leveillea,genus,Rhodomelaceae,family,ncbi
+860632,Janczewskia,genus,Rhodomelaceae,family,ncbi
+860623,Benzaitenia,genus,Rhodomelaceae,family,ncbi
+860621,Alsidium,genus,Rhodomelaceae,family,ncbi
+860619,Acrocystis,genus,Rhodomelaceae,family,ncbi
+756392,Pterosiphonia,genus,Rhodomelaceae,family,ncbi
+756390,Pterochondria,genus,Rhodomelaceae,family,ncbi
+717904,Lophosiphonia,genus,Rhodomelaceae,family,ncbi
+717901,Herposiphonia,genus,Rhodomelaceae,family,ncbi
+524188,Wrightiella,genus,Rhodomelaceae,family,ncbi
+524186,Polyzonia,genus,Rhodomelaceae,family,ncbi
+470589,Palisada,genus,Rhodomelaceae,family,ncbi
+439543,Amansia,genus,Rhodomelaceae,family,ncbi
+397058,Brongniartella,genus,Rhodomelaceae,family,ncbi
+385023,Acanthophora,genus,Rhodomelaceae,family,ncbi
+282365,Odonthalia,genus,Rhodomelaceae,family,ncbi
+256429,Digenea,genus,Rhodomelaceae,family,ncbi
+228268,Aneurianna,genus,Rhodomelaceae,family,ncbi
+228263,Rytiphlaea,genus,Rhodomelaceae,family,ncbi
+228261,Kuetzingia,genus,Rhodomelaceae,family,ncbi
+197320,Chondrophycus,genus,Rhodomelaceae,family,ncbi
+173552,Womersleyella,genus,Rhodomelaceae,family,ncbi
+173549,Enelittosiphonia,genus,Rhodomelaceae,family,ncbi
+173547,Boergeseniella,genus,Rhodomelaceae,family,ncbi
+159726,Lophothalia,genus,Rhodomelaceae,family,ncbi
+159724,Lembergia,genus,Rhodomelaceae,family,ncbi
+159597,Neorhodomela,genus,Rhodomelaceae,family,ncbi
+159595,Bryocladia,genus,Rhodomelaceae,family,ncbi
+155557,Protokuetzingia,genus,Rhodomelaceae,family,ncbi
+155555,Osmundaria,genus,Rhodomelaceae,family,ncbi
+121066,Halopithys,genus,Rhodomelaceae,family,ncbi
+121063,Pleurostichidium,genus,Rhodomelaceae,family,ncbi
+110919,Neosiphonia,genus,Rhodomelaceae,family,ncbi
+110476,Sonderella,genus,Rhodomelaceae,family,ncbi
+110472,Murrayella,genus,Rhodomelaceae,family,ncbi
+110470,Micropeuce,genus,Rhodomelaceae,family,ncbi
+110468,Melanamansia,genus,Rhodomelaceae,family,ncbi
+110465,Lenormandia,genus,Rhodomelaceae,family,ncbi
+110458,Heterocladia,genus,Rhodomelaceae,family,ncbi
+103711,Bostrychia,genus,Rhodomelaceae,family,ncbi
+99900,Laurencia,genus,Rhodomelaceae,family,ncbi
+99898,Osmundea,genus,Rhodomelaceae,family,ncbi
+94298,Lophocladia,genus,Rhodomelaceae,family,ncbi
+89211,Neurymenia,genus,Rhodomelaceae,family,ncbi
+88359,Symphyocladia,genus,Rhodomelaceae,family,ncbi
+35162,Rhodomela,genus,Rhodomelaceae,family,ncbi
+31392,Chondria,genus,Rhodomelaceae,family,ncbi
+2804,Polysiphonia,genus,Rhodomelaceae,family,ncbi
+909747,Rhodonematella,genus,Rhodophysemataceae,family,ncbi
+39577,Rhodophysema,genus,Rhodophysemataceae,family,ncbi
+79946,Camontagnea,genus,Rhodothamniellaceae,family,ncbi
+39580,Rhodothamniella,genus,Rhodothamniellaceae,family,ncbi
+1798820,Sciadophycus,genus,Rhodymeniaceae,family,ncbi
+1074215,Cresia,genus,Rhodymeniaceae,family,ncbi
+748723,Halopeltis,genus,Rhodymeniaceae,family,ncbi
+748560,Microphyllum,genus,Rhodymeniaceae,family,ncbi
+557872,Chamaebotrys,genus,Rhodymeniaceae,family,ncbi
+368083,Drouetia,genus,Rhodymeniaceae,family,ncbi
+261723,Maripelta,genus,Rhodymeniaceae,family,ncbi
+81616,Sparlingia,genus,Rhodymeniaceae,family,ncbi
+81612,Leptosomia,genus,Rhodymeniaceae,family,ncbi
+81610,Irvinea,genus,Rhodymeniaceae,family,ncbi
+81608,Gloiosaccion,genus,Rhodymeniaceae,family,ncbi
+81595,Coelarthrum,genus,Rhodymeniaceae,family,ncbi
+81591,Chrysymenia,genus,Rhodymeniaceae,family,ncbi
+42801,Faucheocolax,genus,Rhodymeniaceae,family,ncbi
+42796,Rhodymeniocolax,genus,Rhodymeniaceae,family,ncbi
+42013,Epymenia,genus,Rhodymeniaceae,family,ncbi
+39627,Erythrocolon,genus,Rhodymeniaceae,family,ncbi
+39622,Cephalocystis,genus,Rhodymeniaceae,family,ncbi
+38334,Halichrysis,genus,Rhodymeniaceae,family,ncbi
+38328,Cordylecladia,genus,Rhodymeniaceae,family,ncbi
+38326,Botryocladia,genus,Rhodymeniaceae,family,ncbi
+2794,Rhodymenia,genus,Rhodymeniaceae,family,ncbi
+257594,Rissoella,genus,Rissoellaceae,family,ncbi
+40389,Trematocarpus,genus,Sarcodiaceae,family,ncbi
+38557,Sarcodia,genus,Sarcodiaceae,family,ncbi
+998123,Malaconema,genus,Sarcomeniaceae,family,ncbi
+197876,Wetherbeella,genus,Schizymeniaceae,family,ncbi
+197836,Platoma,genus,Schizymeniaceae,family,ncbi
+38532,Titanophora,genus,Schizymeniaceae,family,ncbi
+38367,Schizymenia,genus,Schizymeniaceae,family,ncbi
+268582,Scinaia,genus,Scinaiaceae,family,ncbi
+268580,Nothogenia,genus,Scinaiaceae,family,ncbi
+327985,Crassitegula,genus,Sebdeniaceae,family,ncbi
+38377,Sebdenia,genus,Sebdeniaceae,family,ncbi
+1824840,Tacanoosca,genus,Solieriaceae,family,ncbi
+1293581,Placentophora,genus,Solieriaceae,family,ncbi
+248900,Anatheca,genus,Solieriaceae,family,ncbi
+88427,Meristotheca,genus,Solieriaceae,family,ncbi
+88425,Meristiella,genus,Solieriaceae,family,ncbi
+88420,Sarconema,genus,Solieriaceae,family,ncbi
+88414,Betaphycus,genus,Solieriaceae,family,ncbi
+41685,Gardneriella,genus,Solieriaceae,family,ncbi
+41682,Neoagardhiella,genus,Solieriaceae,family,ncbi
+38543,Kappaphycus,genus,Solieriaceae,family,ncbi
+38365,Callophycus,genus,Solieriaceae,family,ncbi
+35191,Areschougia,genus,Solieriaceae,family,ncbi
+31448,Solieria,genus,Solieriaceae,family,ncbi
+31446,Sarcodiotheca,genus,Solieriaceae,family,ncbi
+31444,Eucheuma,genus,Solieriaceae,family,ncbi
+31442,Agardhiella,genus,Solieriaceae,family,ncbi
+31466,Sphaerococcus,genus,Sphaerococcaceae,family,ncbi
+101921,Nemalionopsis,genus,Thoreaceae,family,ncbi
+67960,Thorea,genus,Thoreaceae,family,ncbi
+38363,Tichocarpus,genus,Tichocarpaceae,family,ncbi
+197843,Tsengia,genus,Tsengiaceae,family,ncbi
+1563186,Tiffaniella,genus,Wrangeliaceae,family,ncbi
+1498215,Ptilothamnion,genus,Wrangeliaceae,family,ncbi
+997818,Haloplegma,genus,Wrangeliaceae,family,ncbi
+997603,Diplothamnion,genus,Wrangeliaceae,family,ncbi
+756397,Ptilothamnionopsis,genus,Wrangeliaceae,family,ncbi
+257602,Wurdemannia,genus,Wurdemanniaceae,family,ncbi
+131040,Abroteia orbicularis,species,Abroteia,genus,ncbi
+1785971,Acanthopeltis hirsuta,species,Acanthopeltis,genus,ncbi
+943111,Acanthopeltis longiramulosa,species,Acanthopeltis,genus,ncbi
+82843,Acanthopeltis japonica,species,Acanthopeltis,genus,ncbi
+860618,Acanthophora pacifica,species,Acanthophora,genus,ncbi
+385024,Acanthophora spicifera,species,Acanthophora,genus,ncbi
+1582912,Acrochaetium plumosum,species,Acrochaetium,genus,ncbi
+1403498,Acrochaetium luxurians,species,Acrochaetium,genus,ncbi
+1403497,Acrochaetium humile,species,Acrochaetium,genus,ncbi
+1403496,Acrochaetium densum,species,Acrochaetium,genus,ncbi
+1403456,Acrochaetium catenulatum,species,Acrochaetium,genus,ncbi
+1403455,Acrochaetium arcuatum,species,Acrochaetium,genus,ncbi
+1403454,Acrochaetium alariae,species,Acrochaetium,genus,ncbi
+1042120,Acrochaetium moniliforme,species,Acrochaetium,genus,ncbi
+519112,Acrochaetium parvulum,species,Acrochaetium,genus,ncbi
+519111,Acrochaetium microscopicum,species,Acrochaetium,genus,ncbi
+397017,Acrochaetium savianum,species,Acrochaetium,genus,ncbi
+209631,Acrochaetium secundatum,species,Acrochaetium,genus,ncbi
+31358,Acrochaetium sagraeanum,species,Acrochaetium,genus,ncbi
+1582912,Acrochaetium plumosum,species,Acrochaetium,genus,ncbi
+1403498,Acrochaetium luxurians,species,Acrochaetium,genus,ncbi
+1403497,Acrochaetium humile,species,Acrochaetium,genus,ncbi
+1403496,Acrochaetium densum,species,Acrochaetium,genus,ncbi
+1403456,Acrochaetium catenulatum,species,Acrochaetium,genus,ncbi
+1403455,Acrochaetium arcuatum,species,Acrochaetium,genus,ncbi
+1403454,Acrochaetium alariae,species,Acrochaetium,genus,ncbi
+1042120,Acrochaetium moniliforme,species,Acrochaetium,genus,ncbi
+519112,Acrochaetium parvulum,species,Acrochaetium,genus,ncbi
+519111,Acrochaetium microscopicum,species,Acrochaetium,genus,ncbi
+397017,Acrochaetium savianum,species,Acrochaetium,genus,ncbi
+209631,Acrochaetium secundatum,species,Acrochaetium,genus,ncbi
+31358,Acrochaetium sagraeanum,species,Acrochaetium,genus,ncbi
+860620,Acrocystis nana,species,Acrocystis,genus,ncbi
+1503765,Acrodiscus vidovichii,species,Acrodiscus,genus,ncbi
+439538,Acrosymphyton taylorii,species,Acrosymphyton,genus,ncbi
+367050,Acrosymphyton caribaeum,species,Acrosymphyton,genus,ncbi
+142497,Acrosymphyton purpuriferum,species,Acrosymphyton,genus,ncbi
+439538,Acrosymphyton taylorii,species,Acrosymphyton,genus,ncbi
+367050,Acrosymphyton caribaeum,species,Acrosymphyton,genus,ncbi
+142497,Acrosymphyton purpuriferum,species,Acrosymphyton,genus,ncbi
+997504,Acrothamnion butlerae,species,Acrothamnion,genus,ncbi
+756384,Acrothamnion preissii,species,Acrothamnion,genus,ncbi
+305682,Actinotrichia robusta,species,Actinotrichia,genus,ncbi
+268562,Actinotrichia fragilis,species,Actinotrichia,genus,ncbi
+197835,Adelophycus corneus,species,Adelophycus,genus,ncbi
+1503762,Aeodes marginata,species,Aeodes,genus,ncbi
+164048,Aeodes ulvoidea,species,Aeodes,genus,ncbi
+164047,Aeodes nitidissima,species,Aeodes,genus,ncbi
+38376,Aeodes orbitosa,species,Aeodes,genus,ncbi
+88441,Agardhiella ramosissima,species,Agardhiella,genus,ncbi
+31443,Agardhiella subulata,species,Agardhiella,genus,ncbi
+1218750,Aglaothamnion oosumiense,species,Aglaothamnion,genus,ncbi
+997506,Aglaothamnion cordatum,species,Aglaothamnion,genus,ncbi
+997505,Aglaothamnion boergesenii,species,Aglaothamnion,genus,ncbi
+536585,Aglaothamnion feldmanniae,species,Aglaothamnion,genus,ncbi
+492574,Aglaothamnion bipinnatum,species,Aglaothamnion,genus,ncbi
+284005,Aglaothamnion callophyllidicola,species,Aglaothamnion,genus,ncbi
+193176,Aglaothamnion pseudobyssoides,species,Aglaothamnion,genus,ncbi
+193175,Aglaothamnion halliae,species,Aglaothamnion,genus,ncbi
+193174,Aglaothamnion hookeri,species,Aglaothamnion,genus,ncbi
+193173,Aglaothamnion roseum,species,Aglaothamnion,genus,ncbi
+193167,Aglaothamnion sepositum,species,Aglaothamnion,genus,ncbi
+193166,Aglaothamnion tripinnatum,species,Aglaothamnion,genus,ncbi
+193165,Aglaothamnion tenuissimum,species,Aglaothamnion,genus,ncbi
+193164,Aglaothamnion gallicum,species,Aglaothamnion,genus,ncbi
+159592,Aglaothamnion byssoides,species,Aglaothamnion,genus,ncbi
+2765,Aglaothamnion neglectum,species,Aglaothamnion,genus,ncbi
+1874222,Ahnfeltiopsis fastigiata,species,Ahnfeltiopsis,genus,ncbi
+1874221,Ahnfeltiopsis chnoosporoides,species,Ahnfeltiopsis,genus,ncbi
+997566,Ahnfeltiopsis pygmaea,species,Ahnfeltiopsis,genus,ncbi
+745026,Ahnfeltiopsis pusilla,species,Ahnfeltiopsis,genus,ncbi
+207664,Ahnfeltiopsis divaricatus,species,Ahnfeltiopsis,genus,ncbi
+207661,Ahnfeltiopsis concinna,species,Ahnfeltiopsis,genus,ncbi
+181222,Ahnfeltiopsis paradoxa,species,Ahnfeltiopsis,genus,ncbi
+181221,Ahnfeltiopsis intermedia,species,Ahnfeltiopsis,genus,ncbi
+38520,Ahnfeltiopsis devoniensis,species,Ahnfeltiopsis,genus,ncbi
+38519,Ahnfeltiopsis durvillaei,species,Ahnfeltiopsis,genus,ncbi
+38509,Ahnfeltiopsis svensonii,species,Ahnfeltiopsis,genus,ncbi
+38508,Ahnfeltiopsis humilis,species,Ahnfeltiopsis,genus,ncbi
+38507,Ahnfeltiopsis flabelliformis,species,Ahnfeltiopsis,genus,ncbi
+38506,Ahnfeltiopsis vermicularis,species,Ahnfeltiopsis,genus,ncbi
+38473,Ahnfeltiopsis leptophylla,species,Ahnfeltiopsis,genus,ncbi
+38472,Ahnfeltiopsis linearis,species,Ahnfeltiopsis,genus,ncbi
+38470,Ahnfeltiopsis furcellata,species,Ahnfeltiopsis,genus,ncbi
+38469,Ahnfeltiopsis polyclada,species,Ahnfeltiopsis,genus,ncbi
+38467,Ahnfeltiopsis glomerata,species,Ahnfeltiopsis,genus,ncbi
+38466,Ahnfeltiopsis complicata,species,Ahnfeltiopsis,genus,ncbi
+31438,Ahnfeltiopsis gigartinoides,species,Ahnfeltiopsis,genus,ncbi
+1424648,Aiolocolax pulchellus,species,Aiolocolax,genus,ncbi
+406689,Akalaphycus liagoroides,species,Akalaphycus,genus,ncbi
+285089,Akalaphycus setchelliae,species,Akalaphycus,genus,ncbi
+860622,Alsidium cymatophilum,species,Alsidium,genus,ncbi
+1506560,Amalthea freemaniae,species,Amalthea,genus,ncbi
+911165,Amansia fimbrifolia,species,Amansia,genus,ncbi
+650515,Amansia rhodantha,species,Amansia,genus,ncbi
+121068,Amansia glomerata,species,Amansia,genus,ncbi
+110469,Amansia mamillaris,species,Amansia,genus,ncbi
+257547,Amphiplexia hymenocladioides,species,Amphiplexia,genus,ncbi
+1563190,Amplisiphonia pacifica,species,Amplisiphonia,genus,ncbi
+248901,Anatheca montagnei,species,Anatheca,genus,ncbi
+228269,Aneurianna dentata,species,Aneurianna,genus,ncbi
+136787,Anisocladella pacifica,species,Anisocladella,genus,ncbi
+536586,Anotrichium licmophorum,species,Anotrichium,genus,ncbi
+242727,Anotrichium yagii,species,Anotrichium,genus,ncbi
+242726,Anotrichium tenue,species,Anotrichium,genus,ncbi
+242725,Anotrichium elongatum,species,Anotrichium,genus,ncbi
+242723,Anotrichium crinitum,species,Anotrichium,genus,ncbi
+207916,Anotrichium barbatum,species,Anotrichium,genus,ncbi
+41999,Anotrichium furcellatum,species,Anotrichium,genus,ncbi
+1005974,Antithamnion hubbsii,species,Antithamnion,genus,ncbi
+997573,Antithamnion erucacladellum,species,Antithamnion,genus,ncbi
+997572,Antithamnion decipiens,species,Antithamnion,genus,ncbi
+997571,Antithamnion antillanum,species,Antithamnion,genus,ncbi
+329283,Antithamnion pectinatum,species,Antithamnion,genus,ncbi
+220947,Antithamnion densum,species,Antithamnion,genus,ncbi
+220946,Antithamnion defectum,species,Antithamnion,genus,ncbi
+207918,Antithamnion cruciatum,species,Antithamnion,genus,ncbi
+179279,Antithamnion nipponicum,species,Antithamnion,genus,ncbi
+179278,Antithamnion kylinii,species,Antithamnion,genus,ncbi
+179277,Antithamnion callocladum,species,Antithamnion,genus,ncbi
+179276,Antithamnion aglandum,species,Antithamnion,genus,ncbi
+122413,Antithamnion sparsum,species,Antithamnion,genus,ncbi
+536589,Antithamnionella miharai,species,Antithamnionella,genus,ncbi
+271623,Antithamnion hanovioides,species,Antithamnionella,genus,ncbi
+271622,Antithamnionella spirographidis,species,Antithamnionella,genus,ncbi
+207919,Antithamnionella ternifolia,species,Antithamnionella,genus,ncbi
+122415,Antithamnionella floccosa,species,Antithamnionella,genus,ncbi
+257549,Antrocentrum nigrescens,species,Antrocentrum,genus,ncbi
+436068,Aphanta pachyrrhiza,species,Aphanta,genus,ncbi
+1280632,Apoglossum oppositifolium,species,Apoglossum,genus,ncbi
+167976,Apoglossum ruscifolium,species,Apoglossum,genus,ncbi
+212746,Apophlaea sinclairii,species,Apophlaea,genus,ncbi
+79259,Apophlaea lyallii,species,Apophlaea,genus,ncbi
+1120496,Archestenogramma profundum,species,Archestenogramma,genus,ncbi
+88405,Areschougia ligulata,species,Areschougia,genus,ncbi
+35192,Areschougia congesta,species,Areschougia,genus,ncbi
+332493,Aristoptilon mooreanum,species,Aristoptilon,genus,ncbi
+1874420,Asterfilopsis disciplinalis,species,Asterfilopsis,genus,ncbi
+1874402,Asterfilopsis furcellata,species,Asterfilopsis,genus,ncbi
+1874398,Asterfilopsis piurana,species,Asterfilopsis,genus,ncbi
+1874396,Asterfilopsis centralis,species,Asterfilopsis,genus,ncbi
+136794,Asterocolax gardneri,species,Asterocolax,genus,ncbi
+136789,Asterocolax erythroglossi,species,Asterocolax,genus,ncbi
+403672,Asteromenia pseudocoalescens,species,Asteromenia,genus,ncbi
+367036,Asteromenia anastomosans,species,Asteromenia,genus,ncbi
+319521,Asteromenia bermudensis,species,Asteromenia,genus,ncbi
+81590,Asteromenia peltata,species,Asteromenia,genus,ncbi
+173450,Atractophora hypnoides,species,Atractophora,genus,ncbi
+1145297,Audouinella heterospora,species,Audouinella,genus,ncbi
+1084764,Audouinella sinensis,species,Audouinella,genus,ncbi
+109050,Audouinella macrospora,species,Audouinella,genus,ncbi
+79939,Audouinella endophytica,species,Audouinella,genus,ncbi
+35156,Audouinella dasyae,species,Audouinella,genus,ncbi
+31360,Audouinella hermannii,species,Audouinella,genus,ncbi
+1145297,Audouinella heterospora,species,Audouinella,genus,ncbi
+1084764,Audouinella sinensis,species,Audouinella,genus,ncbi
+109050,Audouinella macrospora,species,Audouinella,genus,ncbi
+79939,Audouinella endophytica,species,Audouinella,genus,ncbi
+35156,Audouinella dasyae,species,Audouinella,genus,ncbi
+31360,Audouinella hermannii,species,Audouinella,genus,ncbi
+298872,Augophyllum marginifructa,species,Augophyllum,genus,ncbi
+298871,Augophyllum kentingii,species,Augophyllum,genus,ncbi
+158732,Augophyllum wysorii,species,Augophyllum,genus,ncbi
+158727,Augophyllum delicatum,species,Augophyllum,genus,ncbi
+257566,Austroclonium charoides,species,Austroclonium,genus,ncbi
+1230304,Austrophyllis harveyana,species,Austrophyllis,genus,ncbi
+1230258,Austrophyllis alcicornis,species,Austrophyllis,genus,ncbi
+1789650,Austropugetia crassa,species,Austropugetia,genus,ncbi
+111861,Balbiania investiens,species,Balbiania,genus,ncbi
+122417,Ballia callitricha,species,Ballia,genus,ncbi
+997575,Balliella repens,species,Balliella,genus,ncbi
+177373,Balliopsis prieurii,species,Balliopsis,genus,ncbi
+131046,Bartoniella crenata,species,Bartoniella,genus,ncbi
+1866278,Batrachospermum serendipidum,species,Batrachospermum,genus,ncbi
+1574448,Batrachospermum vogesiacum,species,Batrachospermum,genus,ncbi
+1552983,Batrachospermum viride-brasiliense,species,Batrachospermum,genus,ncbi
+1443916,Batrachospermum cylindrocellulare,species,Batrachospermum,genus,ncbi
+1082191,Batrachospermum cf. antipodites,species,Batrachospermum,genus,ncbi
+1048511,Batrachospermum longipedicellatum,species,Batrachospermum,genus,ncbi
+1048504,Batrachospermum hondongense,species,Batrachospermum,genus,ncbi
+643651,Batrachospermum brasiliense,species,Batrachospermum,genus,ncbi
+373123,Batrachospermum anatinum,species,Batrachospermum,genus,ncbi
+258474,Batrachospermum nodiflorum,species,Batrachospermum,genus,ncbi
+258472,Batrachospermum guianense,species,Batrachospermum,genus,ncbi
+123751,Batrachospermum deminutum,species,Batrachospermum,genus,ncbi
+123750,Batrachospermum cayennense,species,Batrachospermum,genus,ncbi
+69145,Batrachospermum spermatoinvolucrum,species,Batrachospermum,genus,ncbi
+69143,Batrachospermum gelatinosum,species,Batrachospermum,genus,ncbi
+67910,Batrachospermum turfosum,species,Batrachospermum,genus,ncbi
+67909,Batrachospermum macrosporum,species,Batrachospermum,genus,ncbi
+67907,Batrachospermum helminthosum,species,Batrachospermum,genus,ncbi
+33663,Batrachospermum sirodotii,species,Batrachospermum,genus,ncbi
+2810,Batrachospermum ectocarpum,species,Batrachospermum,genus,ncbi
+252480,Beckerella rumpii,species,Beckerella,genus,ncbi
+252162,Beckerella helenae,species,Beckerella,genus,ncbi
+252157,Beckerella pectinata,species,Beckerella,genus,ncbi
+860624,Benzaitenia yenoshimensis,species,Benzaitenia,genus,ncbi
+207660,Besa papillaeformis,species,Besa,genus,ncbi
+1191690,Betaphycus gelatinus,species,Betaphycus,genus,ncbi
+88422,Betaphycus speciosum,species,Betaphycus,genus,ncbi
+88415,Betaphycus philippinensis,species,Betaphycus,genus,ncbi
+1582916,Binghamiopsis caespitosa,species,Binghamiopsis,genus,ncbi
+1261568,Boergeseniella thuyoides,species,Boergeseniella,genus,ncbi
+173548,Boergeseniella fruticulosa,species,Boergeseniella,genus,ncbi
+1293578,Bonnemaisonia geniculata,species,Bonnemaisonia,genus,ncbi
+767341,Bonnemaisonia clavata,species,Bonnemaisonia,genus,ncbi
+40386,Bonnemaisonia asparagoides,species,Bonnemaisonia,genus,ncbi
+31369,Bonnemaisonia hamifera,species,Bonnemaisonia,genus,ncbi
+1652130,Bostrychia binderi,species,Bostrychia,genus,ncbi
+1432260,Bostrychia anomala,species,Bostrychia,genus,ncbi
+578318,Bostrychia vaga,species,Bostrychia,genus,ncbi
+578317,Bostrychia gracilis,species,Bostrychia,genus,ncbi
+333984,Bostrychia radicosa,species,Bostrychia,genus,ncbi
+324764,Bostrychia scorpioides,species,Bostrychia,genus,ncbi
+324763,Bostrychia pilulifera,species,Bostrychia,genus,ncbi
+324762,Bostrychia harveyi,species,Bostrychia,genus,ncbi
+324761,Bostrychia montagnei,species,Bostrychia,genus,ncbi
+324760,Bostrychia flagellifera,species,Bostrychia,genus,ncbi
+324759,Bostrychia tangatensis,species,Bostrychia,genus,ncbi
+324758,Bostrychia kelanensis,species,Bostrychia,genus,ncbi
+324757,Bostrychia intricata,species,Bostrychia,genus,ncbi
+324756,Bostrychia arbuscula,species,Bostrychia,genus,ncbi
+324755,Bostrychia tenella,species,Bostrychia,genus,ncbi
+324754,Bostrychia simpliciuscula,species,Bostrychia,genus,ncbi
+196631,Bostrychia tenuissima,species,Bostrychia,genus,ncbi
+161377,Bostrychia calliptera,species,Bostrychia,genus,ncbi
+103714,Bostrychia radicans,species,Bostrychia,genus,ncbi
+103713,Bostrychia moritziana,species,Bostrychia,genus,ncbi
+103712,Bostrychia bispora,species,Bostrychia,genus,ncbi
+282348,Bostrychiocolax australis,species,Bostrychiocolax,genus,ncbi
+131048,Botryocarpa prolifera,species,Botryocarpa,genus,ncbi
+1778538,Botryocladia franciscana,species,Botryocladia,genus,ncbi
+740980,Botryocladia iridescens,species,Botryocladia,genus,ncbi
+582892,Botryocladia flookii,species,Botryocladia,genus,ncbi
+582891,Botryocladia exquisita,species,Botryocladia,genus,ncbi
+582890,Botryocladia bermudana,species,Botryocladia,genus,ncbi
+582886,Botryocladia ballantina,species,Botryocladia,genus,ncbi
+470952,Botryocladia wynnei,species,Botryocladia,genus,ncbi
+366940,Botryocladia leptopoda,species,Botryocladia,genus,ncbi
+261722,Botryocladia spinulifera,species,Botryocladia,genus,ncbi
+261721,Botryocladia papenfussiana,species,Botryocladia,genus,ncbi
+261720,Botryocladia canariensis,species,Botryocladia,genus,ncbi
+261719,Botryocladia botryoides,species,Botryocladia,genus,ncbi
+261718,Botryocladia madagascariensis,species,Botryocladia,genus,ncbi
+220762,Botryocladia caraibica,species,Botryocladia,genus,ncbi
+220761,Botryocladia pyriformis,species,Botryocladia,genus,ncbi
+220760,Botryocladia shanskii,species,Botryocladia,genus,ncbi
+220759,Botryocladia occidentalis,species,Botryocladia,genus,ncbi
+220758,Botryocladia monoica,species,Botryocladia,genus,ncbi
+145666,Botryocladia uvarioides,species,Botryocladia,genus,ncbi
+81585,Botryocladia sonderi,species,Botryocladia,genus,ncbi
+81584,Botryocladia ebriosa,species,Botryocladia,genus,ncbi
+41699,Botryocladia pseudodichotoma,species,Botryocladia,genus,ncbi
+38327,Botryocladia skottsbergii,species,Botryocladia,genus,ncbi
+131103,Botryoglossum platycarpum,species,Botryoglossum,genus,ncbi
+1206570,Branchioglossum bipinnatifidum,species,Branchioglossum,genus,ncbi
+131050,Branchioglossum woodii,species,Branchioglossum,genus,ncbi
+397059,Brongniartella byssoides,species,Brongniartella,genus,ncbi
+159596,Bryocladia cuspidata,species,Bryocladia,genus,ncbi
+1880589,Calliblepharis psammophilus,species,Calliblepharis,genus,ncbi
+257568,Calliblepharis planicaulis,species,Calliblepharis,genus,ncbi
+257567,Calliblepharis celatospora,species,Calliblepharis,genus,ncbi
+163335,Calliblepharis fimbriata,species,Calliblepharis,genus,ncbi
+163334,Calliblepharis ciliata,species,Calliblepharis,genus,ncbi
+31414,Calliblepharis jubata,species,Calliblepharis,genus,ncbi
+1628737,Callilithophytum parcum,species,Callilithophytum,genus,ncbi
+1582918,Callithamnion rupicola,species,Callithamnion,genus,ncbi
+645533,Callithamnion biseriatum,species,Callithamnion,genus,ncbi
+645532,Callithamnion acutum,species,Callithamnion,genus,ncbi
+492575,Callithamnion baileyi,species,Callithamnion,genus,ncbi
+397018,Callithamnion consanguineum,species,Callithamnion,genus,ncbi
+193348,Callithamnion collabens,species,Callithamnion,genus,ncbi
+193190,Callithamnion granulatum,species,Callithamnion,genus,ncbi
+193179,Callithamnion tetricum,species,Callithamnion,genus,ncbi
+193178,Callithamnion tetragonum,species,Callithamnion,genus,ncbi
+193177,Callithamnion corymbosum,species,Callithamnion,genus,ncbi
+189623,Callithamnion pikeanum,species,Callithamnion,genus,ncbi
+1824664,Callophycus laxus,species,Callophycus,genus,ncbi
+1114265,Callophycus densus,species,Callophycus,genus,ncbi
+632897,Callophycus serratus,species,Callophycus,genus,ncbi
+88406,Callophycus oppositifolius,species,Callophycus,genus,ncbi
+38366,Callophycus africanus,species,Callophycus,genus,ncbi
+1563188,Callophyllis stenophylla,species,Callophyllis,genus,ncbi
+1551477,Callophyllis mollitia,species,Callophyllis,genus,ncbi
+1551476,Callophyllis cartilaginea,species,Callophyllis,genus,ncbi
+1551475,Callophyllis repens,species,Callophyllis,genus,ncbi
+1551474,Callophyllis undulata,species,Callophyllis,genus,ncbi
+1551473,Callophyllis serratifolia,species,Callophyllis,genus,ncbi
+1551471,Callophyllis hayamensis,species,Callophyllis,genus,ncbi
+1551470,Callophyllis adnata,species,Callophyllis,genus,ncbi
+1551469,Callophyllis adhaerens,species,Callophyllis,genus,ncbi
+1295574,Callophyllis cornu-cervi,species,Callophyllis,genus,ncbi
+1232897,Callophyllis odonthalioides,species,Callophyllis,genus,ncbi
+1211948,Callophyllis cervicornis,species,Callophyllis,genus,ncbi
+1197124,Callophyllis thompsonii,species,Callophyllis,genus,ncbi
+1197123,Callophyllis radula,species,Callophyllis,genus,ncbi
+1197122,Callophyllis linearis,species,Callophyllis,genus,ncbi
+1197121,Callophyllis heanophylla,species,Callophyllis,genus,ncbi
+1197120,Callophyllis dissecta,species,Callophyllis,genus,ncbi
+1197119,Callophyllis beringensis,species,Callophyllis,genus,ncbi
+1132393,Callophyllis macrostiolata,species,Callophyllis,genus,ncbi
+1132370,Callophyllis obtusifolia,species,Callophyllis,genus,ncbi
+1132369,Callophyllis lingulata,species,Callophyllis,genus,ncbi
+1132368,Callophyllis lambertii,species,Callophyllis,genus,ncbi
+1077403,Callophyllis concepcionensis,species,Callophyllis,genus,ncbi
+1036809,Callophyllis laciniata,species,Callophyllis,genus,ncbi
+979660,Callophyllis ornata,species,Callophyllis,genus,ncbi
+979658,Callophyllis laingiana,species,Callophyllis,genus,ncbi
+979656,Callophyllis calliblepharoides,species,Callophyllis,genus,ncbi
+979655,Callophyllis atrosanguinea,species,Callophyllis,genus,ncbi
+717687,Callophyllis japonica,species,Callophyllis,genus,ncbi
+681543,Callophyllis decumbens,species,Callophyllis,genus,ncbi
+681540,Callophyllis depressa,species,Callophyllis,genus,ncbi
+217482,Callophyllis variegata,species,Callophyllis,genus,ncbi
+217481,Callophyllis flabellulata,species,Callophyllis,genus,ncbi
+217480,Callophyllis edentata,species,Callophyllis,genus,ncbi
+217479,Callophyllis crenulata,species,Callophyllis,genus,ncbi
+42008,Callophyllis rangiferina,species,Callophyllis,genus,ncbi
+38325,Callophyllis pinnata,species,Callophyllis,genus,ncbi
+38324,Callophyllis hombroniana,species,Callophyllis,genus,ncbi
+31433,Callophyllis violacea,species,Callophyllis,genus,ncbi
+31432,Callophyllis crispata,species,Callophyllis,genus,ncbi
+1148471,Caloglossa fluviatilis,species,Caloglossa,genus,ncbi
+210932,Caloglossa rotundata,species,Caloglossa,genus,ncbi
+210931,Caloglossa axillaris,species,Caloglossa,genus,ncbi
+210849,Caloglossa saigonensis,species,Caloglossa,genus,ncbi
+210848,Caloglossa pacifica,species,Caloglossa,genus,ncbi
+210847,Caloglossa bengalensis,species,Caloglossa,genus,ncbi
+210846,Caloglossa adhaerens,species,Caloglossa,genus,ncbi
+131038,Caloglossa beccarii,species,Caloglossa,genus,ncbi
+121065,Caloglossa cf. ogasawaraensis,species,Caloglossa,genus,ncbi
+100879,Caloglossa intermedia,species,Caloglossa,genus,ncbi
+88391,Caloglossa stipitata,species,Caloglossa,genus,ncbi
+88390,Caloglossa postiae,species,Caloglossa,genus,ncbi
+76907,Caloglossa ogasawaraensis,species,Caloglossa,genus,ncbi
+76906,Caloglossa monosticha,species,Caloglossa,genus,ncbi
+76905,Caloglossa continua,species,Caloglossa,genus,ncbi
+76904,Caloglossa apomeiotica,species,Caloglossa,genus,ncbi
+76903,Caloglossa leprieurii,species,Caloglossa,genus,ncbi
+131052,Calonitophyllum medium,species,Calonitophyllum,genus,ncbi
+79947,Camontagnea oxyclada,species,Camontagnea,genus,ncbi
+447343,Campylaephora californica,species,Campylaephora,genus,ncbi
+218447,Campylaephora hypnaeoides,species,Campylaephora,genus,ncbi
+218446,Campylaephora borealis,species,Campylaephora,genus,ncbi
+218445,Campylaephora crassa,species,Campylaephora,genus,ncbi
+447342,Carpoblepharis minima,species,Carpoblepharis,genus,ncbi
+326253,Carpoblepharis flaccida,species,Carpoblepharis,genus,ncbi
+176235,Carpopeltis cornea,species,Carpopeltis,genus,ncbi
+42009,Carpopeltis phyllophora,species,Carpopeltis,genus,ncbi
+38497,Carpopeltis maillardii,species,Carpopeltis,genus,ncbi
+2816,Carpopeltis crispata,species,Carpopeltis,genus,ncbi
+332497,Carpothamnion gunnianum,species,Carpothamnion,genus,ncbi
+196393,Catenella nipae,species,Catenella,genus,ncbi
+196371,Catenella caespitosa,species,Catenella,genus,ncbi
+1848512,Catenellopsis oligarthra,species,Catenellopsis,genus,ncbi
+152008,Caulacanthus okamurae,species,Caulacanthus,genus,ncbi
+31411,Caulacanthus ustulatus,species,Caulacanthus,genus,ncbi
+1641915,Centroceras arcii,species,Centroceras,genus,ncbi
+1641914,Centroceras illaqueans,species,Centroceras,genus,ncbi
+656029,Centroceras rodmanii,species,Centroceras,genus,ncbi
+371107,Centroceras uncinatacanthum,species,Centroceras,genus,ncbi
+371106,Centroceras tetrachotomum,species,Centroceras,genus,ncbi
+371101,Centroceras hyalacanthum,species,Centroceras,genus,ncbi
+371100,Centroceras micracanthum,species,Centroceras,genus,ncbi
+371099,Centroceras gasparrinii,species,Centroceras,genus,ncbi
+371097,Centroceras minutum,species,Centroceras,genus,ncbi
+159503,Centroceras clavulatum,species,Centroceras,genus,ncbi
+39624,Cephalocystis leucobotrys,species,Cephalocystis,genus,ncbi
+39623,Cephalocystis furcellata,species,Cephalocystis,genus,ncbi
+1385689,Ceramium filicula,species,Ceramium,genus,ncbi
+1144607,Ceramium riosmenae,species,Ceramium,genus,ncbi
+1037394,Ceramium pusillum,species,Ceramium,genus,ncbi
+1037393,Ceramium obsoletum,species,Ceramium,genus,ncbi
+1037392,Ceramium circinatum,species,Ceramium,genus,ncbi
+997579,Ceramium womersleyi,species,Ceramium,genus,ncbi
+997577,Ceramium hanaense,species,Ceramium,genus,ncbi
+997576,Ceramium codii,species,Ceramium,genus,ncbi
+947978,Ceramium polyceras,species,Ceramium,genus,ncbi
+947977,Ceramium nudiusculum,species,Ceramium,genus,ncbi
+947976,Ceramium derbesii,species,Ceramium,genus,ncbi
+710537,Ceramium tenuissimum,species,Ceramium,genus,ncbi
+710536,Ceramium gardneri,species,Ceramium,genus,ncbi
+710535,Ceramium dumosertum,species,Ceramium,genus,ncbi
+690440,Ceramium washingtoniense,species,Ceramium,genus,ncbi
+679013,Ceramium pacificum,species,Ceramium,genus,ncbi
+381017,Ceramium nitens,species,Ceramium,genus,ncbi
+381016,Ceramium gaditanum,species,Ceramium,genus,ncbi
+381015,Ceramium fujianum,species,Ceramium,genus,ncbi
+381012,Ceramium dawsonii,species,Ceramium,genus,ncbi
+381011,Ceramium clarionense,species,Ceramium,genus,ncbi
+381010,Ceramium brasiliense,species,Ceramium,genus,ncbi
+271605,Ceramium californicum,species,Ceramium,genus,ncbi
+228196,Ceramium elegans,species,Ceramium,genus,ncbi
+228187,Ceramium ciliatum,species,Ceramium,genus,ncbi
+228185,Ceramium cimbricum,species,Ceramium,genus,ncbi
+228184,Ceramium shuttleworthianum,species,Ceramium,genus,ncbi
+218449,Ceramium kondoi,species,Ceramium,genus,ncbi
+218448,Ceramium japonicum,species,Ceramium,genus,ncbi
+216890,Ceramium sinicola,species,Ceramium,genus,ncbi
+216889,Ceramium interruptum,species,Ceramium,genus,ncbi
+216888,Ceramium codicola,species,Ceramium,genus,ncbi
+215760,Ceramium strictum,species,Ceramium,genus,ncbi
+215759,Ceramium siliquosum,species,Ceramium,genus,ncbi
+203700,Ceramium tenuicorne,species,Ceramium,genus,ncbi
+202204,Ceramium boydenii,species,Ceramium,genus,ncbi
+196911,Ceramium tenerrimum,species,Ceramium,genus,ncbi
+196910,Ceramium inkyuii,species,Ceramium,genus,ncbi
+196909,Ceramium horridum,species,Ceramium,genus,ncbi
+196908,Ceramium affine,species,Ceramium,genus,ncbi
+193558,Ceramium deslongchampsii,species,Ceramium,genus,ncbi
+193557,Ceramium virgatum,species,Ceramium,genus,ncbi
+193556,Ceramium secundatum,species,Ceramium,genus,ncbi
+193555,Ceramium pallidum,species,Ceramium,genus,ncbi
+193554,Ceramium botryocarpum,species,Ceramium,genus,ncbi
+193180,Ceramium echionotum,species,Ceramium,genus,ncbi
+179281,Ceramium paniculatum,species,Ceramium,genus,ncbi
+159494,Ceramium brevizonatum,species,Ceramium,genus,ncbi
+42000,Ceramium macilentum,species,Ceramium,genus,ncbi
+35157,Ceramium rubrum,species,Ceramium,genus,ncbi
+31381,Ceramium diaphanum,species,Ceramium,genus,ncbi
+662458,Ceratocolax hartzii,species,Ceratocolax,genus,ncbi
+1089837,Ceratodictyon repens,species,Ceratodictyon,genus,ncbi
+38331,Ceratodictyon spongiosum,species,Ceratodictyon,genus,ncbi
+1074204,Chamaebotrys prolifera,species,Chamaebotrys,genus,ncbi
+997580,Chamaebotrys boergesenii,species,Chamaebotrys,genus,ncbi
+1399957,Champia inkyua,species,Champia,genus,ncbi
+1399956,Champia recta,species,Champia,genus,ncbi
+1136339,Champia lubrica,species,Champia,genus,ncbi
+1136337,Champia expansa,species,Champia,genus,ncbi
+1136336,Champia bifida,species,Champia,genus,ncbi
+1089845,Champia viridis,species,Champia,genus,ncbi
+1089840,Champia lumbricalis,species,Champia,genus,ncbi
+1073982,Champia puertoricensis,species,Champia,genus,ncbi
+624218,Champia chathamensis,species,Champia,genus,ncbi
+570948,Champia harveyana,species,Champia,genus,ncbi
+522303,Champia gigantea,species,Champia,genus,ncbi
+504345,Champia japonica,species,Champia,genus,ncbi
+437229,Champia vieillardii,species,Champia,genus,ncbi
+437228,Champia salicornioides,species,Champia,genus,ncbi
+437227,Champia parvula,species,Champia,genus,ncbi
+239157,Champia compressa,species,Champia,genus,ncbi
+1082196,Chantransia pygmaea,species,Chantransia,genus,ncbi
+131054,Chauviniella coriifolia,species,Chauviniella,genus,ncbi
+400117,Chondracanthus teedei,species,Chondracanthus,genus,ncbi
+291258,Chondracanthus saundersii,species,Chondracanthus,genus,ncbi
+168823,Chondracanthus squarrulosus,species,Chondracanthus,genus,ncbi
+95351,Chondracanthus tepidus,species,Chondracanthus,genus,ncbi
+95350,Chondracanthus tenellus,species,Chondracanthus,genus,ncbi
+95349,Chondracanthus harveyanus,species,Chondracanthus,genus,ncbi
+95348,Chondracanthus exasperatus,species,Chondracanthus,genus,ncbi
+38341,Chondracanthus chamissoi,species,Chondracanthus,genus,ncbi
+35179,Chondracanthus spinosus,species,Chondracanthus,genus,ncbi
+35178,Chondracanthus intermedius,species,Chondracanthus,genus,ncbi
+35177,Chondracanthus corymbiferus,species,Chondracanthus,genus,ncbi
+35176,Chondracanthus chapmanii,species,Chondracanthus,genus,ncbi
+35175,Chondracanthus canaliculatus,species,Chondracanthus,genus,ncbi
+35174,Chondracanthus acicularis,species,Chondracanthus,genus,ncbi
+1497626,Chondria atropurpurea,species,Chondria,genus,ncbi
+1497625,Chondria polyrhiza,species,Chondria,genus,ncbi
+1497583,Chondria littoralis,species,Chondria,genus,ncbi
+1497581,Chondria decipiens,species,Chondria,genus,ncbi
+1424645,Chondria coerulescens,species,Chondria,genus,ncbi
+1413813,Chondria scintillans,species,Chondria,genus,ncbi
+997581,Chondria arcuata,species,Chondria,genus,ncbi
+934964,Chondria collinsiana,species,Chondria,genus,ncbi
+860630,Chondria ryukyuensis,species,Chondria,genus,ncbi
+860629,Chondria expansa,species,Chondria,genus,ncbi
+860628,Chondria dangeardii,species,Chondria,genus,ncbi
+860627,Chondria crassicaulis,species,Chondria,genus,ncbi
+860626,Chondria capillaris,species,Chondria,genus,ncbi
+860625,Chondria armata,species,Chondria,genus,ncbi
+217290,Chondria californica,species,Chondria,genus,ncbi
+31393,Chondria dasyphylla,species,Chondria,genus,ncbi
+998199,Chondrophycus dotyi,species,Chondrophycus,genus,ncbi
+997582,Chondrophycus undulatus,species,Chondrophycus,genus,ncbi
+860643,Chondrophycus cartilagineus,species,Chondrophycus,genus,ncbi
+860641,Chondrophycus cf. cartilagineus,species,Chondrophycus,genus,ncbi
+860631,Chondrophycus succisus,species,Chondrophycus,genus,ncbi
+689797,Chondrophycus cf. undulatus,species,Chondrophycus,genus,ncbi
+424510,Chondrophycus gemmiferus,species,Chondrophycus,genus,ncbi
+197322,Chondrophycus papillosus,species,Chondrophycus,genus,ncbi
+1343909,Chondrus retortus,species,Chondrus,genus,ncbi
+168813,Chondrus platynus,species,Chondrus,genus,ncbi
+95352,Chondrus armatus,species,Chondrus,genus,ncbi
+38505,Chondrus yendoi,species,Chondrus,genus,ncbi
+38463,Chondrus pinnulatus,species,Chondrus,genus,ncbi
+38342,Chondrus nipponicus,species,Chondrus,genus,ncbi
+38340,Chondrus canaliculatus,species,Chondrus,genus,ncbi
+29223,Chondrus verrucosus,species,Chondrus,genus,ncbi
+29222,Chondrus ocellatus,species,Chondrus,genus,ncbi
+29221,Chondrus giganteus,species,Chondrus,genus,ncbi
+29220,Chondrus elatus,species,Chondrus,genus,ncbi
+2769,Chondrus crispus,species,Chondrus,genus,ncbi
+1293580,Chondrymenia lobata,species,Chondrymenia,genus,ncbi
+282351,Choreocolax polysiphoniae,species,Choreocolax,genus,ncbi
+1826826,Chrysymenia brownii,species,Chrysymenia,genus,ncbi
+1780089,Chrysymenia pseudoventricosa,species,Chrysymenia,genus,ncbi
+1399964,Chrysymenia grandis,species,Chrysymenia,genus,ncbi
+1089844,Chrysymenia WES-2011,species,Chrysymenia,genus,ncbi
+1089843,Chrysymenia littleriana,species,Chrysymenia,genus,ncbi
+1089842,Chrysymenia ventricosa,species,Chrysymenia,genus,ncbi
+1089841,Chrysymenia halymenioides,species,Chrysymenia,genus,ncbi
+997584,Chrysymenia okamurae,species,Chrysymenia,genus,ncbi
+997583,Chrysymenia kaernbachii,species,Chrysymenia,genus,ncbi
+571211,Chrysymenia agardhii,species,Chrysymenia,genus,ncbi
+470999,Chrysymenia enteromorpha,species,Chrysymenia,genus,ncbi
+470998,Chrysymenia planifrons,species,Chrysymenia,genus,ncbi
+470997,Chrysymenia nodulosa,species,Chrysymenia,genus,ncbi
+239145,Chrysymenia procumbens,species,Chrysymenia,genus,ncbi
+91058,Chrysymenia wrightii,species,Chrysymenia,genus,ncbi
+81592,Chrysymenia ornata,species,Chrysymenia,genus,ncbi
+437230,Chylocladia schneideri,species,Chylocladia,genus,ncbi
+81594,Chylocladia verticillata,species,Chylocladia,genus,ncbi
+1403556,Cirrulicarpus australis,species,Cirrulicarpus,genus,ncbi
+1232900,Cirrulicarpus polycoelioides,species,Cirrulicarpus,genus,ncbi
+681547,Cirrulicarpus gmelinii,species,Cirrulicarpus,genus,ncbi
+159505,Cladhymenia lyallii,species,Cladhymenia,genus,ncbi
+131056,Cladodonta lyalli,species,Cladodonta,genus,ncbi
+1204431,Claudea elegans,species,Claudea,genus,ncbi
+131099,Claudea batanensis,species,Claudea,genus,ncbi
+257551,Claviclonium ovatum,species,Claviclonium,genus,ncbi
+661323,Coccotylus truncatus,species,Coccotylus,genus,ncbi
+796373,Codiophyllum natalense,species,Codiophyllum,genus,ncbi
+479266,Coelarthrum cliftonii,species,Coelarthrum,genus,ncbi
+81596,Coelarthrum opuntia,species,Coelarthrum,genus,ncbi
+1852973,Coeloseira compressa,species,Coeloseira,genus,ncbi
+479265,Coelothrix irregularis,species,Coelothrix,genus,ncbi
+1620271,Colaconema infestans,species,Colaconema,genus,ncbi
+209638,Colaconema tetrasporum,species,Colaconema,genus,ncbi
+209637,Colaconema rhizoideum,species,Colaconema,genus,ncbi
+209636,Colaconema proskaueri,species,Colaconema,genus,ncbi
+209635,Colaconema pectinatum,species,Colaconema,genus,ncbi
+209634,Colaconema daviesii,species,Colaconema,genus,ncbi
+209633,Colaconema caespitosum,species,Colaconema,genus,ncbi
+209632,Colaconema amphiroae,species,Colaconema,genus,ncbi
+173033,Colaconema asparagopsis,species,Colaconema,genus,ncbi
+536591,Compsothamnion thuyoides,species,Compsothamnion,genus,ncbi
+1819327,Constantinea rosa-marina,species,Constantinea,genus,ncbi
+1037073,Constantinea cf. simplex 1 BEC-2011,species,Constantinea,genus,ncbi
+1037067,Constantinea simplex,species,Constantinea,genus,ncbi
+142499,Constantinea subulifera,species,Constantinea,genus,ncbi
+1505955,Contarinia squamariae,species,Contarinia,genus,ncbi
+508002,Contarinia peyssonneliaeformis,species,Contarinia,genus,ncbi
+508001,Contarinia okamurae,species,Contarinia,genus,ncbi
+508000,Contarinia magdae,species,Contarinia,genus,ncbi
+997585,Corallophila huysmansii,species,Corallophila,genus,ncbi
+326255,Corallophila eatoniana,species,Corallophila,genus,ncbi
+38329,Cordylecladia erecta,species,Cordylecladia,genus,ncbi
+257554,Corynocystis prostrata,species,Corynocystis,genus,ncbi
+1503763,Corynomorpha prismatica,species,Corynomorpha,genus,ncbi
+239160,Corynomorpha clavata,species,Corynomorpha,genus,ncbi
+257569,Craspedocarpus ramentaceus,species,Craspedocarpus,genus,ncbi
+163337,Craspedocarpus tenuifolius,species,Craspedocarpus,genus,ncbi
+163336,Craspedocarpus erosus,species,Craspedocarpus,genus,ncbi
+163327,Craspedocarpus venosus,species,Craspedocarpus,genus,ncbi
+1090323,Crassitegula imitans,species,Crassitegula,genus,ncbi
+327986,Crassitegula walsinghamii,species,Crassitegula,genus,ncbi
+1381585,Crebradomus gongylocarpus,species,Crebradomus,genus,ncbi
+1074216,Cresia opalescens,species,Cresia,genus,ncbi
+997586,Crouania minutissima,species,Crouania,genus,ncbi
+332484,Crouania elisiae,species,Crouania,genus,ncbi
+42002,Crouania attenuata,species,Crouania,genus,ncbi
+1268066,Cruoria cruoriaeformis,species,Cruoria,genus,ncbi
+257561,Cruoria pellita,species,Cruoria,genus,ncbi
+508014,Cruoriopsis crucialis,species,Cruoriopsis,genus,ncbi
+1563185,Cryptonemia obovata,species,Cryptonemia,genus,ncbi
+1550623,Cryptonemia seminervis,species,Cryptonemia,genus,ncbi
+1542470,Cryptonemia asiatica,species,Cryptonemia,genus,ncbi
+1364986,Cryptonemia lapathifolia,species,Cryptonemia,genus,ncbi
+997587,Cryptonemia yendoi,species,Cryptonemia,genus,ncbi
+796371,Cryptonemia lomation,species,Cryptonemia,genus,ncbi
+222715,Cryptonemia bengryi,species,Cryptonemia,genus,ncbi
+203887,Cryptonemia borealis,species,Cryptonemia,genus,ncbi
+159583,Cryptonemia rotunda,species,Cryptonemia,genus,ncbi
+159582,Cryptonemia luxurians,species,Cryptonemia,genus,ncbi
+42011,Cryptonemia undulata,species,Cryptonemia,genus,ncbi
+282364,Cryptopleura crispa,species,Cryptopleura,genus,ncbi
+131096,Cryptopleura violacea,species,Cryptopleura,genus,ncbi
+131095,Cryptopleura ruprechtiana,species,Cryptopleura,genus,ncbi
+131094,Cryptopleura ramosa,species,Cryptopleura,genus,ncbi
+131093,Cryptopleura lobulifera,species,Cryptopleura,genus,ncbi
+131092,Cryptopleura corallinara,species,Cryptopleura,genus,ncbi
+131058,Cryptopleura callophylloides,species,Cryptopleura,genus,ncbi
+142502,Cryptosiphonia woodii,species,Cryptosiphonia,genus,ncbi
+1424651,Ctenosiphonia hypnoides,species,Ctenosiphonia,genus,ncbi
+257564,Cubiculosporum koronicarpus,species,Cubiculosporum,genus,ncbi
+31486,Cumagloia andersonii,species,Cumagloia,genus,ncbi
+1206573,Cumathamnion serrulata,species,Cumathamnion,genus,ncbi
+1204433,Cumathamnion sympodophyllum,species,Cumathamnion,genus,ncbi
+131060,Cumathamnion decipiens,species,Cumathamnion,genus,ncbi
+225046,Curdiea codiodes,species,Curdiea,genus,ncbi
+172985,Curdiea crassa,species,Curdiea,genus,ncbi
+172984,Curdiea racovitzia,species,Curdiea,genus,ncbi
+172983,Curdiea coriacea,species,Curdiea,genus,ncbi
+31476,Curdiea flabellata,species,Curdiea,genus,ncbi
+257571,Cystoclonium purpureum,species,Cystoclonium,genus,ncbi
+1246549,Dasya enomotoi,species,Dasya,genus,ncbi
+997590,Dasya murrayana,species,Dasya,genus,ncbi
+997589,Dasya kristeniae,species,Dasya,genus,ncbi
+997588,Dasya corymbifera,species,Dasya,genus,ncbi
+593883,Dasya iridescens,species,Dasya,genus,ncbi
+593879,Dasya elongata,species,Dasya,genus,ncbi
+475657,Dasya anastomosans,species,Dasya,genus,ncbi
+306616,Dasya sessilis,species,Dasya,genus,ncbi
+189626,Dasya villosa,species,Dasya,genus,ncbi
+189625,Dasya sinicola,species,Dasya,genus,ncbi
+189624,Dasya collabens,species,Dasya,genus,ncbi
+94293,Dasya ocellata,species,Dasya,genus,ncbi
+94292,Dasya hutchinsiae,species,Dasya,genus,ncbi
+35166,Dasya baillouviana,species,Dasya,genus,ncbi
+536593,Dasyphila preissii,species,Dasyphila,genus,ncbi
+35173,Dasyphloea insignis,species,Dasyphloea,genus,ncbi
+306615,Dasysiphonia okiensis,species,Dasysiphonia,genus,ncbi
+189634,Dasysiphonia chejuensis,species,Dasysiphonia,genus,ncbi
+536616,Dasythamniella dasyura,species,Dasythamniella,genus,ncbi
+282353,Dawsoniocolax bostrychiae,species,Dawsoniocolax,genus,ncbi
+624217,Delesseria lancifolia,species,Delesseria,genus,ncbi
+131097,Delesseria sanguinea,species,Delesseria,genus,ncbi
+408196,Delisea hypneoides,species,Delisea,genus,ncbi
+40395,Delisea flaccida,species,Delisea,genus,ncbi
+40385,Delisea pulchra,species,Delisea,genus,ncbi
+38531,Delisea japonica,species,Delisea,genus,ncbi
+1750562,Dermocorynus montagnei,species,Dermocorynus,genus,ncbi
+1562370,Dermocorynus dichotomus,species,Dermocorynus,genus,ncbi
+1562369,Dermocorynus horridus,species,Dermocorynus,genus,ncbi
+1077399,Dermonema virens,species,Dermonema,genus,ncbi
+997602,Dermonema pulvinatum,species,Dermonema,genus,ncbi
+35202,Devaleraea ramentacea,species,Devaleraea,genus,ncbi
+332491,Diapse ptilota,species,Diapse,genus,ncbi
+1819763,Dichotomaria huismanii,species,Dichotomaria,genus,ncbi
+1380563,Dichotomaria apiculata,species,Dichotomaria,genus,ncbi
+1291019,Dichotomaria hommersandii,species,Dichotomaria,genus,ncbi
+305685,Dichotomaria latifolia,species,Dichotomaria,genus,ncbi
+305684,Dichotomaria hystrix,species,Dichotomaria,genus,ncbi
+268569,Dichotomaria tenera,species,Dichotomaria,genus,ncbi
+268568,Dichotomaria obtusata,species,Dichotomaria,genus,ncbi
+268567,Dichotomaria marginata,species,Dichotomaria,genus,ncbi
+268566,Dichotomaria diesingiana,species,Dichotomaria,genus,ncbi
+242854,Dichotomaria falcata,species,Dichotomaria,genus,ncbi
+239144,Dicranema revolutum,species,Dicranema,genus,ncbi
+81598,Dictyothamnion saltatum,species,Dictyothamnion,genus,ncbi
+189649,Dictyurus purpurascens,species,Dictyurus,genus,ncbi
+189636,Dictyurus occidentalis,species,Dictyurus,genus,ncbi
+475977,Dilsea lindstromiae,species,Dilsea,genus,ncbi
+475971,Dilsea pygmaea,species,Dilsea,genus,ncbi
+319476,Dilsea integra,species,Dilsea,genus,ncbi
+142540,Dilsea natashae,species,Dilsea,genus,ncbi
+142488,Dilsea socialis,species,Dilsea,genus,ncbi
+42012,Dilsea carnosa,species,Dilsea,genus,ncbi
+31417,Dilsea californica,species,Dilsea,genus,ncbi
+997604,Diplothamnion jolyi,species,Diplothamnion,genus,ncbi
+672023,Dipterocladia pinnatifolia,species,Dipterocladia,genus,ncbi
+1381491,Dissimularia umbraticola,species,Dissimularia,genus,ncbi
+1381490,Dissimularia dactylocarpa,species,Dissimularia,genus,ncbi
+997605,Dotyophycus yamadae,species,Dotyophycus,genus,ncbi
+268564,Dotyophycus abbottiae,species,Dotyophycus,genus,ncbi
+160594,Drachiella liaoii,species,Drachiella,genus,ncbi
+131062,Drachiella spectabilis,species,Drachiella,genus,ncbi
+1826847,Drouetia viridescens,species,Drouetia,genus,ncbi
+1826830,Drouetia scutellata,species,Drouetia,genus,ncbi
+1826829,Drouetia aggregata,species,Drouetia,genus,ncbi
+368084,Drouetia coalescens,species,Drouetia,genus,ncbi
+1824667,Dudresnaya crassa,species,Dudresnaya,genus,ncbi
+997607,Dudresnaya littleri,species,Dudresnaya,genus,ncbi
+997606,Dudresnaya hawaiiensis,species,Dudresnaya,genus,ncbi
+753887,Dudresnaya australis,species,Dudresnaya,genus,ncbi
+508027,Dudresnaya verticillata,species,Dudresnaya,genus,ncbi
+142489,Dudresnaya capricornica,species,Dudresnaya,genus,ncbi
+38553,Dudresnaya japonica,species,Dudresnaya,genus,ncbi
+142491,Dumontia simplex,species,Dumontia,genus,ncbi
+142490,Dumontia alaskana,species,Dumontia,genus,ncbi
+40401,Dumontia contorta,species,Dumontia,genus,ncbi
+38514,Dumontia incrassata,species,Dumontia,genus,ncbi
+1233106,Ectophora cf. depressa 1,species,Ectophora,genus,ncbi
+979698,Ectophora marginata,species,Ectophora,genus,ncbi
+31421,Endocladia muricata,species,Endocladia,genus,ncbi
+173550,Enelittosiphonia stimpsonii,species,Enelittosiphonia,genus,ncbi
+1267491,Entwisleia bella,species,Entwisleia,genus,ncbi
+257605,Epiphloea bullosa,species,Epiphloea,genus,ncbi
+164050,Epymenia obtusa,species,Epymenia,genus,ncbi
+164049,Epymenia capensis,species,Epymenia,genus,ncbi
+42014,Epymenia wilsonis,species,Epymenia,genus,ncbi
+88423,Erythroclonium muelleri,species,Erythroclonium,genus,ncbi
+88417,Erythroclonium angustatum,species,Erythroclonium,genus,ncbi
+39628,Erythrocolon podagricum,species,Erythrocolon,genus,ncbi
+38482,Erythrodermis traillii,species,Erythrodermis,genus,ncbi
+1400242,Erythroglossum minimum,species,Erythroglossum,genus,ncbi
+1400241,Erythroglossum pinnatum,species,Erythroglossum,genus,ncbi
+136791,Erythroglossum laciniata,species,Erythroglossum,genus,ncbi
+259827,Erythronaema ceramioides,species,Erythronaema,genus,ncbi
+128537,Erythrophyllum delesserioides,species,Erythrophyllum,genus,ncbi
+335919,Erythrymenia obovata,species,Erythrymenia,genus,ncbi
+81600,Erythrymenia minuta,species,Erythrymenia,genus,ncbi
+1819317,Ethelia suluensis,species,Ethelia,genus,ncbi
+1819316,Ethelia wilcei,species,Ethelia,genus,ncbi
+1819315,Ethelia denizotii,species,Ethelia,genus,ncbi
+1819314,Ethelia kraftii,species,Ethelia,genus,ncbi
+1819313,Ethelia biradiata,species,Ethelia,genus,ncbi
+1819311,Ethelia mucronata,species,Ethelia,genus,ncbi
+305493,Eucheuma denticulatum,species,Eucheuma,genus,ncbi
+305492,Eucheuma platycladum,species,Eucheuma,genus,ncbi
+88407,Eucheuma arnoldii,species,Eucheuma,genus,ncbi
+39836,Eucheuma isiforme,species,Eucheuma,genus,ncbi
+38516,Eucheuma serra,species,Eucheuma,genus,ncbi
+94300,Eupogodon spinellus,species,Eupogodon,genus,ncbi
+94295,Eupogodon planus,species,Eupogodon,genus,ncbi
+536594,Euptilocladia spongiosa,species,Euptilocladia,genus,ncbi
+439553,Euptilocladia magruderi,species,Euptilocladia,genus,ncbi
+333148,Euptilota molle,species,Euptilota,genus,ncbi
+333147,Euptilota fergusonii,species,Euptilota,genus,ncbi
+332501,Euptilota articulata,species,Euptilota,genus,ncbi
+159593,Euptilota formosissima,species,Euptilota,genus,ncbi
+994791,Euthora timburtonii,species,Euthora,genus,ncbi
+173452,Euthora cristata,species,Euthora,genus,ncbi
+332487,Falklandiella harveyi,species,Falklandiella,genus,ncbi
+1582993,Farlowia conferta,species,Farlowia,genus,ncbi
+1582992,Farlowia compressa,species,Farlowia,genus,ncbi
+42016,Farlowia mollis,species,Farlowia,genus,ncbi
+42802,Faucheocolax attenuata,species,Faucheocolax,genus,ncbi
+81603,Faucheopsis coronata,species,Faucheopsis,genus,ncbi
+257575,Fimbrifolium dichotomum,species,Fimbrifolium,genus,ncbi
+1406132,Fredericqia decewii,species,Fredericqia,genus,ncbi
+1405809,Fredericqia deveauniensis,species,Fredericqia,genus,ncbi
+38475,Fredericqia chiton,species,Fredericqia,genus,ncbi
+81605,Fryeella gardneri,species,Fryeella,genus,ncbi
+28020,Furcellaria lumbricalis,species,Furcellaria,genus,ncbi
+142505,Gainia mollis,species,Gainia,genus,ncbi
+305681,Galaxaura filamentosa,species,Galaxaura,genus,ncbi
+302012,Galaxaura subverticillata,species,Galaxaura,genus,ncbi
+268570,Galaxaura rugosa,species,Galaxaura,genus,ncbi
+242860,Galaxaura pacifica,species,Galaxaura,genus,ncbi
+242858,Galaxaura cuculligera,species,Galaxaura,genus,ncbi
+242856,Galaxaura papillata,species,Galaxaura,genus,ncbi
+242855,Galaxaura divaricata,species,Galaxaura,genus,ncbi
+1506559,Galene meridionalis,species,Galene,genus,ncbi
+1506558,Galene profundae,species,Galene,genus,ncbi
+259039,Ganonema farinosum,species,Ganonema,genus,ncbi
+259037,Ganonema pinnatum,species,Ganonema,genus,ncbi
+259036,Ganonema papenfussii,species,Ganonema,genus,ncbi
+259027,Ganonema yoshizakii,species,Ganonema,genus,ncbi
+41686,Gardneriella tuberifera,species,Gardneriella,genus,ncbi
+1479093,Gastroclonium reflexum,species,Gastroclonium,genus,ncbi
+239152,Gastroclonium subarticulatum,species,Gastroclonium,genus,ncbi
+173444,Gastroclonium clavatum,species,Gastroclonium,genus,ncbi
+81587,Gastroclonium ovatum,species,Gastroclonium,genus,ncbi
+2773,Gastroclonium coulteri,species,Gastroclonium,genus,ncbi
+710539,Gayliella fimbriata,species,Gayliella,genus,ncbi
+355658,Gayliella mazoyerae,species,Gayliella,genus,ncbi
+355657,Gayliella womersleyi,species,Gayliella,genus,ncbi
+342852,Gayliella miniatum,species,Gayliella,genus,ncbi
+342851,Gayliella flaccida,species,Gayliella,genus,ncbi
+342850,Gayliella keywestiensis,species,Gayliella,genus,ncbi
+342847,Gayliella taylorii,species,Gayliella,genus,ncbi
+1785968,Gelidiella incrassata,species,Gelidiella,genus,ncbi
+997608,Gelidiella machrisiana,species,Gelidiella,genus,ncbi
+564942,Gelidiella ramellosa,species,Gelidiella,genus,ncbi
+485435,Gelidiella fanii,species,Gelidiella,genus,ncbi
+82839,Gelidiella ligulata,species,Gelidiella,genus,ncbi
+28867,Gelidiella acerosa,species,Gelidiella,genus,ncbi
+1785973,Gelidiophycus freshwateri,species,Gelidiophycus,genus,ncbi
+997609,Gelidiopsis scoparia,species,Gelidiopsis,genus,ncbi
+408197,Gelidiopsis intricata,species,Gelidiopsis,genus,ncbi
+81607,Gelidiopsis variabilis,species,Gelidiopsis,genus,ncbi
+1785965,Gelidium nudifrons,species,Gelidium,genus,ncbi
+1785964,Gelidium microdon,species,Gelidium,genus,ncbi
+1785963,Gelidium crispum,species,Gelidium,genus,ncbi
+1785962,Gelidium madagascariense,species,Gelidium,genus,ncbi
+1357443,Gelidium johnstonii,species,Gelidium,genus,ncbi
+1295015,Gelidium maggsiae,species,Gelidium,genus,ncbi
+1260956,Gelidium indonesianum,species,Gelidium,genus,ncbi
+1247900,Gelidium prostratum,species,Gelidium,genus,ncbi
+1247899,Gelidium minimum,species,Gelidium,genus,ncbi
+1247898,Gelidium jejuense,species,Gelidium,genus,ncbi
+1247897,Gelidium coreanum,species,Gelidium,genus,ncbi
+1238356,Gelidium koshikianum,species,Gelidium,genus,ncbi
+1176152,Gelidium pusillum 2 MEPM-2012,species,Gelidium,genus,ncbi
+944965,Gelidium foliaceum,species,Gelidium,genus,ncbi
+943117,Gelidium spinosum,species,Gelidium,genus,ncbi
+943115,Gelidium corneum,species,Gelidium,genus,ncbi
+439551,Gelidium reediae,species,Gelidium,genus,ncbi
+436072,Gelidium vittatum,species,Gelidium,genus,ncbi
+436070,Gelidium profundum,species,Gelidium,genus,ncbi
+317102,Gelidium sclerophyllum,species,Gelidium,genus,ncbi
+317101,Gelidium microdentatum,species,Gelidium,genus,ncbi
+317100,Gelidium galapagense,species,Gelidium,genus,ncbi
+283680,Gelidium microphyllum,species,Gelidium,genus,ncbi
+283679,Gelidium longipes,species,Gelidium,genus,ncbi
+253180,Gelidium bernabei,species,Gelidium,genus,ncbi
+252831,Gelidium declerckii,species,Gelidium,genus,ncbi
+252830,Gelidium australe,species,Gelidium,genus,ncbi
+252829,Gelidium asperum,species,Gelidium,genus,ncbi
+252649,Gelidium omanense,species,Gelidium,genus,ncbi
+240213,Gelidium isabelae,species,Gelidium,genus,ncbi
+239734,Gelidium hommersandii,species,Gelidium,genus,ncbi
+210417,Gelidium japonicum,species,Gelidium,genus,ncbi
+194821,Gelidium pluma,species,Gelidium,genus,ncbi
+143013,Gelidium crinale,species,Gelidium,genus,ncbi
+143006,Gelidium rex,species,Gelidium,genus,ncbi
+143004,Gelidium microdonticum,species,Gelidium,genus,ncbi
+143003,Gelidium chilense,species,Gelidium,genus,ncbi
+101508,Gelidium tenuifolium,species,Gelidium,genus,ncbi
+82841,Gelidium subfastigiatum,species,Gelidium,genus,ncbi
+82840,Gelidium linoides,species,Gelidium,genus,ncbi
+58179,Gelidium pristoides,species,Gelidium,genus,ncbi
+58178,Gelidium arbuscula,species,Gelidium,genus,ncbi
+37202,Gelidium pteridifolium,species,Gelidium,genus,ncbi
+37201,Gelidium pacificum,species,Gelidium,genus,ncbi
+37200,Gelidium elegans,species,Gelidium,genus,ncbi
+37199,Gelidium abbottiorum,species,Gelidium,genus,ncbi
+37198,Gelidium divaricatum,species,Gelidium,genus,ncbi
+35171,Gelidium vagum,species,Gelidium,genus,ncbi
+31406,Gelidium sesquipedale,species,Gelidium,genus,ncbi
+31405,Gelidium serrulatum,species,Gelidium,genus,ncbi
+31404,Gelidium robustum,species,Gelidium,genus,ncbi
+31403,Gelidium pusillum,species,Gelidium,genus,ncbi
+31402,Gelidium purpurascens,species,Gelidium,genus,ncbi
+31401,Gelidium micropterum,species,Gelidium,genus,ncbi
+31400,Gelidium attenuatum,species,Gelidium,genus,ncbi
+28856,Gelidium capense,species,Gelidium,genus,ncbi
+28855,Gelidium canariensis,species,Gelidium,genus,ncbi
+28854,Gelidium americanum,species,Gelidium,genus,ncbi
+28853,Gelidium allanii,species,Gelidium,genus,ncbi
+28852,Gelidium pulchellum,species,Gelidium,genus,ncbi
+28851,Gelidium latifolium,species,Gelidium,genus,ncbi
+28850,Gelidium floridanum,species,Gelidium,genus,ncbi
+28849,Gelidium coulteri,species,Gelidium,genus,ncbi
+28016,Gelidium caulacantheum,species,Gelidium,genus,ncbi
+2812,Gelidium amansii,species,Gelidium,genus,ncbi
+796370,Gelinaria ulvoidea,species,Gelinaria,genus,ncbi
+332489,Georgiella confluens,species,Georgiella,genus,ncbi
+341002,Gigartina grandifida,species,Gigartina,genus,ncbi
+169075,Gigartina pectinata,species,Gigartina,genus,ncbi
+163840,Gigartina macrocarpa,species,Gigartina,genus,ncbi
+163340,Gigartina polycarpa,species,Gigartina,genus,ncbi
+163339,Gigartina pinnata,species,Gigartina,genus,ncbi
+163338,Gigartina bracteata,species,Gigartina,genus,ncbi
+163328,Gigartina cf. tuberculosa,species,Gigartina,genus,ncbi
+95353,Gigartina divaricata,species,Gigartina,genus,ncbi
+35183,Gigartina skottsbergii,species,Gigartina,genus,ncbi
+35182,Gigartina muelleriana,species,Gigartina,genus,ncbi
+35181,Gigartina clavifera,species,Gigartina,genus,ncbi
+33671,Gigartina radula,species,Gigartina,genus,ncbi
+33670,Gigartina pistillata,species,Gigartina,genus,ncbi
+33668,Gigartina clathrata,species,Gigartina,genus,ncbi
+33666,Gigartina atropurpurea,species,Gigartina,genus,ncbi
+33665,Gigartina alveata,species,Gigartina,genus,ncbi
+1578063,Glaphyrosiphon aucklandica,species,Glaphyrosiphon,genus,ncbi
+931256,Glaphyrosiphon chilensis,species,Glaphyrosiphon,genus,ncbi
+931255,Glaphyrosiphon lindaueri,species,Glaphyrosiphon,genus,ncbi
+931254,Glaphyrosiphon intestinalis,species,Glaphyrosiphon,genus,ncbi
+1197752,Glaphyrymenia pustulosa,species,Glaphyrymenia,genus,ncbi
+1635104,Gloiocallis dendroidea,species,Gloiocallis,genus,ncbi
+1780088,Gloiocladia saccata,species,Gloiocladia,genus,ncbi
+1399965,Gloiocladia japonica,species,Gloiocladia,genus,ncbi
+1074205,Gloiocladia atlantica,species,Gloiocladia,genus,ncbi
+997497,Gloiocladia australis,species,Gloiocladia,genus,ncbi
+620814,Gloiocladia repens,species,Gloiocladia,genus,ncbi
+620813,Gloiocladia iyoensis,species,Gloiocladia,genus,ncbi
+620812,Gloiocladia microspora,species,Gloiocladia,genus,ncbi
+620811,Gloiocladia pelicana,species,Gloiocladia,genus,ncbi
+620810,Gloiocladia tenuissima,species,Gloiocladia,genus,ncbi
+522302,Gloiocladia laciniata,species,Gloiocladia,genus,ncbi
+522301,Gloiocladia fryeana,species,Gloiocladia,genus,ncbi
+515838,Gloiocladia spinulosa,species,Gloiocladia,genus,ncbi
+397497,Gloiocladia fruticulosa,species,Gloiocladia,genus,ncbi
+397496,Gloiocladia furcata,species,Gloiocladia,genus,ncbi
+406708,Gloioderma polycarpum,species,Gloioderma,genus,ncbi
+406706,Gloioderma saccatum,species,Gloioderma,genus,ncbi
+406699,Gloioderma halymenioides,species,Gloioderma,genus,ncbi
+409941,Gloiopeltis tenax,species,Gloiopeltis,genus,ncbi
+42017,Gloiopeltis furcata,species,Gloiopeltis,genus,ncbi
+2824,Gloiopeltis complanata,species,Gloiopeltis,genus,ncbi
+1583022,Gloiosiphonia verticillaris,species,Gloiosiphonia,genus,ncbi
+257579,Gloiosiphonia capillaris,species,Gloiosiphonia,genus,ncbi
+282363,Gonimophyllum skottsbergii,species,Gonimophyllum,genus,ncbi
+1711607,Gracilaria manilaensis,species,Gracilaria,genus,ncbi
+1674929,Gracilaria babae,species,Gracilaria,genus,ncbi
+1577639,Gracilaria crassa,species,Gracilaria,genus,ncbi
+1574224,Gracilaria cearensis,species,Gracilaria,genus,ncbi
+1458456,Gracilaria rhodymenioides,species,Gracilaria,genus,ncbi
+1317110,Gracilaria irregularis,species,Gracilaria,genus,ncbi
+1187962,Gracilaria brasiliensis,species,Gracilaria,genus,ncbi
+1184158,Gracilaria ferox,species,Gracilaria,genus,ncbi
+1183060,Gracilaria isabellana,species,Gracilaria,genus,ncbi
+1172980,Gracilaria chouae,species,Gracilaria,genus,ncbi
+1077413,Gracilaria taiwanensis,species,Gracilaria,genus,ncbi
+1077395,Gracilaria truncata,species,Gracilaria,genus,ncbi
+1077394,Gracilaria stipitata,species,Gracilaria,genus,ncbi
+1064536,Gracilaria birdiae,species,Gracilaria,genus,ncbi
+997612,Gracilaria epihippisora,species,Gracilaria,genus,ncbi
+997611,Gracilaria dawsonii,species,Gracilaria,genus,ncbi
+997610,Gracilaria abbottiana,species,Gracilaria,genus,ncbi
+556281,Gracilaria debilis,species,Gracilaria,genus,ncbi
+556280,Gracilaria fergusonii,species,Gracilaria,genus,ncbi
+545167,Gracilaria cylindrica,species,Gracilaria,genus,ncbi
+448387,Gracilaria parvispora,species,Gracilaria,genus,ncbi
+448386,Gracilaria chorda,species,Gracilaria,genus,ncbi
+439548,Gracilaria coronopifolia,species,Gracilaria,genus,ncbi
+439547,Gracilaria dotyi,species,Gracilaria,genus,ncbi
+360295,Gracilaria huangii,species,Gracilaria,genus,ncbi
+356489,Gracilaria conferta,species,Gracilaria,genus,ncbi
+340926,Gracilaria confervoides,species,Gracilaria,genus,ncbi
+340451,Gracilaria incurvata,species,Gracilaria,genus,ncbi
+340450,Gracilaria cuneifolia,species,Gracilaria,genus,ncbi
+330876,Gracilaria firma,species,Gracilaria,genus,ncbi
+313411,Gracilaria asiatica,species,Gracilaria,genus,ncbi
+313410,Gracilaria cacalia,species,Gracilaria,genus,ncbi
+305691,Gracilaria punctata,species,Gracilaria,genus,ncbi
+305687,Gracilaria vieillardii,species,Gracilaria,genus,ncbi
+301533,Gracilaria dura,species,Gracilaria,genus,ncbi
+301532,Gracilaria longa,species,Gracilaria,genus,ncbi
+301531,Gracilaria armata,species,Gracilaria,genus,ncbi
+298876,Gracilaria articulata,species,Gracilaria,genus,ncbi
+298875,Gracilaria gigas,species,Gracilaria,genus,ncbi
+269665,Gracilaria oliveirarum,species,Gracilaria,genus,ncbi
+269646,Gracilaria yoneshigueana,species,Gracilaria,genus,ncbi
+269645,Gracilaria smithsoniensis,species,Gracilaria,genus,ncbi
+269643,Gracilaria galetensis,species,Gracilaria,genus,ncbi
+269640,Gracilaria hayi,species,Gracilaria,genus,ncbi
+257814,Gracilaria vermiculophylla,species,Gracilaria,genus,ncbi
+223961,Gracilaria millardetii,species,Gracilaria,genus,ncbi
+223960,Gracilaria denticulata,species,Gracilaria,genus,ncbi
+223959,Gracilaria corticata,species,Gracilaria,genus,ncbi
+223957,Gracilaria canaliculata,species,Gracilaria,genus,ncbi
+223956,Gracilaria aculeata,species,Gracilaria,genus,ncbi
+207925,Gracilaria venezuelensis,species,Gracilaria,genus,ncbi
+206548,Gracilaria cliftonii,species,Gracilaria,genus,ncbi
+203694,Gracilaria eucheumoides,species,Gracilaria,genus,ncbi
+203266,Gracilaria blodgettii,species,Gracilaria,genus,ncbi
+191042,Gracilaria foliifera,species,Gracilaria,genus,ncbi
+172974,Gracilaria urvilleii,species,Gracilaria,genus,ncbi
+172973,Gracilaria secundata,species,Gracilaria,genus,ncbi
+172972,Gracilaria spinulosa,species,Gracilaria,genus,ncbi
+172970,Gracilaria eucheumatoides,species,Gracilaria,genus,ncbi
+172969,Gracilaria changii,species,Gracilaria,genus,ncbi
+172968,Gracilaria salicornia,species,Gracilaria,genus,ncbi
+172967,Gracilaria arcuata,species,Gracilaria,genus,ncbi
+172966,Gracilaria edulis,species,Gracilaria,genus,ncbi
+172965,Gracilaria dentata,species,Gracilaria,genus,ncbi
+172964,Gracilaria capensis,species,Gracilaria,genus,ncbi
+172963,Gracilaria beckeri,species,Gracilaria,genus,ncbi
+172962,Gracilaria bursa-pastoris,species,Gracilaria,genus,ncbi
+172961,Gracilaria domingensis,species,Gracilaria,genus,ncbi
+172960,Gracilaria cervicornis,species,Gracilaria,genus,ncbi
+172959,Gracilaria crassissima,species,Gracilaria,genus,ncbi
+172957,Gracilaria curtissiae,species,Gracilaria,genus,ncbi
+172956,Gracilaria intermedia,species,Gracilaria,genus,ncbi
+172955,Gracilaria flabelliformis,species,Gracilaria,genus,ncbi
+172954,Gracilaria lacinulata,species,Gracilaria,genus,ncbi
+172953,Gracilaria caudata,species,Gracilaria,genus,ncbi
+172952,Gracilaria apiculata,species,Gracilaria,genus,ncbi
+172951,Gracilaria usneoides,species,Gracilaria,genus,ncbi
+172950,Gracilaria damaecornis,species,Gracilaria,genus,ncbi
+172949,Gracilaria textorii,species,Gracilaria,genus,ncbi
+172948,Gracilaria mammillaris,species,Gracilaria,genus,ncbi
+172947,Gracilaria occidentalis,species,Gracilaria,genus,ncbi
+172946,Gracilaria ornata,species,Gracilaria,genus,ncbi
+172945,Gracilaria multipartita,species,Gracilaria,genus,ncbi
+172944,Gracilaria cuneata,species,Gracilaria,genus,ncbi
+38400,Gracilaria robusta,species,Gracilaria,genus,ncbi
+31471,Gracilaria pacifica,species,Gracilaria,genus,ncbi
+31470,Gracilaria cornea,species,Gracilaria,genus,ncbi
+2779,Gracilaria tikvahiae,species,Gracilaria,genus,ncbi
+2777,Gracilaria gracilis,species,Gracilaria,genus,ncbi
+2776,Gracilaria tenuistipitata,species,Gracilaria,genus,ncbi
+2775,Gracilaria chilensis,species,Gracilaria,genus,ncbi
+42480,Gracilariophila oryzoides,species,Gracilariophila,genus,ncbi
+1399953,Gracilariopsis bailiniae,species,Gracilariopsis,genus,ncbi
+1042181,Gracilariopsis silvana,species,Gracilariopsis,genus,ncbi
+1042180,Gracilariopsis carolinensis,species,Gracilariopsis,genus,ncbi
+1042179,Gracilariopsis hommersandii,species,Gracilariopsis,genus,ncbi
+1042171,Gracilariopsis cata-luziana,species,Gracilariopsis,genus,ncbi
+486814,Gracilariopsis persica,species,Gracilariopsis,genus,ncbi
+486813,Gracilariopsis mclachlanii,species,Gracilariopsis,genus,ncbi
+486812,Gracilariopsis funicularis,species,Gracilariopsis,genus,ncbi
+408198,Gracilariopsis andersonii,species,Gracilariopsis,genus,ncbi
+342824,Gracilariopsis nhatrangensis,species,Gracilariopsis,genus,ncbi
+224259,Gracilariopsis funiculus,species,Gracilariopsis,genus,ncbi
+172982,Gracilariopsis costaricensis,species,Gracilariopsis,genus,ncbi
+172980,Gracilariopsis megaspora,species,Gracilariopsis,genus,ncbi
+172979,Gracilariopsis sjoestedtii,species,Gracilariopsis,genus,ncbi
+172978,Gracilariopsis heteroclada,species,Gracilariopsis,genus,ncbi
+172976,Gracilariopsis longissima,species,Gracilariopsis,genus,ncbi
+38299,Gracilariopsis cf. lemaneiformis,species,Gracilariopsis,genus,ncbi
+31472,Gracilariopsis tenuifrons,species,Gracilariopsis,genus,ncbi
+2782,Gracilariopsis lemaneiformis,species,Gracilariopsis,genus,ncbi
+525895,Grania efflorescens,species,Grania,genus,ncbi
+525895,Grania efflorescens,species,Grania,genus,ncbi
+1660227,Grateloupia fastigiata,species,Grateloupia,genus,ncbi
+1562373,Grateloupia proteus,species,Grateloupia,genus,ncbi
+1561944,Grateloupia chiangii,species,Grateloupia,genus,ncbi
+1547598,Grateloupia denticulata,species,Grateloupia,genus,ncbi
+1400247,Grateloupia prolifera,species,Grateloupia,genus,ncbi
+1347085,Grateloupia angusta,species,Grateloupia,genus,ncbi
+1260292,Grateloupia taiwanensis,species,Grateloupia,genus,ncbi
+1260291,Grateloupia gibbesii,species,Grateloupia,genus,ncbi
+1134035,Grateloupia okamurae,species,Grateloupia,genus,ncbi
+1068724,Grateloupia orientalis,species,Grateloupia,genus,ncbi
+1000459,Grateloupia yangjiangensis,species,Grateloupia,genus,ncbi
+884980,Grateloupia ovata,species,Grateloupia,genus,ncbi
+795833,Grateloupia violacea,species,Grateloupia,genus,ncbi
+557418,Grateloupia californica,species,Grateloupia,genus,ncbi
+417830,Grateloupia lanceola,species,Grateloupia,genus,ncbi
+321989,Grateloupia capensis,species,Grateloupia,genus,ncbi
+313580,Grateloupia hawaiiana,species,Grateloupia,genus,ncbi
+313579,Grateloupia belangeri,species,Grateloupia,genus,ncbi
+313577,Grateloupia phuquocensis,species,Grateloupia,genus,ncbi
+313576,Grateloupia somalensis,species,Grateloupia,genus,ncbi
+288766,Grateloupia urvilleana,species,Grateloupia,genus,ncbi
+260582,Grateloupia minima,species,Grateloupia,genus,ncbi
+260578,Grateloupia luxurians,species,Grateloupia,genus,ncbi
+237475,Grateloupia subpectinata,species,Grateloupia,genus,ncbi
+222714,Grateloupia huertana,species,Grateloupia,genus,ncbi
+203894,Grateloupia americana,species,Grateloupia,genus,ncbi
+203893,Grateloupia stipitata,species,Grateloupia,genus,ncbi
+203892,Grateloupia schizophylla,species,Grateloupia,genus,ncbi
+203891,Grateloupia ramossissima,species,Grateloupia,genus,ncbi
+203890,Grateloupia filiformis,species,Grateloupia,genus,ncbi
+203889,Grateloupia dichotoma,species,Grateloupia,genus,ncbi
+185956,Grateloupia doryphora,species,Grateloupia,genus,ncbi
+176236,Grateloupia porcea,species,Grateloupia,genus,ncbi
+169076,Grateloupia johnstonii,species,Grateloupia,genus,ncbi
+151735,Grateloupia asiatica,species,Grateloupia,genus,ncbi
+151734,Grateloupia acuminata,species,Grateloupia,genus,ncbi
+151733,Grateloupia lanceolata,species,Grateloupia,genus,ncbi
+151732,Grateloupia sparsa,species,Grateloupia,genus,ncbi
+128531,Grateloupia versicolor,species,Grateloupia,genus,ncbi
+118375,Grateloupia turuturu,species,Grateloupia,genus,ncbi
+118374,Grateloupia livida,species,Grateloupia,genus,ncbi
+118373,Grateloupia kurogii,species,Grateloupia,genus,ncbi
+118372,Grateloupia imbricata,species,Grateloupia,genus,ncbi
+118371,Grateloupia elliptica,species,Grateloupia,genus,ncbi
+118370,Grateloupia divaricata,species,Grateloupia,genus,ncbi
+118369,Grateloupia catenata,species,Grateloupia,genus,ncbi
+118368,Grateloupia carnosa,species,Grateloupia,genus,ncbi
+38373,Grateloupia longifolia,species,Grateloupia,genus,ncbi
+31455,Grateloupia filicina,species,Grateloupia,genus,ncbi
+997799,Griffithsia subcylindrica,species,Griffithsia,genus,ncbi
+997782,Griffithsia schousboei,species,Griffithsia,genus,ncbi
+997781,Griffithsia heteromorpha,species,Griffithsia,genus,ncbi
+536595,Griffithsia corallina,species,Griffithsia,genus,ncbi
+291168,Griffithsia okiensis,species,Griffithsia,genus,ncbi
+291167,Griffithsia koreana,species,Griffithsia,genus,ncbi
+242732,Griffithsia traversii,species,Griffithsia,genus,ncbi
+242731,Griffithsia tomo-yamadae,species,Griffithsia,genus,ncbi
+242730,Griffithsia teges,species,Griffithsia,genus,ncbi
+242729,Griffithsia corallinoides,species,Griffithsia,genus,ncbi
+242728,Griffithsia antarctica,species,Griffithsia,genus,ncbi
+83288,Griffithsia japonica,species,Griffithsia,genus,ncbi
+42003,Griffithsia monilis,species,Griffithsia,genus,ncbi
+35689,Griffithsia pacifica,species,Griffithsia,genus,ncbi
+35159,Griffithsia globulifera,species,Griffithsia,genus,ncbi
+1310127,Gulsonia nodulosa,species,Gulsonia,genus,ncbi
+1874423,Gymnogongrus guadalupensis,species,Gymnogongrus,genus,ncbi
+207662,Gymnogongrus martinensis,species,Gymnogongrus,genus,ncbi
+181224,Gymnogongrus johnstonii,species,Gymnogongrus,genus,ncbi
+38549,Gymnogongrus torulosus,species,Gymnogongrus,genus,ncbi
+38548,Gymnogongrus furcatus,species,Gymnogongrus,genus,ncbi
+38547,Gymnogongrus antarcticus,species,Gymnogongrus,genus,ncbi
+38546,Gymnogongrus griffithsiae,species,Gymnogongrus,genus,ncbi
+38545,Gymnogongrus crenulatus,species,Gymnogongrus,genus,ncbi
+38474,Gymnogongrus dilatatus,species,Gymnogongrus,genus,ncbi
+31440,Gymnogongrus turquetii,species,Gymnogongrus,genus,ncbi
+193182,Gymnothamnion elegans,species,Gymnothamnion,genus,ncbi
+867924,Haemescharia polygyna,species,Haemescharia,genus,ncbi
+1880591,Halarachnion parvum,species,Halarachnion,genus,ncbi
+1545846,Halarachnion louisianensis,species,Halarachnion,genus,ncbi
+1545845,Halarachnion latissimum,species,Halarachnion,genus,ncbi
+31423,Halarachnion ligulatum,species,Halarachnion,genus,ncbi
+662037,Halichrysis corallinarius,species,Halichrysis,genus,ncbi
+367038,Halichrysis concrescens,species,Halichrysis,genus,ncbi
+38335,Halichrysis micans,species,Halichrysis,genus,ncbi
+1405420,Halopeltis willisii,species,Halopeltis,genus,ncbi
+1188050,Halopeltis pellucida,species,Halopeltis,genus,ncbi
+1188048,Halopeltis adnata,species,Halopeltis,genus,ncbi
+748755,Halopeltis gracilis,species,Halopeltis,genus,ncbi
+748754,Halopeltis prostrata,species,Halopeltis,genus,ncbi
+748681,Halopeltis austrina,species,Halopeltis,genus,ncbi
+748680,Halopeltis verrucosa,species,Halopeltis,genus,ncbi
+522300,Halopeltis australis,species,Halopeltis,genus,ncbi
+121067,Halopithys incurva,species,Halopithys,genus,ncbi
+1550624,Halurus equisetifolius,species,Halurus,genus,ncbi
+189638,Halurus flosculosus,species,Halurus,genus,ncbi
+189652,Halydictyon mirabile,species,Halydictyon,genus,ncbi
+1864486,Halymenia cf. pseudofloresii,species,Halymenia,genus,ncbi
+1864485,Halymenia cf. floresii,species,Halymenia,genus,ncbi
+1674931,Halymenia malaysiana,species,Halymenia,genus,ncbi
+1583026,Halymenia californica,species,Halymenia,genus,ncbi
+1506554,Halymenia latifolia,species,Halymenia,genus,ncbi
+1276176,Halymenia tondoana,species,Halymenia,genus,ncbi
+1276175,Halymenia harveyana,species,Halymenia,genus,ncbi
+997820,Halymenia stipitata,species,Halymenia,genus,ncbi
+795832,Halymenia abyssicola,species,Halymenia,genus,ncbi
+795831,Halymenia actinophysa,species,Halymenia,genus,ncbi
+672353,Halymenia pseudofloresii,species,Halymenia,genus,ncbi
+417829,Halymenia formosa,species,Halymenia,genus,ncbi
+370307,Halymenia schizymenioides,species,Halymenia,genus,ncbi
+313575,Halymenia durvillei,species,Halymenia,genus,ncbi
+260215,Halymenia sinensis,species,Halymenia,genus,ncbi
+185957,Halymenia floridana,species,Halymenia,genus,ncbi
+159591,Halymenia maculata,species,Halymenia,genus,ncbi
+118377,Halymenia floresii,species,Halymenia,genus,ncbi
+118376,Halymenia dilatata,species,Halymenia,genus,ncbi
+42021,Halymenia plana,species,Halymenia,genus,ncbi
+1210007,Haraldiophyllum udoensis,species,Haraldiophyllum,genus,ncbi
+167977,Haraldiophyllum bonnemaisonii,species,Haraldiophyllum,genus,ncbi
+131105,Haraldiophyllum mirabile,species,Haraldiophyllum,genus,ncbi
+131066,Haraldiophyllum ramirezii,species,Haraldiophyllum,genus,ncbi
+282355,Harveyella mirabilis,species,Harveyella,genus,ncbi
+1792818,Helminthocladia densa,species,Helminthocladia,genus,ncbi
+1286232,Helminthocladia kempii,species,Helminthocladia,genus,ncbi
+997925,Helminthocladia rhizoidea,species,Helminthocladia,genus,ncbi
+935651,Helminthocladia calvadosii,species,Helminthocladia,genus,ncbi
+908973,Helminthocladia hudsonii,species,Helminthocladia,genus,ncbi
+260093,Helminthocladia australis,species,Helminthocladia,genus,ncbi
+1653317,Helminthora lindaueri,species,Helminthora,genus,ncbi
+908974,Helminthora divaricata,species,Helminthora,genus,ncbi
+268575,Helminthora australis,species,Helminthora,genus,ncbi
+131068,Hemineura frondosa,species,Hemineura,genus,ncbi
+259825,Hennedya crispa,species,Hennedya,genus,ncbi
+38380,Heringia mirabilis,species,Heringia,genus,ncbi
+397019,Herpochondria corallinae,species,Herpochondria,genus,ncbi
+326259,Herpochondria elegans,species,Herpochondria,genus,ncbi
+1583027,Herposiphonia verticillata,species,Herposiphonia,genus,ncbi
+1424641,Herposiphonia secunda,species,Herposiphonia,genus,ncbi
+1261569,Herposiphonia parca,species,Herposiphonia,genus,ncbi
+1308468,Heterodasya mucronata,species,Heterodasya,genus,ncbi
+131070,Heterodoxia denticulata,species,Heterodoxia,genus,ncbi
+332495,Heteroptilon pappeanum,species,Heteroptilon,genus,ncbi
+997926,Heterosiphonia crispella,species,Heterosiphonia,genus,ncbi
+756401,Heterosiphonia densiuscula,species,Heterosiphonia,genus,ncbi
+189631,Heterosiphonia pulchra,species,Heterosiphonia,genus,ncbi
+189630,Heterosiphonia muelleri,species,Heterosiphonia,genus,ncbi
+189629,Heterosiphonia japonica,species,Heterosiphonia,genus,ncbi
+189628,Heterosiphonia gunniana,species,Heterosiphonia,genus,ncbi
+94301,Heterosiphonia plumosa,species,Heterosiphonia,genus,ncbi
+94297,Heterosiphonia gibbesii,species,Heterosiphonia,genus,ncbi
+212751,Hildenbrandia patula,species,Hildenbrandia,genus,ncbi
+212750,Hildenbrandia dawsonii,species,Hildenbrandia,genus,ncbi
+212747,Hildenbrandia lecannellieri,species,Hildenbrandia,genus,ncbi
+135206,Hildenbrandia rivularis,species,Hildenbrandia,genus,ncbi
+135205,Hildenbrandia crouanii,species,Hildenbrandia,genus,ncbi
+108286,Hildenbrandia occidentalis,species,Hildenbrandia,genus,ncbi
+108285,Hildenbrandia angolensis,species,Hildenbrandia,genus,ncbi
+31481,Hildenbrandia rubra,species,Hildenbrandia,genus,ncbi
+31480,Hildenbrandia prototypus,species,Hildenbrandia,genus,ncbi
+710542,Hollenbergia subulata,species,Hollenbergia,genus,ncbi
+710541,Hollenbergia nigricans,species,Hollenbergia,genus,ncbi
+130878,Holmesia capensis,species,Holmesia,genus,ncbi
+282361,Holmsella australis,species,Holmsella,genus,ncbi
+282360,Holmsella pachyderma,species,Holmsella,genus,ncbi
+257592,Hummbrella hydra,species,Hummbrella,genus,ncbi
+142510,Hyalosiphonia caespitosa,species,Hyalosiphonia,genus,ncbi
+1232878,Hydropuntia fisheri,species,Hydropuntia,genus,ncbi
+1232877,Hydropuntia multifurcata,species,Hydropuntia,genus,ncbi
+1232876,Hydropuntia changii,species,Hydropuntia,genus,ncbi
+1232873,Hydropuntia preissiana,species,Hydropuntia,genus,ncbi
+448389,Hydropuntia edulis,species,Hydropuntia,genus,ncbi
+356490,Hydropuntia cornea,species,Hydropuntia,genus,ncbi
+338881,Hydropuntia rangiferina,species,Hydropuntia,genus,ncbi
+269642,Hydropuntia secunda,species,Hydropuntia,genus,ncbi
+197869,Hydropuntia perplexa,species,Hydropuntia,genus,ncbi
+191046,Hydropuntia pauciramosa,species,Hydropuntia,genus,ncbi
+1583023,Hymenena multiloba,species,Hymenena,genus,ncbi
+1077400,Hymenena durvillei,species,Hymenena,genus,ncbi
+994792,Hymenena kylinii,species,Hymenena,genus,ncbi
+158645,Hymenena venosa,species,Hymenena,genus,ncbi
+158644,Hymenena palmata,species,Hymenena,genus,ncbi
+158643,Hymenena multipartita,species,Hymenena,genus,ncbi
+130883,Hymenena laciniata,species,Hymenena,genus,ncbi
+130882,Hymenena fryeana,species,Hymenena,genus,ncbi
+130881,Hymenena flabelligera,species,Hymenena,genus,ncbi
+130880,Hymenena curdieana,species,Hymenena,genus,ncbi
+128539,Hymenena falklandica,species,Hymenena,genus,ncbi
+1848507,Hymenocladia conspersa,species,Hymenocladia,genus,ncbi
+1827008,Hymenocladia usnea,species,Hymenocladia,genus,ncbi
+91060,Hymenocladia chondricola,species,Hymenocladia,genus,ncbi
+322167,Hymenocladiopsis prolifera,species,Hymenocladiopsis,genus,ncbi
+38333,Hymenocladiopsis crustigena,species,Hymenocladiopsis,genus,ncbi
+1866962,Hypnea brasiliensis,species,Hypnea,genus,ncbi
+1545697,Hypnea pseudomusciformis,species,Hypnea,genus,ncbi
+1524268,Hypnea cf. musciformis,species,Hypnea,genus,ncbi
+1524266,Hypnea flava,species,Hypnea,genus,ncbi
+1524265,Hypnea edeniana,species,Hypnea,genus,ncbi
+673454,Hypnea caespitosa,species,Hypnea,genus,ncbi
+673453,Hypnea asiatica,species,Hypnea,genus,ncbi
+673452,Hypnea viridis,species,Hypnea,genus,ncbi
+673451,Hypnea tenuis,species,Hypnea,genus,ncbi
+673450,Hypnea rosea,species,Hypnea,genus,ncbi
+673449,Hypnea nidulans,species,Hypnea,genus,ncbi
+673448,Hypnea nidifica,species,Hypnea,genus,ncbi
+387623,Hypnea cervicornis,species,Hypnea,genus,ncbi
+257580,Hypnea ramentacea,species,Hypnea,genus,ncbi
+223962,Hypnea spicifera,species,Hypnea,genus,ncbi
+213656,Hypnea yamadae,species,Hypnea,genus,ncbi
+213655,Hypnea stellulifera,species,Hypnea,genus,ncbi
+202272,Hypnea valentiae,species,Hypnea,genus,ncbi
+164054,Hypnea volubilis,species,Hypnea,genus,ncbi
+164053,Hypnea boergesenii,species,Hypnea,genus,ncbi
+105608,Hypnea spinella,species,Hypnea,genus,ncbi
+105607,Hypnea pannosa,species,Hypnea,genus,ncbi
+105606,Hypnea japonica,species,Hypnea,genus,ncbi
+105605,Hypnea flexicaulis,species,Hypnea,genus,ncbi
+105604,Hypnea flagelliformis,species,Hypnea,genus,ncbi
+105603,Hypnea cornuta,species,Hypnea,genus,ncbi
+105602,Hypnea chordacea,species,Hypnea,genus,ncbi
+105601,Hypnea charoides,species,Hypnea,genus,ncbi
+31429,Hypnea musciformis,species,Hypnea,genus,ncbi
+997931,Hypneocolax stellaris,species,Hypneocolax,genus,ncbi
+997933,Hypoglossum rhizophorum,species,Hypoglossum,genus,ncbi
+158647,Hypoglossum hypoglossoides,species,Hypoglossum,genus,ncbi
+158646,Hypoglossum anomalum,species,Hypoglossum,genus,ncbi
+1265889,Incendia crenata,species,Incendia,genus,ncbi
+1265888,Incendia undulata,species,Incendia,genus,ncbi
+1265886,Incendia basilii,species,Incendia,genus,ncbi
+1265883,Incendia glabra,species,Incendia,genus,ncbi
+1265880,Incendia cryptotricha,species,Incendia,genus,ncbi
+1265877,Incendia regularis,species,Incendia,genus,ncbi
+123988,Inkyuleea mariana,species,Inkyuleea,genus,ncbi
+123987,Inkyuleea ballioides,species,Inkyuleea,genus,ncbi
+536597,Involucrana crassa,species,Involucrana,genus,ncbi
+168822,Iridaea micans,species,Iridaea,genus,ncbi
+38343,Iridaea tuberculosa,species,Iridaea,genus,ncbi
+29225,Iridaea cordata,species,Iridaea,genus,ncbi
+169083,Iridophycus sinicola,species,Iridophycus,genus,ncbi
+169082,Iridophycus reediae,species,Iridophycus,genus,ncbi
+169081,Iridophycus fulgens,species,Iridophycus,genus,ncbi
+169080,Iridophycus coriaceum,species,Iridophycus,genus,ncbi
+645529,Irtugovia pacifica,species,Irtugovia,genus,ncbi
+261725,Irvinea boergesenii,species,Irvinea,genus,ncbi
+81611,Irvinea ardreana,species,Irvinea,genus,ncbi
+1653393,Izziella hommersandii,species,Izziella,genus,ncbi
+1653390,Izziella kuroshioensis,species,Izziella,genus,ncbi
+1653389,Izziella formosana,species,Izziella,genus,ncbi
+284066,Izziella orientalis,species,Izziella,genus,ncbi
+860634,Janczewskia morimotoi,species,Janczewskia,genus,ncbi
+860633,Janczewskia hawaiiana,species,Janczewskia,genus,ncbi
+1789643,Judithia delicatissima,species,Judithia,genus,ncbi
+1550625,Kallymenia crouaniorum,species,Kallymenia,genus,ncbi
+1472009,Kallymenia lacerata,species,Kallymenia,genus,ncbi
+1233030,Kallymenia cribrogloea,species,Kallymenia,genus,ncbi
+997935,Kallymenia thompsonii,species,Kallymenia,genus,ncbi
+997934,Kallymenia sessilis,species,Kallymenia,genus,ncbi
+529244,Kallymenia requienii,species,Kallymenia,genus,ncbi
+529243,Kallymenia patens,species,Kallymenia,genus,ncbi
+529242,Kallymenia feldmannii,species,Kallymenia,genus,ncbi
+217484,Kallymenia limminghii,species,Kallymenia,genus,ncbi
+217483,Kallymenia cribrosa,species,Kallymenia,genus,ncbi
+142492,Kallymenia tasmanica,species,Kallymenia,genus,ncbi
+128532,Kallymenia rosea,species,Kallymenia,genus,ncbi
+40406,Kallymenia reniformis,species,Kallymenia,genus,ncbi
+38555,Kallymenia antarctica,species,Kallymenia,genus,ncbi
+217486,Kallymeniopsis oblongifructa,species,Kallymeniopsis,genus,ncbi
+1450167,Kappaphycus inermis,species,Kappaphycus,genus,ncbi
+1408293,Kappaphycus malesianus,species,Kappaphycus,genus,ncbi
+88410,Kappaphycus striatus,species,Kappaphycus,genus,ncbi
+88409,Kappaphycus cottonii,species,Kappaphycus,genus,ncbi
+38544,Kappaphycus alvarezii,species,Kappaphycus,genus,ncbi
+1399955,Kintokiocolax aggregato-cerantha,species,Kintokiocolax,genus,ncbi
+142512,Kraftia dichotoma,species,Kraftia,genus,ncbi
+228262,Kuetzingia canaliculata,species,Kuetzingia,genus,ncbi
+1631798,Kumanoa montagnei,species,Kumanoa,genus,ncbi
+1443915,Kumanoa gibberosa,species,Kumanoa,genus,ncbi
+1343919,Kumanoa capensis,species,Kumanoa,genus,ncbi
+1232734,Kumanoa intorta,species,Kumanoa,genus,ncbi
+1196392,Kumanoa holtonii,species,Kumanoa,genus,ncbi
+1196391,Kumanoa louisianae,species,Kumanoa,genus,ncbi
+1196390,Kumanoa gracillima,species,Kumanoa,genus,ncbi
+1196388,Kumanoa tabagatenensis,species,Kumanoa,genus,ncbi
+1196387,Kumanoa mahlacensis,species,Kumanoa,genus,ncbi
+1196386,Kumanoa faroensis,species,Kumanoa,genus,ncbi
+1196385,Kumanoa iriomotensis,species,Kumanoa,genus,ncbi
+1196380,Kumanoa curvata,species,Kumanoa,genus,ncbi
+1196379,Kumanoa novaecaledonensis,species,Kumanoa,genus,ncbi
+1196378,Kumanoa gudjewga,species,Kumanoa,genus,ncbi
+1196377,Kumanoa americana,species,Kumanoa,genus,ncbi
+1196376,Kumanoa procarpa,species,Kumanoa,genus,ncbi
+1196375,Kumanoa skujana,species,Kumanoa,genus,ncbi
+1196374,Kumanoa vittata,species,Kumanoa,genus,ncbi
+723659,Kumanoa globospora,species,Kumanoa,genus,ncbi
+723658,Kumanoa equisetoidea,species,Kumanoa,genus,ncbi
+723657,Kumanoa cipoensis,species,Kumanoa,genus,ncbi
+723656,Kumanoa breviarticulata,species,Kumanoa,genus,ncbi
+723655,Kumanoa amazonensis,species,Kumanoa,genus,ncbi
+723654,Kumanoa abilii,species,Kumanoa,genus,ncbi
+644274,Kumanoa spermatiophora,species,Kumanoa,genus,ncbi
+644273,Kumanoa ambigua,species,Kumanoa,genus,ncbi
+644272,Kumanoa virgatodecaisneana,species,Kumanoa,genus,ncbi
+644270,Kumanoa australica,species,Kumanoa,genus,ncbi
+1858662,Laurencia snackeyi,species,Laurencia,genus,ncbi
+1617885,Laurencia coelenterata,species,Laurencia,genus,ncbi
+1583034,Laurencia saitoi,species,Laurencia,genus,ncbi
+1534569,Laurencia cf. brongniartii MCGR-2014a,species,Laurencia,genus,ncbi
+1380052,Laurencia laurahuertana,species,Laurencia,genus,ncbi
+1167837,Laurencia oliveirana,species,Laurencia,genus,ncbi
+1167835,Laurencia aldingensis,species,Laurencia,genus,ncbi
+998119,Laurencia tenera,species,Laurencia,genus,ncbi
+997939,Laurencia galtsoffii,species,Laurencia,genus,ncbi
+997938,Laurencia decumbens,species,Laurencia,genus,ncbi
+997937,Laurencia crustiformans,species,Laurencia,genus,ncbi
+997936,Laurencia brachyclados,species,Laurencia,genus,ncbi
+860636,Laurencia nipponica,species,Laurencia,genus,ncbi
+860635,Laurencia mcdermidiae,species,Laurencia,genus,ncbi
+700169,Laurencia dendroidea,species,Laurencia,genus,ncbi
+689811,Laurencia pyramidalis,species,Laurencia,genus,ncbi
+689810,Laurencia cf. nidifica,species,Laurencia,genus,ncbi
+689809,Laurencia nidifica,species,Laurencia,genus,ncbi
+689808,Laurencia cf. mcdermidiae,species,Laurencia,genus,ncbi
+689807,Laurencia cf. mariannensis,species,Laurencia,genus,ncbi
+689805,Laurencia cf. kuetzingii,species,Laurencia,genus,ncbi
+689798,Laurencia cf. majuscula,species,Laurencia,genus,ncbi
+681646,Laurencia caduciramulosa,species,Laurencia,genus,ncbi
+470949,Laurencia majuscula,species,Laurencia,genus,ncbi
+469475,Laurencia caraibica,species,Laurencia,genus,ncbi
+424516,Laurencia venusta,species,Laurencia,genus,ncbi
+324766,Laurencia rigida,species,Laurencia,genus,ncbi
+290688,Laurencia pacifica,species,Laurencia,genus,ncbi
+288677,Laurencia scoparia,species,Laurencia,genus,ncbi
+209200,Laurencia paniculata,species,Laurencia,genus,ncbi
+201072,Laurencia tronoi,species,Laurencia,genus,ncbi
+201071,Laurencia patentiramea,species,Laurencia,genus,ncbi
+201069,Laurencia flexilis,species,Laurencia,genus,ncbi
+197330,Laurencia natalensis,species,Laurencia,genus,ncbi
+197329,Laurencia intricata,species,Laurencia,genus,ncbi
+197328,Laurencia flexuosa,species,Laurencia,genus,ncbi
+197327,Laurencia complanata,species,Laurencia,genus,ncbi
+197326,Laurencia catarinensis,species,Laurencia,genus,ncbi
+197325,Laurencia brongniartii,species,Laurencia,genus,ncbi
+197323,Laurencia translucida,species,Laurencia,genus,ncbi
+159594,Laurencia pinnatifida,species,Laurencia,genus,ncbi
+137763,Laurencia obtusa,species,Laurencia,genus,ncbi
+110462,Laurencia filiformis,species,Laurencia,genus,ncbi
+99904,Laurencia viridis,species,Laurencia,genus,ncbi
+99903,Laurencia thyrsifera,species,Laurencia,genus,ncbi
+99902,Laurencia cf. perforata,species,Laurencia,genus,ncbi
+282357,Leachiella pacifica,species,Leachiella,genus,ncbi
+536599,Lejolisia pacifica,species,Lejolisia,genus,ncbi
+1652147,Lemanea manipurensis,species,Lemanea,genus,ncbi
+259681,Lemanea torulosa,species,Lemanea,genus,ncbi
+69148,Lemanea fucina,species,Lemanea,genus,ncbi
+69146,Lemanea borealis,species,Lemanea,genus,ncbi
+67900,Lemanea fluviatilis,species,Lemanea,genus,ncbi
+159725,Lembergia allanii,species,Lembergia,genus,ncbi
+1789647,Leniea lubrica,species,Leniea,genus,ncbi
+228258,Lenormandia marginata,species,Lenormandia,genus,ncbi
+155554,Lenormandia spectabilis,species,Lenormandia,genus,ncbi
+155553,Lenormandia smithiae,species,Lenormandia,genus,ncbi
+155552,Lenormandia pardalis,species,Lenormandia,genus,ncbi
+155551,Lenormandia latifolia,species,Lenormandia,genus,ncbi
+155550,Lenormandia angustifolia,species,Lenormandia,genus,ncbi
+110478,Lenormandia muelleri,species,Lenormandia,genus,ncbi
+110466,Lenormandia prolifera,species,Lenormandia,genus,ncbi
+1583065,Leptocladia binghamiae,species,Leptocladia,genus,ncbi
+31419,Leptocladia conferta,species,Leptocladia,genus,ncbi
+1719028,Leptofauchea munseomica,species,Leptofauchea,genus,ncbi
+1719027,Leptofauchea cocosana,species,Leptofauchea,genus,ncbi
+1104995,Leptofauchea leptophylla,species,Leptofauchea,genus,ncbi
+406715,Leptofauchea chiloensis,species,Leptofauchea,genus,ncbi
+406714,Leptofauchea rhodymenioides,species,Leptofauchea,genus,ncbi
+406713,Leptofauchea nitophylloides,species,Leptofauchea,genus,ncbi
+406712,Leptofauchea earleae,species,Leptofauchea,genus,ncbi
+319519,Leptofauchea pacifica,species,Leptofauchea,genus,ncbi
+680465,Leptophyllis conferta,species,Leptophyllis,genus,ncbi
+1261571,Leptosiphonia schousboei,species,Leptosiphonia,genus,ncbi
+81613,Leptosomia rosea,species,Leptosomia,genus,ncbi
+860638,Leveillea jungermannioides,species,Leveillea,genus,ncbi
+1635109,Liagora nesophila,species,Liagora,genus,ncbi
+998120,Liagora robusta,species,Liagora,genus,ncbi
+935654,Liagora pectinata,species,Liagora,genus,ncbi
+935653,Liagora distenta,species,Liagora,genus,ncbi
+406719,Liagora viscida,species,Liagora,genus,ncbi
+406718,Liagora harveyana,species,Liagora,genus,ncbi
+406717,Liagora australasica,species,Liagora,genus,ncbi
+268576,Liagora mannarensis,species,Liagora,genus,ncbi
+260095,Liagora ceranoides,species,Liagora,genus,ncbi
+260094,Liagora boergesenii,species,Liagora,genus,ncbi
+259035,Liagora donaldiana,species,Liagora,genus,ncbi
+259033,Liagora julieae,species,Liagora,genus,ncbi
+259032,Liagora albicans,species,Liagora,genus,ncbi
+1653392,Liagoropsis maxima,species,Liagoropsis,genus,ncbi
+1826921,Lomentaria divaricata,species,Lomentaria,genus,ncbi
+1550533,Lomentaria clavellosa,species,Lomentaria,genus,ncbi
+1073995,Lomentaria rawitsheri,species,Lomentaria,genus,ncbi
+569520,Lomentaria pinnata,species,Lomentaria,genus,ncbi
+515839,Lomentaria articulata,species,Lomentaria,genus,ncbi
+406729,Lomentaria orcadensis,species,Lomentaria,genus,ncbi
+42025,Lomentaria australis,species,Lomentaria,genus,ncbi
+38336,Lomentaria catenata,species,Lomentaria,genus,ncbi
+35207,Lomentaria baileyana,species,Lomentaria,genus,ncbi
+31500,Lomentaria hakodatensis,species,Lomentaria,genus,ncbi
+998121,Lophocladia kipukaia,species,Lophocladia,genus,ncbi
+94299,Lophocladia trichoclados,species,Lophocladia,genus,ncbi
+1424638,Lophosiphonia reptabunda,species,Lophosiphonia,genus,ncbi
+159727,Lophothalia hormoclados,species,Lophothalia,genus,ncbi
+158692,Loranthophycus californica,species,Loranthophycus,genus,ncbi
+1364881,Macrocarpus perennis,species,Macrocarpus,genus,ncbi
+998124,Malaconema minimum,species,Malaconema,genus,ncbi
+756402,Marionella schmitziana,species,Marionella,genus,ncbi
+158694,Marionella prolifera,species,Marionella,genus,ncbi
+261724,Maripelta rotata,species,Maripelta,genus,ncbi
+1690264,Martensia albida,species,Martensia,genus,ncbi
+1364889,Martensia taiwanifretensis,species,Martensia,genus,ncbi
+1364888,Martensia leeii,species,Martensia,genus,ncbi
+1364887,Martensia kentingii,species,Martensia,genus,ncbi
+1364886,Martensia jejuensis,species,Martensia,genus,ncbi
+1364885,Martensia denticulata,species,Martensia,genus,ncbi
+1364884,Martensia bibarii,species,Martensia,genus,ncbi
+608514,Martensia speciosa,species,Martensia,genus,ncbi
+236485,Martensia lewisiae,species,Martensia,genus,ncbi
+236484,Martensia formosana,species,Martensia,genus,ncbi
+159498,Martensia cf. fragilis,species,Martensia,genus,ncbi
+158716,Martensia pavonia,species,Martensia,genus,ncbi
+158715,Martensia fragilis,species,Martensia,genus,ncbi
+158714,Martensia flabelliformis,species,Martensia,genus,ncbi
+158713,Martensia elegans,species,Martensia,genus,ncbi
+158696,Martensia australis,species,Martensia,genus,ncbi
+1088775,Mastocarpus vancouveriensis,species,Mastocarpus,genus,ncbi
+1088774,Mastocarpus rigidus,species,Mastocarpus,genus,ncbi
+1088773,Mastocarpus latissimus,species,Mastocarpus,genus,ncbi
+1088772,Mastocarpus intermedius,species,Mastocarpus,genus,ncbi
+1088771,Mastocarpus cristatus,species,Mastocarpus,genus,ncbi
+1088770,Mastocarpus californianus,species,Mastocarpus,genus,ncbi
+1088769,Mastocarpus alaskensis,species,Mastocarpus,genus,ncbi
+1088766,Mastocarpus agardhii,species,Mastocarpus,genus,ncbi
+1051344,Mastocarpus jardinii complex,no rank,Mastocarpus,genus,ncbi
+415930,Mastocarpus papillatus complex,no rank,Mastocarpus,genus,ncbi
+40514,Mastocarpus pacificus,species,Mastocarpus,genus,ncbi
+29227,Mastocarpus stellatus,species,Mastocarpus,genus,ncbi
+1452558,Mazzaella minima,species,Mazzaella,genus,ncbi
+225488,Mazzaella sanguinea,species,Mazzaella,genus,ncbi
+169078,Mazzaella parva,species,Mazzaella,genus,ncbi
+169064,Mazzaella parksii,species,Mazzaella,genus,ncbi
+168818,Mazzaella phyllocarpa,species,Mazzaella,genus,ncbi
+168817,Mazzaella oregona,species,Mazzaella,genus,ncbi
+95357,Mazzaella rosea,species,Mazzaella,genus,ncbi
+95356,Mazzaella japonica,species,Mazzaella,genus,ncbi
+95355,Mazzaella coriacea,species,Mazzaella,genus,ncbi
+95354,Mazzaella cobinae,species,Mazzaella,genus,ncbi
+38344,Mazzaella membranacea,species,Mazzaella,genus,ncbi
+35188,Mazzaella convoluta,species,Mazzaella,genus,ncbi
+35187,Mazzaella capensis,species,Mazzaella,genus,ncbi
+35186,Mazzaella californica,species,Mazzaella,genus,ncbi
+29237,Mazzaella volans,species,Mazzaella,genus,ncbi
+29236,Mazzaella splendens,species,Mazzaella,genus,ncbi
+29235,Mazzaella linearis,species,Mazzaella,genus,ncbi
+29234,Mazzaella lilacina,species,Mazzaella,genus,ncbi
+29233,Mazzaella leptorhynchos,species,Mazzaella,genus,ncbi
+29232,Mazzaella laminarioides,species,Mazzaella,genus,ncbi
+29231,Mazzaella heterocarpa,species,Mazzaella,genus,ncbi
+29230,Mazzaella flaccida,species,Mazzaella,genus,ncbi
+29229,Mazzaella cornucopiae,species,Mazzaella,genus,ncbi
+700708,Meiodiscus concrescens,species,Meiodiscus,genus,ncbi
+39572,Meiodiscus spetsbergensis,species,Meiodiscus,genus,ncbi
+172989,Melanthalia intermedia,species,Melanthalia,genus,ncbi
+172988,Melanthalia concinna,species,Melanthalia,genus,ncbi
+172987,Melanthalia abscissa,species,Melanthalia,genus,ncbi
+31474,Melanthalia obtusata,species,Melanthalia,genus,ncbi
+1280633,Membranoptera alata,species,Membranoptera,genus,ncbi
+1206316,Membranoptera fabriciana,species,Membranoptera,genus,ncbi
+1204437,Membranoptera platyphylla,species,Membranoptera,genus,ncbi
+158720,Membranoptera weeksiae,species,Membranoptera,genus,ncbi
+158698,Membranoptera tenuis,species,Membranoptera,genus,ncbi
+1403551,Meredithia pseudopeltata,species,Meredithia,genus,ncbi
+1403548,Meredithia norfolkensis,species,Meredithia,genus,ncbi
+1403544,Meredithia nutleorum,species,Meredithia,genus,ncbi
+1281654,Meredithia guiryorum,species,Meredithia,genus,ncbi
+1281651,Meredithia kraftii,species,Meredithia,genus,ncbi
+1281650,Meredithia crenata,species,Meredithia,genus,ncbi
+1261616,Meredithia opuntioides,species,Meredithia,genus,ncbi
+1232898,Meredithia nana,species,Meredithia,genus,ncbi
+681550,Meredithia microphylla,species,Meredithia,genus,ncbi
+88426,Meristiella gelidium,species,Meristiella,genus,ncbi
+385022,Meristotheca coacta,species,Meristotheca,genus,ncbi
+301694,Meristotheca dakarensis,species,Meristotheca,genus,ncbi
+88442,Meristotheca procumbens,species,Meristotheca,genus,ncbi
+88428,Meristotheca papulosa,species,Meristotheca,genus,ncbi
+1413250,Metapeyssonnelia milleporoides,species,Metapeyssonnelia,genus,ncbi
+508033,Metapeyssonnelia corallepida,species,Metapeyssonnelia,genus,ncbi
+710543,Microcladia coulteri,species,Microcladia,genus,ncbi
+326257,Microcladia borealis,species,Microcladia,genus,ncbi
+110471,Micropeuce strobiliferum,species,Micropeuce,genus,ncbi
+748728,Microphyllum robustum,species,Microphyllum,genus,ncbi
+1827020,Minium parvum,species,Minium,genus,ncbi
+998125,Monosporus indicus,species,Monosporus,genus,ncbi
+536601,Monosporus pedicellatus,species,Monosporus,genus,ncbi
+38382,Montemaria horridula,species,Montemaria,genus,ncbi
+536603,Muellerena wattsii,species,Muellerena,genus,ncbi
+110473,Murrayella periclados,species,Murrayella,genus,ncbi
+408199,Mychodea acanthymenia,species,Mychodea,genus,ncbi
+257582,Mychodea pusilla,species,Mychodea,genus,ncbi
+257581,Mychodea marginifera,species,Mychodea,genus,ncbi
+128533,Mychodea hamata,species,Mychodea,genus,ncbi
+42023,Mychodea carnosa,species,Mychodea,genus,ncbi
+257585,Mychodeophyllum papillitectum,species,Mychodeophyllum,genus,ncbi
+158722,Myriogramme smithii,species,Myriogramme,genus,ncbi
+158721,Myriogramme manginii,species,Myriogramme,genus,ncbi
+158700,Myriogramme livida,species,Myriogramme,genus,ncbi
+291393,Naccaria wiggii,species,Naccaria,genus,ncbi
+935621,Nemalion vermiculare,species,Nemalion,genus,ncbi
+908972,Nemalion lubricum,species,Nemalion,genus,ncbi
+908971,Nemalion multifidum,species,Nemalion,genus,ncbi
+35200,Nemalion helminthoides,species,Nemalion,genus,ncbi
+202686,Nemalionopsis shawii,species,Nemalionopsis,genus,ncbi
+101922,Nemalionopsis tortuosa,species,Nemalionopsis,genus,ncbi
+1092457,Nemastoma gelatinosum,species,Nemastoma,genus,ncbi
+367057,Nemastoma dichotomum,species,Nemastoma,genus,ncbi
+239169,Nemastoma canariense,species,Nemastoma,genus,ncbi
+41683,Neoagardhiella baileyi,species,Neoagardhiella,genus,ncbi
+142541,Neodilsea yendoana,species,Neodilsea,genus,ncbi
+142514,Neodilsea borealis,species,Neodilsea,genus,ncbi
+1583063,Neogastroclonium subarticulatum,species,Neogastroclonium,genus,ncbi
+1077398,Neoizziella divaricata,species,Neoizziella,genus,ncbi
+1077397,Neoizziella asiatica,species,Neoizziella,genus,ncbi
+332481,Neoptilota densa,species,Neoptilota,genus,ncbi
+320441,Neoptilota hypnoides,species,Neoptilota,genus,ncbi
+320440,Neoptilota asplenioides,species,Neoptilota,genus,ncbi
+1134036,Neorhodomela munita,species,Neorhodomela,genus,ncbi
+756387,Neorhodomela oregona,species,Neorhodomela,genus,ncbi
+756386,Neorhodomela aculeata,species,Neorhodomela,genus,ncbi
+159598,Neorhodomela larix,species,Neorhodomela,genus,ncbi
+1874040,Neosiphonia yongpilii,species,Neosiphonia,genus,ncbi
+1677827,Neosiphonia echinata,species,Neosiphonia,genus,ncbi
+1652509,Neosiphonia ramireziae,species,Neosiphonia,genus,ncbi
+1580046,Neosiphonia thailandica,species,Neosiphonia,genus,ncbi
+1436009,Neosiphonia baliana,species,Neosiphonia,genus,ncbi
+1436008,Neosiphonia silvae,species,Neosiphonia,genus,ncbi
+1231895,Neosiphonia peruviensis,species,Neosiphonia,genus,ncbi
+998134,Neosiphonia upolensis,species,Neosiphonia,genus,ncbi
+945055,Neosiphonia tepida,species,Neosiphonia,genus,ncbi
+945002,Neosiphonia ferulacea,species,Neosiphonia,genus,ncbi
+397016,Neosiphonia yendoi,species,Neosiphonia,genus,ncbi
+397015,Neosiphonia tongatensis,species,Neosiphonia,genus,ncbi
+397014,Neosiphonia teradomariensis,species,Neosiphonia,genus,ncbi
+397013,Neosiphonia subtilissima,species,Neosiphonia,genus,ncbi
+397012,Neosiphonia sphaerocarpa,species,Neosiphonia,genus,ncbi
+397005,Neosiphonia harveyi,species,Neosiphonia,genus,ncbi
+397004,Neosiphonia harlandii,species,Neosiphonia,genus,ncbi
+397003,Neosiphonia flavimarina,species,Neosiphonia,genus,ncbi
+397001,Neosiphonia elongella,species,Neosiphonia,genus,ncbi
+397000,Neosiphonia decumbens,species,Neosiphonia,genus,ncbi
+282368,Neosiphonia paniculata,species,Neosiphonia,genus,ncbi
+173540,Neosiphonia japonica,species,Neosiphonia,genus,ncbi
+110920,Neosiphonia savatieri,species,Neosiphonia,genus,ncbi
+508038,Nesophila hoggardii,species,Nesophila,genus,ncbi
+1550535,Neurocaulon foliosum,species,Neurocaulon,genus,ncbi
+158702,Neuroglossum binderianum,species,Neuroglossum,genus,ncbi
+89212,Neurymenia fraxinifolia,species,Neurymenia,genus,ncbi
+158650,Nienburgia borealis,species,Nienburgia,genus,ncbi
+136793,Nienburgia andersoniana,species,Nienburgia,genus,ncbi
+199311,Nitophyllum hommersandii,species,Nitophyllum,genus,ncbi
+158729,Nitophyllum punctatum,species,Nitophyllum,genus,ncbi
+158704,Nitophyllum adhaerens,species,Nitophyllum,genus,ncbi
+508039,Nizymenia conferta,species,Nizymenia,genus,ncbi
+35195,Nizymenia australis,species,Nizymenia,genus,ncbi
+123749,Nocturama antipodites,species,Nocturama,genus,ncbi
+257607,Norrissia setchellii,species,Norrissia,genus,ncbi
+1866319,Nothocladus verruculosus,species,Nothocladus,genus,ncbi
+1866308,Nothocladus diatyches,species,Nothocladus,genus,ncbi
+1677793,Nothocladus ranulifer,species,Nothocladus,genus,ncbi
+547141,Nothocladus bourrellyi,species,Nothocladus,genus,ncbi
+386634,Nothocladus discors,species,Nothocladus,genus,ncbi
+123756,Nothocladus lindauri,species,Nothocladus,genus,ncbi
+123755,Nothocladus wattsii,species,Nothocladus,genus,ncbi
+123754,Nothocladus theaquus,species,Nothocladus,genus,ncbi
+123753,Nothocladus pseudogelatinosus,species,Nothocladus,genus,ncbi
+123752,Nothocladus kraftii,species,Nothocladus,genus,ncbi
+69142,Nothocladus ater,species,Nothocladus,genus,ncbi
+39574,Nothocladus nodosus,species,Nothocladus,genus,ncbi
+1633779,Nothogenia lingula,species,Nothogenia,genus,ncbi
+1633778,Nothogenia neilliae,species,Nothogenia,genus,ncbi
+1633777,Nothogenia pseudosaccata,species,Nothogenia,genus,ncbi
+1633776,Nothogenia fragilis,species,Nothogenia,genus,ncbi
+1633775,Nothogenia pulvinata,species,Nothogenia,genus,ncbi
+1633774,Nothogenia ovalis,species,Nothogenia,genus,ncbi
+1633773,Nothogenia erinacea,species,Nothogenia,genus,ncbi
+1633771,Nothogenia variolosa,species,Nothogenia,genus,ncbi
+1633770,Nothogenia chilensis,species,Nothogenia,genus,ncbi
+268581,Nothogenia fastigiata,species,Nothogenia,genus,ncbi
+508042,Ochtodes secundiramea,species,Ochtodes,genus,ncbi
+508041,Ochtodes crockeri,species,Ochtodes,genus,ncbi
+1261572,Odonthalia corymbifera,species,Odonthalia,genus,ncbi
+1240992,Odonthalia dentata,species,Odonthalia,genus,ncbi
+282367,Odonthalia washingtoniensis,species,Odonthalia,genus,ncbi
+282366,Odonthalia floccosa,species,Odonthalia,genus,ncbi
+158706,Opephyllum martensii,species,Opephyllum,genus,ncbi
+1261574,Ophidocladus simpliciusculus,species,Ophidocladus,genus,ncbi
+142516,Orculifilum denticulatum,species,Orculifilum,genus,ncbi
+911171,Osmundaria obtusiloba,species,Osmundaria,genus,ncbi
+228267,Osmundaria colensoi,species,Osmundaria,genus,ncbi
+228266,Osmundaria spiralis,species,Osmundaria,genus,ncbi
+228265,Osmundaria fimbriata,species,Osmundaria,genus,ncbi
+155556,Osmundaria prolifera,species,Osmundaria,genus,ncbi
+1855822,Osmundea cf. silvae,species,Osmundea,genus,ncbi
+1855821,Osmundea cf. pinnatifida,species,Osmundea,genus,ncbi
+1855819,Osmundea prudhommevanreinei,species,Osmundea,genus,ncbi
+1855818,Osmundea silvae,species,Osmundea,genus,ncbi
+1855817,Osmundea oederi,species,Osmundea,genus,ncbi
+290685,Osmundea sinicola,species,Osmundea,genus,ncbi
+217287,Osmundea spectabilis,species,Osmundea,genus,ncbi
+217286,Osmundea splendens,species,Osmundea,genus,ncbi
+217285,Osmundea blinksii,species,Osmundea,genus,ncbi
+137767,Osmundea truncata,species,Osmundea,genus,ncbi
+137766,Osmundea ramosissima,species,Osmundea,genus,ncbi
+137765,Osmundea osmunda,species,Osmundea,genus,ncbi
+137764,Osmundea hybrida,species,Osmundea,genus,ncbi
+99899,Osmundea pinnatifida,species,Osmundea,genus,ncbi
+1684697,Otohimella japonica,species,Otohimella,genus,ncbi
+662459,Ozophora lanceolata,species,Ozophora,genus,ncbi
+207666,Ozophora norrisii,species,Ozophora,genus,ncbi
+38480,Ozophora clevelandii,species,Ozophora,genus,ncbi
+288765,Pachymenia orbicularis,species,Pachymenia,genus,ncbi
+288764,Pachymenia laciniata,species,Pachymenia,genus,ncbi
+257608,Pachymenia cf. orbicularis,species,Pachymenia,genus,ncbi
+164056,Pachymenia lusoria,species,Pachymenia,genus,ncbi
+164055,Pachymenia carnosa,species,Pachymenia,genus,ncbi
+38374,Pachymenia crassa,species,Pachymenia,genus,ncbi
+38360,Pachymenia cornea,species,Pachymenia,genus,ncbi
+1578120,Pachymeniopsis gargiuli,species,Pachymeniopsis,genus,ncbi
+176239,Pachymeniopsis elliptica,species,Pachymeniopsis,genus,ncbi
+1380037,Palisada iridescens,species,Palisada,genus,ncbi
+998126,Palisada yamadana,species,Palisada,genus,ncbi
+936397,Palisada furcata,species,Palisada,genus,ncbi
+934962,Palisada flagellifera,species,Palisada,genus,ncbi
+860642,Palisada parvipapillata,species,Palisada,genus,ncbi
+689830,Palisada cf. robusta,species,Palisada,genus,ncbi
+689829,Palisada cf. perforata,species,Palisada,genus,ncbi
+689813,Palisada cf. cruciata,species,Palisada,genus,ncbi
+470590,Palisada perforata,species,Palisada,genus,ncbi
+424507,Palisada corallopsis,species,Palisada,genus,ncbi
+397057,Palisada intermedia,species,Palisada,genus,ncbi
+201070,Palisada papillosa,species,Palisada,genus,ncbi
+700711,Palmaria mollis,species,Palmaria,genus,ncbi
+700710,Palmaria hecatensis,species,Palmaria,genus,ncbi
+700709,Palmaria callophylloides,species,Palmaria,genus,ncbi
+405752,Palmaria marginicrassa,species,Palmaria,genus,ncbi
+187399,Palmaria decipiens,species,Palmaria,genus,ncbi
+2822,Palmaria palmata,species,Palmaria,genus,ncbi
+1798140,Paraglossum amsleri,species,Paraglossum,genus,ncbi
+158737,Paraglossum papenfussii,species,Paraglossum,genus,ncbi
+158735,Paraglossum fuegiensis,species,Paraglossum,genus,ncbi
+158734,Paraglossum epiglossum,species,Paraglossum,genus,ncbi
+158708,Paraglossum crassinervium,species,Paraglossum,genus,ncbi
+386795,Paralemanea grandis,species,Paralemanea,genus,ncbi
+67898,Paralemanea catenata,species,Paralemanea,genus,ncbi
+31376,Paralemanea annulata,species,Paralemanea,genus,ncbi
+1785969,Parviphycus albertanoae,species,Parviphycus,genus,ncbi
+417199,Parviphycus felicinii,species,Parviphycus,genus,ncbi
+417198,Parviphycus antipai,species,Parviphycus,genus,ncbi
+102629,Parviphycus tenuissimus,species,Parviphycus,genus,ncbi
+268578,Patenocarpus paraphysiferus,species,Patenocarpus,genus,ncbi
+158710,Patulophycus eclipes,species,Patulophycus,genus,ncbi
+998128,Peleophycus multiprocarpium,species,Peleophycus,genus,ncbi
+998130,Perikladosporon percurrens,species,Perikladosporon,genus,ncbi
+1647383,Perplexiramosus clintonii,species,Perplexiramosus,genus,ncbi
+38551,Petroglossum pacificum,species,Petroglossum,genus,ncbi
+320783,Petrohua bernabei,species,Petrohua,genus,ncbi
+1779846,Peyssonnelia polymorpha,species,Peyssonnelia,genus,ncbi
+680461,Peyssonnelia cf. inamoena,species,Peyssonnelia,genus,ncbi
+508061,Peyssonnelia boergesenii,species,Peyssonnelia,genus,ncbi
+508060,Peyssonnelia valentinii,species,Peyssonnelia,genus,ncbi
+508057,Peyssonnelia stoechas,species,Peyssonnelia,genus,ncbi
+508056,Peyssonnelia simulans,species,Peyssonnelia,genus,ncbi
+508052,Peyssonnelia replicata,species,Peyssonnelia,genus,ncbi
+508051,Peyssonnelia nordstedtii,species,Peyssonnelia,genus,ncbi
+508050,Peyssonnelia coriacea,species,Peyssonnelia,genus,ncbi
+508049,Peyssonnelia conchicola,species,Peyssonnelia,genus,ncbi
+508047,Peyssonnelia bornetii,species,Peyssonnelia,genus,ncbi
+449125,Peyssonnelia orientalis,species,Peyssonnelia,genus,ncbi
+449124,Peyssonnelia mariti,species,Peyssonnelia,genus,ncbi
+449122,Peyssonnelia boudouresquei,species,Peyssonnelia,genus,ncbi
+389204,Peyssonnelia rubra,species,Peyssonnelia,genus,ncbi
+367056,Peyssonnelia novae-hollandiae,species,Peyssonnelia,genus,ncbi
+367055,Peyssonnelia capensis,species,Peyssonnelia,genus,ncbi
+339600,Peyssonnelia caulifera,species,Peyssonnelia,genus,ncbi
+339599,Peyssonnelia immersa,species,Peyssonnelia,genus,ncbi
+339598,Peyssonnelia dubyi,species,Peyssonnelia,genus,ncbi
+339597,Peyssonnelia atropurpurea,species,Peyssonnelia,genus,ncbi
+339596,Peyssonnelia squamaria,species,Peyssonnelia,genus,ncbi
+339595,Peyssonnelia japonica,species,Peyssonnelia,genus,ncbi
+339594,Peyssonnelia meridionalis,species,Peyssonnelia,genus,ncbi
+339593,Peyssonnelia rosenvingii,species,Peyssonnelia,genus,ncbi
+339592,Peyssonnelia armorica,species,Peyssonnelia,genus,ncbi
+339591,Peyssonnelia rumoiana,species,Peyssonnelia,genus,ncbi
+339590,Peyssonnelia harveyana,species,Peyssonnelia,genus,ncbi
+339589,Peyssonnelia distenta,species,Peyssonnelia,genus,ncbi
+339588,Peyssonnelia inamoena,species,Peyssonnelia,genus,ncbi
+650598,Phacelocarpus neurymenioides,species,Phacelocarpus,genus,ncbi
+508188,Phacelocarpus sessilis,species,Phacelocarpus,genus,ncbi
+40405,Phacelocarpus tortuosus,species,Phacelocarpus,genus,ncbi
+35198,Phacelocarpus peperocarpos,species,Phacelocarpus,genus,ncbi
+158739,Phitymophora linearis,species,Phitymophora,genus,ncbi
+158712,Phitymophora amansioides,species,Phitymophora,genus,ncbi
+881579,Phycodrys franiae,species,Phycodrys,genus,ncbi
+881577,Phycodrys adamsiae,species,Phycodrys,genus,ncbi
+881576,Phycodrys novae-zelandiae,species,Phycodrys,genus,ncbi
+881575,Phycodrys antarctica,species,Phycodrys,genus,ncbi
+881574,Phycodrys austrogeorgica,species,Phycodrys,genus,ncbi
+881573,Phycodrys fimbriata,species,Phycodrys,genus,ncbi
+158653,Phycodrys radicosa,species,Phycodrys,genus,ncbi
+158652,Phycodrys quercifolia,species,Phycodrys,genus,ncbi
+158651,Phycodrys ovifolia,species,Phycodrys,genus,ncbi
+136796,Phycodrys setchellii,species,Phycodrys,genus,ncbi
+136795,Phycodrys isabelliae,species,Phycodrys,genus,ncbi
+35161,Phycodrys rubens,species,Phycodrys,genus,ncbi
+1550582,Phyllophora sicula,species,Phyllophora,genus,ncbi
+765015,Phyllophora cf. antarctica,species,Phyllophora,genus,ncbi
+508189,Phyllophora pseudoceranoides,species,Phyllophora,genus,ncbi
+207667,Phyllophora herediae,species,Phyllophora,genus,ncbi
+38517,Phyllophora antarctica,species,Phyllophora,genus,ncbi
+38510,Phyllophora ahnfeltioides,species,Phyllophora,genus,ncbi
+29239,Phyllophora crispa,species,Phyllophora,genus,ncbi
+244126,Pihiella liagoraciphila,species,Pihiella,genus,ncbi
+142518,Pikea californica,species,Pikea,genus,ncbi
+367118,Pinnatiphycus menouana,species,Pinnatiphycus,genus,ncbi
+1293582,Placentophora colensoi,species,Placentophora,genus,ncbi
+998131,Platoma ardreanum,species,Platoma,genus,ncbi
+239162,Platoma chrysymenioides,species,Platoma,genus,ncbi
+197838,Platoma cf. cyclocolpa,species,Platoma,genus,ncbi
+197837,Platoma cyclocolpa,species,Platoma,genus,ncbi
+158656,Platyclinia taylorii,species,Platyclinia,genus,ncbi
+189640,Platysiphonia victoriae,species,Platysiphonia,genus,ncbi
+645537,Pleonosporium vancouverianum,species,Pleonosporium,genus,ncbi
+645536,Pleonosporium squarrosum,species,Pleonosporium,genus,ncbi
+645535,Pleonosporium abysicola,species,Pleonosporium,genus,ncbi
+536604,Pleonosporium caribaeum,species,Pleonosporium,genus,ncbi
+460887,Pleonosporium mexicanum,species,Pleonosporium,genus,ncbi
+121064,Pleurostichidium falkenbergii,species,Pleurostichidium,genus,ncbi
+35206,Plocamiocolax pulvinata,species,Plocamiocolax,genus,ncbi
+1561943,Plocamium brasiliense,species,Plocamium,genus,ncbi
+993420,Plocamium cf. angustum 4 GWS-2011,species,Plocamium,genus,ncbi
+993399,Plocamium cf. cartilagineum NZ 3 GWS-2011,species,Plocamium,genus,ncbi
+993398,Plocamium cf. cartilagineum NZ 2 GWS-2011,species,Plocamium,genus,ncbi
+993397,Plocamium cf. cartilagineum NZ 1 GWS-2011,species,Plocamium,genus,ncbi
+993396,Plocamium cf. pacificum 1 GWS-2011,species,Plocamium,genus,ncbi
+993391,Plocamium cf. telfairiae 2 GWS-2011,species,Plocamium,genus,ncbi
+993390,Plocamium cf. telfairiae 1 GWS-2011,species,Plocamium,genus,ncbi
+993389,Plocamium cf. leptophyllum 2 GWS-2011,species,Plocamium,genus,ncbi
+993388,Plocamium cf. leptophyllum 1 GWS-2011,species,Plocamium,genus,ncbi
+993387,Plocamium cf. cirrhosum 2 GWS-2011,species,Plocamium,genus,ncbi
+993386,Plocamium cf. cirrhosum 1 GWS-2011,species,Plocamium,genus,ncbi
+993050,Plocamium cf. angustum 3 GWS-2011,species,Plocamium,genus,ncbi
+993049,Plocamium cf. angustum NZ 2 GWS-2011,species,Plocamium,genus,ncbi
+993048,Plocamium cf. angustum 1 GWS-2011,species,Plocamium,genus,ncbi
+993033,Plocamium suhrii,species,Plocamium,genus,ncbi
+993032,Plocamium raphelisianum,species,Plocamium,genus,ncbi
+993031,Plocamium microcladioides,species,Plocamium,genus,ncbi
+993030,Plocamium lyngbyanum,species,Plocamium,genus,ncbi
+993029,Plocamium fimbriatum,species,Plocamium,genus,ncbi
+993028,Plocamium dilatatum,species,Plocamium,genus,ncbi
+439554,Plocamium sandvicense,species,Plocamium,genus,ncbi
+321259,Plocamium pacificum,species,Plocamium,genus,ncbi
+321258,Plocamium preissianum,species,Plocamium,genus,ncbi
+321257,Plocamium leptophyllum,species,Plocamium,genus,ncbi
+321256,Plocamium hamatum,species,Plocamium,genus,ncbi
+321255,Plocamium cirrhosum,species,Plocamium,genus,ncbi
+321254,Plocamium nanum,species,Plocamium,genus,ncbi
+321253,Plocamium subtile,species,Plocamium,genus,ncbi
+309167,Plocamium maggsiae,species,Plocamium,genus,ncbi
+257610,Plocamium mertensii,species,Plocamium,genus,ncbi
+223160,Plocamium serrulatum,species,Plocamium,genus,ncbi
+223159,Plocamium recurvatum,species,Plocamium,genus,ncbi
+223158,Plocamium ovicornis,species,Plocamium,genus,ncbi
+42794,Plocamium violaceum,species,Plocamium,genus,ncbi
+42793,Plocamium patagiatum,species,Plocamium,genus,ncbi
+41698,Plocamium oregonum,species,Plocamium,genus,ncbi
+38523,Plocamium cornutum,species,Plocamium,genus,ncbi
+38522,Plocamium telfairiae,species,Plocamium,genus,ncbi
+38521,Plocamium coleorhiza,species,Plocamium,genus,ncbi
+35204,Plocamium angustum,species,Plocamium,genus,ncbi
+31452,Plocamium cartilagineum,species,Plocamium,genus,ncbi
+189642,Plumaria plumosa,species,Plumaria,genus,ncbi
+158658,Pollexfenia liaoii,species,Pollexfenia,genus,ncbi
+1233104,Polycoelia laciniata,species,Polycoelia,genus,ncbi
+31461,Polyides rotundus,species,Polyides,genus,ncbi
+881580,Polyneura japonica,species,Polyneura,genus,ncbi
+136797,Polyneura bonnemaisonii,species,Polyneura,genus,ncbi
+31391,Polyneura latissima,species,Polyneura,genus,ncbi
+158660,Polyneuropsis stolonifera,species,Polyneuropsis,genus,ncbi
+214834,Polyopes tosaensis,species,Polyopes,genus,ncbi
+214833,Polyopes hakalauensis,species,Polyopes,genus,ncbi
+194518,Polyopes tasmanicus,species,Polyopes,genus,ncbi
+194517,Polyopes lancifolius,species,Polyopes,genus,ncbi
+194516,Polyopes prolifer,species,Polyopes,genus,ncbi
+164058,Polyopes tenuis,species,Polyopes,genus,ncbi
+151738,Polyopes polyideoides,species,Polyopes,genus,ncbi
+151737,Polyopes constrictus,species,Polyopes,genus,ncbi
+1583041,Polysiphonia hendryi,species,Polysiphonia,genus,ncbi
+1572004,Polysiphonia dokdoensis,species,Polysiphonia,genus,ncbi
+1538366,Polysiphonia ulleungensis,species,Polysiphonia,genus,ncbi
+1424646,Polysiphonia devoniensis,species,Polysiphonia,genus,ncbi
+1424637,Polysiphonia caespitosa,species,Polysiphonia,genus,ncbi
+1271553,Polysiphonia tripinnata,species,Polysiphonia,genus,ncbi
+1262398,Polysiphonia foetidissima,species,Polysiphonia,genus,ncbi
+1261576,Polysiphonia polyspora,species,Polysiphonia,genus,ncbi
+1240994,Polysiphonia arctica,species,Polysiphonia,genus,ncbi
+1005973,Polysiphonia hemisphaerica,species,Polysiphonia,genus,ncbi
+945054,Polysiphonia isogona,species,Polysiphonia,genus,ncbi
+945027,Polysiphonia sertularioides-3,species,Polysiphonia,genus,ncbi
+945026,Polysiphonia sertularioides-2,species,Polysiphonia,genus,ncbi
+945025,Polysiphonia sertularioides-1,species,Polysiphonia,genus,ncbi
+945024,Polysiphonia pseudovillum,species,Polysiphonia,genus,ncbi
+945023,Polysiphonia pernacola,species,Polysiphonia,genus,ncbi
+945022,Polysiphonia pentamera,species,Polysiphonia,genus,ncbi
+945020,Polysiphonia macrocarpa,species,Polysiphonia,genus,ncbi
+945019,Polysiphonia homoia,species,Polysiphonia,genus,ncbi
+945018,Polysiphonia havanensis sensu Borgesen,species,Polysiphonia,genus,ncbi
+945006,Polysiphonia binneyi,species,Polysiphonia,genus,ncbi
+945005,Polysiphonia bajacali,species,Polysiphonia,genus,ncbi
+945003,Polysiphonia anomala,species,Polysiphonia,genus,ncbi
+717899,Polysiphonia schneideri,species,Polysiphonia,genus,ncbi
+717897,Polysiphonia constricta,species,Polysiphonia,genus,ncbi
+717896,Polysiphonia aterrima,species,Polysiphonia,genus,ncbi
+524168,Polysiphonia breviarticulata,species,Polysiphonia,genus,ncbi
+524167,Polysiphonia atlantica,species,Polysiphonia,genus,ncbi
+335259,Polysiphonia senticulosa,species,Polysiphonia,genus,ncbi
+290689,Polysiphonia muelleriana,species,Polysiphonia,genus,ncbi
+257861,Polysiphonia paniculosa,species,Polysiphonia,genus,ncbi
+257860,Polysiphonia scopulorum,species,Polysiphonia,genus,ncbi
+228259,Polysiphonia howei,species,Polysiphonia,genus,ncbi
+173546,Polysiphonia virgata,species,Polysiphonia,genus,ncbi
+173545,Polysiphonia stricta,species,Polysiphonia,genus,ncbi
+173544,Polysiphonia pacifica,species,Polysiphonia,genus,ncbi
+173543,Polysiphonia nigra,species,Polysiphonia,genus,ncbi
+173542,Polysiphonia morrowii,species,Polysiphonia,genus,ncbi
+173541,Polysiphonia fucoides,species,Polysiphonia,genus,ncbi
+159760,Polysiphonia strictissima,species,Polysiphonia,genus,ncbi
+159759,Polysiphonia simplex,species,Polysiphonia,genus,ncbi
+159757,Polysiphonia forfex,species,Polysiphonia,genus,ncbi
+159756,Polysiphonia fibrillosa,species,Polysiphonia,genus,ncbi
+159755,Polysiphonia fibrata,species,Polysiphonia,genus,ncbi
+159753,Polysiphonia elongata,species,Polysiphonia,genus,ncbi
+159752,Polysiphonia denudata,species,Polysiphonia,genus,ncbi
+159751,Polysiphonia brodiei,species,Polysiphonia,genus,ncbi
+159750,Polysiphonia akkeshiensis,species,Polysiphonia,genus,ncbi
+65404,Polysiphonia urceolata,species,Polysiphonia,genus,ncbi
+2805,Polysiphonia boldii,species,Polysiphonia,genus,ncbi
+339604,Polystrata dura,species,Polystrata,genus,ncbi
+339603,Polystrata fosliei,species,Polystrata,genus,ncbi
+524187,Polyzonia elegans,species,Polyzonia,genus,ncbi
+1249611,Portieria cf. hornemannii V32 FL-2012,species,Portieria,genus,ncbi
+1249610,Portieria cf. hornemannii V31 FL-2012,species,Portieria,genus,ncbi
+1249609,Portieria cf. hornemannii V27 FL-2012,species,Portieria,genus,ncbi
+1249608,Portieria cf. hornemannii V26 FL-2012,species,Portieria,genus,ncbi
+1249607,Portieria cf. hornemannii V1E FL-2012,species,Portieria,genus,ncbi
+1249606,Portieria cf. hornemannii V1D FL-2012,species,Portieria,genus,ncbi
+1249605,Portieria cf. hornemannii V1C FL-2012,species,Portieria,genus,ncbi
+1249604,Portieria cf. hornemannii V1B FL-2012,species,Portieria,genus,ncbi
+1249603,Portieria cf. hornemannii V1A FL-2012,species,Portieria,genus,ncbi
+1249602,Portieria cf. hornemannii SP3 FL-2012,species,Portieria,genus,ncbi
+1249601,Portieria cf. hornemannii S7 FL-2012,species,Portieria,genus,ncbi
+1249600,Portieria cf. hornemannii S6 FL-2012,species,Portieria,genus,ncbi
+1249599,Portieria cf. hornemannii S40 FL-2012,species,Portieria,genus,ncbi
+1249598,Portieria cf. hornemannii S39 FL-2012,species,Portieria,genus,ncbi
+1249597,Portieria cf. hornemannii S36 FL-2012,species,Portieria,genus,ncbi
+1249596,Portieria cf. hornemannii S2 FL-2012,species,Portieria,genus,ncbi
+1249595,Portieria cf. hornemannii B8 FL-2012,species,Portieria,genus,ncbi
+1249594,Portieria cf. hornemannii B5 FL-2012,species,Portieria,genus,ncbi
+1249593,Portieria cf. hornemannii B38 FL-2012,species,Portieria,genus,ncbi
+1249592,Portieria cf. hornemannii B35 FL-2012,species,Portieria,genus,ncbi
+1249591,Portieria cf. hornemannii B34 FL-2012,species,Portieria,genus,ncbi
+1249590,Portieria cf. hornemannii B33 FL-2012,species,Portieria,genus,ncbi
+1249589,Portieria cf. hornemannii B21 FL-2012,species,Portieria,genus,ncbi
+508190,Portieria tripinnata,species,Portieria,genus,ncbi
+128534,Portieria hornemanii,species,Portieria,genus,ncbi
+31464,Portieria japonica,species,Portieria,genus,ncbi
+693504,Predaea goffiana,species,Predaea,genus,ncbi
+508192,Predaea laciniosa,species,Predaea,genus,ncbi
+239165,Predaea pusilla,species,Predaea,genus,ncbi
+239147,Predaea feldmannii,species,Predaea,genus,ncbi
+197842,Predaea weldii,species,Predaea,genus,ncbi
+197841,Predaea kraftiana,species,Predaea,genus,ncbi
+197840,Predaea aurora,species,Predaea,genus,ncbi
+1582954,Prionitis simplex,species,Prionitis,genus,ncbi
+469967,Prionitis sternbergii,species,Prionitis,genus,ncbi
+468945,Prionitis jubata,species,Prionitis,genus,ncbi
+459857,Prionitis linearis,species,Prionitis,genus,ncbi
+313581,Prionitis nodifera,species,Prionitis,genus,ncbi
+159590,Prionitis schmitziana,species,Prionitis,genus,ncbi
+159589,Prionitis ramosissima,species,Prionitis,genus,ncbi
+159588,Prionitis patens,species,Prionitis,genus,ncbi
+159587,Prionitis elata,species,Prionitis,genus,ncbi
+159586,Prionitis divaricata,species,Prionitis,genus,ncbi
+159585,Prionitis crispata,species,Prionitis,genus,ncbi
+159584,Prionitis cornea,species,Prionitis,genus,ncbi
+128579,Prionitis filiformis,species,Prionitis,genus,ncbi
+128578,Prionitis decipiens,species,Prionitis,genus,ncbi
+31458,Prionitis lyallii,species,Prionitis,genus,ncbi
+31457,Prionitis lanceolata,species,Prionitis,genus,ncbi
+155558,Protokuetzingia australasica,species,Protokuetzingia,genus,ncbi
+681551,Psaromenia berggrenii,species,Psaromenia,genus,ncbi
+748684,Pseudohalopeltis tasmanensis,species,Pseudohalopeltis,genus,ncbi
+158663,Pseudophycodrys pulcherrima,species,Pseudophycodrys,genus,ncbi
+158662,Pseudophycodrys phyllophora,species,Pseudophycodrys,genus,ncbi
+1267907,Pseudopolyides furcellarioides,species,Pseudopolyides,genus,ncbi
+643655,Psilosiphon scoparius,species,Psilosiphon,genus,ncbi
+320444,Psilothallia dentata,species,Psilothallia,genus,ncbi
+756391,Pterochondria woodii,species,Pterochondria,genus,ncbi
+1785970,Pterocladia rectangularis,species,Pterocladia,genus,ncbi
+31408,Pterocladia lucida,species,Pterocladia,genus,ncbi
+28860,Pterocladiella melanoidea,species,Pterocladia,genus,ncbi
+1265826,Pterocladiella phangiae,species,Pterocladiella,genus,ncbi
+1265825,Pterocladiella megasporangia,species,Pterocladiella,genus,ncbi
+947988,Pterocladiella tenuis,species,Pterocladiella,genus,ncbi
+436071,Pterocladiella caespitosa,species,Pterocladiella,genus,ncbi
+436069,Pterocladiella psammophila,species,Pterocladiella,genus,ncbi
+143009,Pterocladiella beachiae,species,Pterocladiella,genus,ncbi
+143008,Pterocladiella bartlettii,species,Pterocladiella,genus,ncbi
+102631,Pterocladiella nana,species,Pterocladiella,genus,ncbi
+102630,Pterocladiella caloglossoides,species,Pterocladiella,genus,ncbi
+102628,Pterocladiella caerulescens,species,Pterocladiella,genus,ncbi
+70838,Pterocladiella capillacea,species,Pterocladiella,genus,ncbi
+1882493,Pterosiphonia stangeri,species,Pterosiphonia,genus,ncbi
+1882488,Pterosiphonia spinifera,species,Pterosiphonia,genus,ncbi
+1620465,Pterosiphonia tanakae,species,Pterosiphonia,genus,ncbi
+1563184,Pterosiphonia hamata,species,Pterosiphonia,genus,ncbi
+1424640,Pterosiphonia parasitica,species,Pterosiphonia,genus,ncbi
+1261578,Pterosiphonia pennata,species,Pterosiphonia,genus,ncbi
+1261577,Pterosiphonia ardreana,species,Pterosiphonia,genus,ncbi
+884090,Pterosiphonia cloiophylla,species,Pterosiphonia,genus,ncbi
+884089,Pterosiphonia complanata,species,Pterosiphonia,genus,ncbi
+756395,Pterosiphonia gracilis,species,Pterosiphonia,genus,ncbi
+756394,Pterosiphonia bipinnata,species,Pterosiphonia,genus,ncbi
+756393,Pterosiphonia dendroidea,species,Pterosiphonia,genus,ncbi
+1550583,Pterothamnion crispum,species,Pterothamnion,genus,ncbi
+710544,Pterothamnion pectinatum,species,Pterothamnion,genus,ncbi
+179283,Pterothamnion yezoense,species,Pterothamnion,genus,ncbi
+173464,Pterothamnion villosum,species,Pterothamnion,genus,ncbi
+173462,Pterothamnion plumula,species,Pterothamnion,genus,ncbi
+332483,Ptilocladia pulchra,species,Ptilocladia,genus,ncbi
+257542,Ptilonia australasica,species,Ptilonia,genus,ncbi
+38529,Ptilonia magellanica,species,Ptilonia,genus,ncbi
+1785967,Ptilophora scalaramosa,species,Ptilophora,genus,ncbi
+238785,Ptilophora coppejansii,species,Ptilophora,genus,ncbi
+238474,Ptilophora leliaertii,species,Ptilophora,genus,ncbi
+210421,Ptilophora mediterranea,species,Ptilophora,genus,ncbi
+210420,Ptilophora rhodoptera,species,Ptilophora,genus,ncbi
+210419,Ptilophora pterocladioides,species,Ptilophora,genus,ncbi
+210418,Ptilophora hildebrandtii,species,Ptilophora,genus,ncbi
+143014,Ptilophora prolifera,species,Ptilophora,genus,ncbi
+143011,Ptilophora scalarimosa,species,Ptilophora,genus,ncbi
+143010,Ptilophora diversifolia,species,Ptilophora,genus,ncbi
+37205,Ptilophora subcostata,species,Ptilophora,genus,ncbi
+37204,Ptilophora pinnatifida,species,Ptilophora,genus,ncbi
+536605,Ptilota hannafordii,species,Ptilota,genus,ncbi
+320442,Ptilota phacelocarpoides,species,Ptilota,genus,ncbi
+207917,Ptilota gunneri,species,Ptilota,genus,ncbi
+153248,Ptilota filicina,species,Ptilota,genus,ncbi
+110475,Ptilota serrata,species,Ptilota,genus,ncbi
+1498216,Ptilothamnion sphaericum,species,Ptilothamnion,genus,ncbi
+756398,Ptilothamnionopsis lejolisea,species,Ptilothamnionopsis,genus,ncbi
+1037066,Pugetia sanguinea,species,Pugetia,genus,ncbi
+1037065,Pugetia cryptica,species,Pugetia,genus,ncbi
+217493,Pugetia chilensis,species,Pugetia,genus,ncbi
+217487,Pugetia fragilissima,species,Pugetia,genus,ncbi
+421747,Reinboldiella warburgii,species,Reinboldiella,genus,ncbi
+218451,Reinboldiella schmitziana,species,Reinboldiella,genus,ncbi
+1398152,Reptataxis rhizophora,species,Reptataxis,genus,ncbi
+367044,Reticulocaulis mucosissimus,species,Reticulocaulis,genus,ncbi
+257557,Rhabdonia verticillata,species,Rhabdonia,genus,ncbi
+88424,Rhabdonia coccinea,species,Rhabdonia,genus,ncbi
+88419,Rhabdonia clavigera,species,Rhabdonia,genus,ncbi
+508195,Rhizophyllis pacifica,species,Rhizophyllis,genus,ncbi
+979663,Rhizopogonia asperata,species,Rhizopogonia,genus,ncbi
+745925,Rhodachlya hawaiiana,species,Rhodachlya,genus,ncbi
+498767,Rhodachlya madagascarensis,species,Rhodachlya,genus,ncbi
+189644,Rhodocallis elegans,species,Rhodocallis,genus,ncbi
+173034,Rhodochorton tenue,species,Rhodochorton,genus,ncbi
+39576,Rhodochorton purpureum,species,Rhodochorton,genus,ncbi
+173034,Rhodochorton tenue,species,Rhodochorton,genus,ncbi
+39576,Rhodochorton purpureum,species,Rhodochorton,genus,ncbi
+67958,Rhododraparnaldia oregonica,species,Rhododraparnaldia,genus,ncbi
+29241,Rhodoglossum gigartinoides,species,Rhodoglossum,genus,ncbi
+998137,Rhodolachne decussata,species,Rhodolachne,genus,ncbi
+1240996,Rhodomela lycopodioides,species,Rhodomela,genus,ncbi
+35163,Rhodomela confervoides,species,Rhodomela,genus,ncbi
+702331,Rhodonematella subimmersa,species,Rhodonematella,genus,ncbi
+1819322,Rhodopeltis australis,species,Rhodopeltis,genus,ncbi
+40404,Rhodopeltis borealis,species,Rhodopeltis,genus,ncbi
+1609944,Rhodophyllis parasitica,species,Rhodophyllis,genus,ncbi
+257578,Rhodophyllis multipartita,species,Rhodophyllis,genus,ncbi
+164319,Rhodophyllis volans,species,Rhodophyllis,genus,ncbi
+163342,Rhodophyllis reptans,species,Rhodophyllis,genus,ncbi
+163341,Rhodophyllis membranacea,species,Rhodophyllis,genus,ncbi
+163331,Rhodophyllis divaricata,species,Rhodophyllis,genus,ncbi
+702327,Rhodophysema kjellmanii,species,Rhodophysema,genus,ncbi
+700714,Rhodophysema minus,species,Rhodophysema,genus,ncbi
+519114,Rhodophysema georgei,species,Rhodophysema,genus,ncbi
+39578,Rhodophysema elegans,species,Rhodophysema,genus,ncbi
+189646,Rhodoptilum plumosum,species,Rhodoptilum,genus,ncbi
+39581,Rhodothamniella floridula,species,Rhodothamniella,genus,ncbi
+1848266,Rhodymenia novazelandica,species,Rhodymenia,genus,ncbi
+748686,Rhodymenia wilsonis,species,Rhodymenia,genus,ncbi
+748685,Rhodymenia novahollandica,species,Rhodymenia,genus,ncbi
+748569,Rhodymenia leptophylla 2 LH,species,Rhodymenia,genus,ncbi
+748568,Rhodymenia leptophylla 1 Tas,species,Rhodymenia,genus,ncbi
+748562,Rhodymenia cuneata,species,Rhodymenia,genus,ncbi
+748559,Rhodymenia californica,species,Rhodymenia,genus,ncbi
+748557,Rhodymenia obtusa,species,Rhodymenia,genus,ncbi
+748556,Rhodymenia prolificans,species,Rhodymenia,genus,ncbi
+551844,Rhodymenia divaricata,species,Rhodymenia,genus,ncbi
+522299,Rhodymenia delicatula,species,Rhodymenia,genus,ncbi
+515840,Rhodymenia holmesii,species,Rhodymenia,genus,ncbi
+397053,Rhodymenia intricata,species,Rhodymenia,genus,ncbi
+367059,Rhodymenia ardissonei,species,Rhodymenia,genus,ncbi
+239155,Rhodymenia skottsbergii,species,Rhodymenia,genus,ncbi
+220757,Rhodymenia corallina,species,Rhodymenia,genus,ncbi
+105598,Rhodymenia leptophylla,species,Rhodymenia,genus,ncbi
+81588,Rhodymenia stenoglossa,species,Rhodymenia,genus,ncbi
+41701,Rhodymenia pacifica,species,Rhodymenia,genus,ncbi
+31502,Rhodymenia pseudopalmata,species,Rhodymenia,genus,ncbi
+42797,Rhodymeniocolax botryoides,species,Rhodymeniocolax,genus,ncbi
+508197,Riquetophycus polypus,species,Riquetophycus,genus,ncbi
+257596,Rissoella verruculosa,species,Rissoella,genus,ncbi
+702329,Rubrointrusa membranacea,species,Rubrointrusa,genus,ncbi
+228264,Rytiphlaea tinctoria,species,Rytiphlaea,genus,ncbi
+217478,Salishia firma,species,Salishia,genus,ncbi
+1077308,Sarcodia grandifolia,species,Sarcodia,genus,ncbi
+367058,Sarcodia ciliata,species,Sarcodia,genus,ncbi
+173445,Sarcodia antarctica,species,Sarcodia,genus,ncbi
+128535,Sarcodia marginata,species,Sarcodia,genus,ncbi
+40398,Sarcodia flabellata,species,Sarcodia,genus,ncbi
+40394,Sarcodia ceylanica,species,Sarcodia,genus,ncbi
+40393,Sarcodia dentata,species,Sarcodia,genus,ncbi
+38558,Sarcodia montagneana,species,Sarcodia,genus,ncbi
+38401,Sarcodiotheca furcata,species,Sarcodiotheca,genus,ncbi
+31447,Sarcodiotheca gaudichaudii,species,Sarcodiotheca,genus,ncbi
+158665,Sarcomenia delesserioides,species,Sarcomenia,genus,ncbi
+88421,Sarconema filiforme,species,Sarconema,genus,ncbi
+341003,Sarcothalia lanceata,species,Sarcothalia,genus,ncbi
+168272,Sarcothalia papillosa,species,Sarcothalia,genus,ncbi
+95361,Sarcothalia crassifolia,species,Sarcothalia,genus,ncbi
+95360,Sarcothalia circumcincta,species,Sarcothalia,genus,ncbi
+95359,Sarcothalia ancistroclada,species,Sarcothalia,genus,ncbi
+35190,Sarcothalia decipiens,species,Sarcothalia,genus,ncbi
+29246,Sarcothalia stiriata,species,Sarcothalia,genus,ncbi
+29245,Sarcothalia scutellata,species,Sarcothalia,genus,ncbi
+29244,Sarcothalia livida,species,Sarcothalia,genus,ncbi
+29243,Sarcothalia crispata,species,Sarcothalia,genus,ncbi
+326251,Scagelia occidentale,species,Scagelia,genus,ncbi
+1583061,Schimmelmannia plumosa,species,Schimmelmannia,genus,ncbi
+173468,Schimmelmannia schousboei,species,Schimmelmannia,genus,ncbi
+158672,Schizoseris multinervis,species,Schizoseris,genus,ncbi
+158671,Schizoseris liaoii,species,Schizoseris,genus,ncbi
+158670,Schizoseris griffithsia,species,Schizoseris,genus,ncbi
+158669,Schizoseris dichotoma,species,Schizoseris,genus,ncbi
+158668,Schizoseris davisii,species,Schizoseris,genus,ncbi
+158667,Schizoseris condensata,species,Schizoseris,genus,ncbi
+508198,Schizymenia apoda,species,Schizymenia,genus,ncbi
+38372,Schizymenia pacifica,species,Schizymenia,genus,ncbi
+38371,Schizymenia novae-zelandiae,species,Schizymenia,genus,ncbi
+38370,Schizymenia japonica,species,Schizymenia,genus,ncbi
+38369,Schizymenia obovata,species,Schizymenia,genus,ncbi
+38368,Schizymenia dubyi,species,Schizymenia,genus,ncbi
+257600,Schmitziella endophloea,species,Schmitziella,genus,ncbi
+257600,Schmitziella endophloea,species,Schmitziella,genus,ncbi
+38512,Schottera nicaeensis,species,Schottera,genus,ncbi
+1798821,Sciadophycus stellatus,species,Sciadophycus,genus,ncbi
+1653388,Scinaia pseudojaponica,species,Scinaia,genus,ncbi
+1653387,Scinaia chinensis,species,Scinaia,genus,ncbi
+998139,Scinaia hormoides,species,Scinaia,genus,ncbi
+998138,Scinaia furcata,species,Scinaia,genus,ncbi
+935655,Scinaia complanata,species,Scinaia,genus,ncbi
+912070,Scinaia forcellata,species,Scinaia,genus,ncbi
+908970,Scinaia interrupta,species,Scinaia,genus,ncbi
+382344,Scinaia okamurae,species,Scinaia,genus,ncbi
+382343,Scinaia latifrons,species,Scinaia,genus,ncbi
+268583,Scinaia confusa,species,Scinaia,genus,ncbi
+332500,Sciurothamnion stegengae,species,Sciurothamnion,genus,ncbi
+239161,Sebdenia integra,species,Sebdenia,genus,ncbi
+173446,Sebdenia flabellulata,species,Sebdenia,genus,ncbi
+42024,Sebdenia flabellata,species,Sebdenia,genus,ncbi
+38378,Sebdenia monardiana,species,Sebdenia,genus,ncbi
+536607,Seirospora seirosperma,species,Seirospora,genus,ncbi
+332498,Seirospora viridis,species,Seirospora,genus,ncbi
+193184,Seirospora interrupta,species,Seirospora,genus,ncbi
+406723,Semnocarpa corynephora,species,Semnocarpa,genus,ncbi
+81615,Semnocarpa minuta,species,Semnocarpa,genus,ncbi
+1884865,Setacea atro-brasiliensis,species,Setacea,genus,ncbi
+1884864,Setacea atra,species,Setacea,genus,ncbi
+1866309,Setacea puiggariana,species,Setacea,genus,ncbi
+1486663,Sheathia meridionale,species,Sheathia,genus,ncbi
+1486654,Sheathia americana,species,Sheathia,genus,ncbi
+1486651,Sheathia grandis,species,Sheathia,genus,ncbi
+1486650,Sheathia exigua,species,Sheathia,genus,ncbi
+1486647,Sheathia boryana,species,Sheathia,genus,ncbi
+1486646,Sheathia involuta,species,Sheathia,genus,ncbi
+373125,Sheathia heterocortica,species,Sheathia,genus,ncbi
+373124,Sheathia confusa,species,Sheathia,genus,ncbi
+340433,Sheathia arcuata,species,Sheathia,genus,ncbi
+536609,Shepleya wattsii,species,Shepleya,genus,ncbi
+1088696,Sinotubimorpha ramosissima,species,Sinotubimorpha,genus,ncbi
+1088695,Sinotubimorpha qingdaoensis,species,Sinotubimorpha,genus,ncbi
+1088694,Sinotubimorpha guangdongensis,species,Sinotubimorpha,genus,ncbi
+1088693,Sinotubimorpha claviformis,species,Sinotubimorpha,genus,ncbi
+1146888,Sirodotia goebelii,species,Sirodotia,genus,ncbi
+386631,Sirodotia delicatula,species,Sirodotia,genus,ncbi
+99590,Sirodotia tenuissima,species,Sirodotia,genus,ncbi
+67914,Sirodotia suecica,species,Sirodotia,genus,ncbi
+67913,Sirodotia huillensis,species,Sirodotia,genus,ncbi
+88412,Solieria robusta,species,Solieria,genus,ncbi
+88411,Solieria chordalis,species,Solieria,genus,ncbi
+38515,Solieria pacifica,species,Solieria,genus,ncbi
+31449,Solieria filiformis,species,Solieria,genus,ncbi
+110477,Sonderella linearis,species,Sonderella,genus,ncbi
+257588,Sonderopelta coriacea,species,Sonderopelta,genus,ncbi
+189632,Sorella repens,species,Sorella,genus,ncbi
+48481,Sorella delicatula,species,Sorella,genus,ncbi
+81617,Sparlingia pertusa,species,Sparlingia,genus,ncbi
+31383,Spermothamnion repens,species,Spermothamnion,genus,ncbi
+31467,Sphaerococcus coronopifolius,species,Sphaerococcus,genus,ncbi
+193186,Sphondylothamnion multifidum,species,Sphondylothamnion,genus,ncbi
+998142,Spirocladia hodgsoniae,species,Spirocladia,genus,ncbi
+998141,Spirocladia barodensis,species,Spirocladia,genus,ncbi
+536610,Spongoclonium conspicuum,species,Spongoclonium,genus,ncbi
+397061,Spongoclonium pastorale,species,Spongoclonium,genus,ncbi
+536611,Spyridia elongata,species,Spyridia,genus,ncbi
+314492,Spyridia griffithsiana,species,Spyridia,genus,ncbi
+314491,Spyridia horridula,species,Spyridia,genus,ncbi
+314490,Spyridia cupressina,species,Spyridia,genus,ncbi
+196893,Spyridia clavata,species,Spyridia,genus,ncbi
+196632,Spyridia filamentosa,species,Spyridia,genus,ncbi
+173447,Spyridia dasyoides,species,Spyridia,genus,ncbi
+31385,Spyridia hypnoides,species,Spyridia,genus,ncbi
+1165048,Stauromenia australis,species,Stauromenia,genus,ncbi
+1775945,Stenogramma lamyi,species,Stenogramma,genus,ncbi
+1053875,Stenogramma californicum,species,Stenogramma,genus,ncbi
+1053874,Stenogramma bamfieldiense,species,Stenogramma,genus,ncbi
+661325,Stenogramma phyllophoroides,species,Stenogramma,genus,ncbi
+207669,Stenogramma rhodymenioides,species,Stenogramma,genus,ncbi
+32602,Stenogramma interruptum,species,Stenogramma,genus,ncbi
+284059,Stenopeltis gracilis,species,Stenopeltis,genus,ncbi
+1269974,Sterrocladia belizeana,species,Sterrocladia,genus,ncbi
+163333,Stictosporum nitophylloides,species,Stictosporum,genus,ncbi
+406725,Stirnia prolifera,species,Stirnia,genus,ncbi
+1261580,Streblocladia collabens,species,Streblocladia,genus,ncbi
+1400250,Symphyocladia glabra,species,Symphyocladia,genus,ncbi
+943080,Symphyocladia linearis,species,Symphyocladia,genus,ncbi
+884088,Symphyocladia lithophila,species,Symphyocladia,genus,ncbi
+884087,Symphyocladia pumila,species,Symphyocladia,genus,ncbi
+396806,Symphyocladia latiuscula,species,Symphyocladia,genus,ncbi
+88360,Symphyocladia marchantioides,species,Symphyocladia,genus,ncbi
+1824841,Tacanoosca uncinata,species,Tacanoosca,genus,ncbi
+210852,Taenioma perpusillum,species,Taenioma,genus,ncbi
+1230256,Thamnophyllis lacerata,species,Thamnophyllis,genus,ncbi
+979669,Thamnophyllis laingii,species,Thamnophyllis,genus,ncbi
+1853346,Thorea indica,species,Thorea,genus,ncbi
+874386,Thorea bachmannii,species,Thorea,genus,ncbi
+261529,Thorea riekei,species,Thorea,genus,ncbi
+261528,Thorea okadae,species,Thorea,genus,ncbi
+261527,Thorea gaudichaudii,species,Thorea,genus,ncbi
+202687,Thorea hispida,species,Thorea,genus,ncbi
+67961,Thorea violacea,species,Thorea,genus,ncbi
+1819326,Thuretellopsis peggiana,species,Thuretellopsis,genus,ncbi
+189650,Thuretia quercifolia,species,Thuretia,genus,ncbi
+189648,Thuretia australasica,species,Thuretia,genus,ncbi
+38364,Tichocarpus crinitus,species,Tichocarpus,genus,ncbi
+1563187,Tiffaniella snyderae,species,Tiffaniella,genus,ncbi
+257615,Tikvahiella candida,species,Tikvahiella,genus,ncbi
+239164,Titanophora incrustans,species,Titanophora,genus,ncbi
+239163,Titanophora pikeana,species,Titanophora,genus,ncbi
+38533,Titanophora weberae,species,Titanophora,genus,ncbi
+940129,Titanophycus setchellii,species,Titanophycus,genus,ncbi
+940128,Titanophycus validus,species,Titanophycus,genus,ncbi
+756404,Tokidadendron kurilensis,species,Tokidadendron,genus,ncbi
+860646,Tolypiocladia glomerulata,species,Tolypiocladia,genus,ncbi
+164060,Trematocarpus flabellatus,species,Trematocarpus,genus,ncbi
+40391,Trematocarpus fragilis,species,Trematocarpus,genus,ncbi
+40390,Trematocarpus dichotomus,species,Trematocarpus,genus,ncbi
+998190,Trichogloea requienii,species,Trichogloea,genus,ncbi
+935656,Trichogloea herveyi,species,Trichogloea,genus,ncbi
+284064,Trichogloea lubrica,species,Trichogloea,genus,ncbi
+1495616,Trichogloeopsis mucosissima,species,Trichogloeopsis,genus,ncbi
+1495610,Trichogloeopsis pedicellata,species,Trichogloeopsis,genus,ncbi
+1381113,Tricleocarpa jejuensis,species,Tricleocarpa,genus,ncbi
+1380562,Tricleocarpa natalensis,species,Tricleocarpa,genus,ncbi
+305683,Tricleocarpa fragilis,species,Tricleocarpa,genus,ncbi
+268572,Tricleocarpa cylindrica,species,Tricleocarpa,genus,ncbi
+197846,Tsengia comosa,species,Tsengia,genus,ncbi
+197845,Tsengia lanceolata,species,Tsengia,genus,ncbi
+197844,Tsengia laingii,species,Tsengia,genus,ncbi
+367116,Tylotus obtusatus,species,Tylotus,genus,ncbi
+367115,Tylotus lichenoides,species,Tylotus,genus,ncbi
+860648,Ululania stellata,species,Ululania,genus,ncbi
+158675,Valeriemaya cruenta,species,Valeriemaya,genus,ncbi
+998193,Vanvoorstia coccinea,species,Vanvoorstia,genus,ncbi
+158677,Vanvoorstia spectabilis,species,Vanvoorstia,genus,ncbi
+1261582,Vertebrata lanosa,species,Vertebrata,genus,ncbi
+1819324,Waernia mirabilis,species,Waernia,genus,ncbi
+1497578,Waldoia antillana,species,Waldoia,genus,ncbi
+536613,Warrenia comosa,species,Warrenia,genus,ncbi
+406726,Webervanbossea tasmanensis,species,Webervanbossea,genus,ncbi
+81619,Webervanbossea splachnoides,species,Webervanbossea,genus,ncbi
+475976,Weeksia reticulata,species,Weeksia,genus,ncbi
+142493,Weeksia coccinea,species,Weeksia,genus,ncbi
+1789645,Wendya incisa,species,Wendya,genus,ncbi
+197878,Wetherbeella foliosa,species,Wetherbeella,genus,ncbi
+197877,Wetherbeella australica,species,Wetherbeella,genus,ncbi
+915459,Whidbeyella cartilaginea,species,Whidbeyella,genus,ncbi
+158679,Womersleya monanthos,species,Womersleya,genus,ncbi
+173553,Womersleyella setacea,species,Womersleyella,genus,ncbi
+1413251,Wrangelia penicillata,species,Wrangelia,genus,ncbi
+998197,Wrangelia bicuspidata,species,Wrangelia,genus,ncbi
+998195,Wrangelia argus,species,Wrangelia,genus,ncbi
+536614,Wrangelia plumosa,species,Wrangelia,genus,ncbi
+439546,Wrangelia elegantissima,species,Wrangelia,genus,ncbi
+524189,Wrightiella tumanowiczii,species,Wrightiella,genus,ncbi
+1635108,Yamadaella grassyi,species,Yamadaella,genus,ncbi
+259029,Yamadaella caenomyce,species,Yamadaella,genus,ncbi
+82846,Yatabella hirsuta,species,Yatabella,genus,ncbi
+1775948,Yonagunia ligulata,species,Yonagunia,genus,ncbi
+1775947,Yonagunia atimo-vatae,species,Yonagunia,genus,ncbi
+1134408,Yonagunia zollingeri,species,Yonagunia,genus,ncbi
+241241,Yonagunia tenuifolia,species,Yonagunia,genus,ncbi
+241240,Yonagunia formosana,species,Yonagunia,genus,ncbi
+1364883,Yoshizakia indopacifica,species,Yoshizakia,genus,ncbi
+1539137,Yuzurua poiteaui,species,Yuzurua,genus,ncbi
+158681,Zellera tawallina,species,Zellera,genus,ncbi
+197848,Zymurgia chondriopsidea,species,Zymurgia,genus,ncbi
+,Bonnemaisonia,genus,Bonnemaisoniaceae,family,algaebase
+,Bornetia,genus,Ceramiaceae,family,algaebase
+,Dictyomenia,genus,Rhodomelaceae,family,algaebase
+,Echinothamnion,genus,Rhodomelaceae,family,algaebase
+,Halicnide,genus,Delesseriaceae,family,algaebase
+,Halopitys,genus,Rhodomelaceae,family,algaebase
+,Jeannerettia,genus,Rhodomelaceae,family,algaebase
+,Opuntiella,genus,Furcellariaceae,family,algaebase
