@@ -55,6 +55,7 @@ Lastly, I want to compare these different databases to see what kinds of differe
 
 Next steps are:
 
+0. Reformat NCBI global taxonomy dataset
 1. Evaluate functions in reformatted NCBI taxonomy dataset - genera per family, family per order, etc.
 2. Get all children for each Class, Order, Family, Genus in NCBI
 3. Pipeline for BOLD - 1st get genera IDs
@@ -89,6 +90,7 @@ library(taxize)
 library(taxizesoap)
 library(dplyr)
 library(lazyeval)
+library(tidyr)
 data <- read.csv("../data/mean_13c_per_species.csv")
 ```
 
@@ -296,14 +298,20 @@ Here I'm getting the total number of children for each Class, Order, Family and 
   
   ncbi_species <<- filter(df_c2s, childtaxa_rank == "species") %>% arrange(childtaxa_name)
   
-write.csv(df_c2s, file = "../data/ncbi_global_Rhodophyta_tax.csv")
+write.csv(df_c2s, file = "../data/ncbi_global_Rhodophyta_tax.csv", row.names = FALSE)
 ```
 
-Putting the dataset together at from Order to Genus
+Putting the NCBI dataset together from Order to Genus
 
 ```{r}
-
-  
+df <- read.csv("../data/ncbi_global_Rhodophyta_tax.csv")
+df <- filter(df, childtaxa_rank %in% c("order", "family", "genus")) %>% distinct(childtaxa_name) 
+genus <- filter(df, parent_rank == "family") %>% select(childtaxa_id, childtaxa_name, childtaxa_rank, parent, source)
+colnames(genus) <- c("childtaxa_id", "childtaxa_name", "childtaxa_rank", "family", "source")
+family <- filter(df, parent_rank == "order")
+class <- filter(df, parent_rank == "class")
+genus$order <- family$parent[match(genus$family, family$childtaxa_name)]
+genus$class <- class$parent[match(genus$order, class$childtaxa_name)]
 ```
 
 ## BOLD taxonomy
