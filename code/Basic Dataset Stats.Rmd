@@ -29,7 +29,7 @@ Additionally:
 * histogram of taxa by order
 * histogram of taxa by class
 
-Class, Order and Family data will be reported using 5 different taxonomy sources: BOLD, NCBI, EOL, WoRMS, and ITIS.
+Class, Order and Family data will be reported using 3 different taxonomy sources: BOLD, NCBI and AlgaeBase.
 
 # Next steps
 

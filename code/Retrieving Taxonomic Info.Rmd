@@ -51,17 +51,28 @@ I want to investigate the coverage our tree will have compared to all possible f
 
 Lastly, I want to compare these different databases to see what kinds of differences there are in taxonomy - Rhodophyta is constantly changing taxonomy. 
 
+
+# Last completed steps
+
+Compare my dataset to global NCBI dataset - what kind of coverage do we have at each level?
+Reformat NCBI global taxonomy dataset
+Get all children for each Class, Order, Family, Genus in NCBI
+Function for getting genera per family, family per order, etc. in the dataset
+Function for reformatting NCBI list data as dataframe
+How to transform data to appropriate format - making function in NCBI
+Exclude non-Protists and NAs in BOLD system
+Reporting results for BOLD (this many genera missing - only 2 I think)
+
 # Next steps
 
 Next steps are:
 
-0. Reformat NCBI global taxonomy dataset
-1. Evaluate functions in reformatted NCBI taxonomy dataset - genera per family, family per order, etc.
-2. Get all children for each Class, Order, Family, Genus in NCBI
-3. Pipeline for BOLD - 1st get genera IDs
-4. Use IDs to get higher level taxonomy from BOLD
-5. reformat taxonomy data in BOLD. BOLD is easier to recast the data
-6. finding all genera in a family, all species in a genus, etc.
+0. Make code to subset my current isotope dataset by the actualy number of taxa we get gene sequences for (currently, I'm assuming that we get 100% of taxa represented from scraping GenBank)
+1. Evaluate functions in reformatted NCBI global Rhodophyta dataset - genera per family, family per order, etc. (update code to reflect source global dataset) and compare to my dataset - create plots, ID key areas of low coverage (might be more appropriate for basic Dataset Stats file)
+2. Pipeline for BOLD - 1st get genera IDs
+3. Use IDs to get higher level taxonomy from BOLD
+4. reformat taxonomy data in BOLD. BOLD is easier to recast the data
+5. finding all genera in a family, all species in a genus, etc. for BOLD
 
 ## Improving functions and code
 
@@ -70,15 +81,6 @@ My functions work but are clunky - fix the following functions:
 1. tax_bins - could use aggregate to make it better, apply over a list
 2. ncbi_downstream - make it generalizable to any level taxonomy, enter taxonomy name and level (eg. "Rhodomelaceae", "order") and it will return every taxa downstream of that, down to species
 3. Adding new lines before and after print statements (especially "Missing Ballia genera children due to ...")
-
-# Last steps
-
-Function for getting genera per family, family per order, etc. in the dataset
-Function for reformatting NCBI list data as dataframe
-How to transform data to appropriate format - making function in NCBI
-Exclude non-Protists and NAs in BOLD system
-Reporting results for BOLD (this many genera missing - only 2 I think)
-
 
 
 # Analysis
@@ -150,13 +152,14 @@ Like ITIS, you must choose the correct genus if there are multiple taxa with the
 ### Add higher taxonomy information to isotope dataset
 
 ```{r}
+tax_ncbi <- read.csv("../data/ncbi__dataset_taxonomy.csv")
 data_ncbi <- data
 data_ncbi$class <- tax_ncbi$class[match(data_ncbi$genus, tax_ncbi$genus)]
 data_ncbi$order <- tax_ncbi$order[match(data_ncbi$genus, tax_ncbi$genus)]
 data_ncbi$family <- tax_ncbi$family[match(data_ncbi$genus, tax_ncbi$genus)]
 ```
 
-### Species and Genus Coverage from NCBI
+### Dataset Species and Genus Coverage from NCBI
 
 The NCBI database is way better than ITIS, and returns things in the correct scheme. Only 7 genera are missing out of 149 genera for the genus level dataset as of last query on Sun Aug 14 2016, a 95% coverage rate - super cool! There is also one genus missing family-level data - Opuntiella family membership is listed as 'no rank', 'unclassified Gigartinales'
 
@@ -173,11 +176,10 @@ Missing red algal genera in NCBI:
 
 For species, `r length(names(which(is.na(taxreturn_s))))` species are missing out of `r length(species_list)` genera for the genus level dataset. ` r 100*length(names(which(!is.na(taxreturn_s))))/length(species_list)`% species coverage in NCBI, so clearly genus level is the way to go.
 
-### How many Orders, Families and Genera total from Dataset
+### How many Orders, Families and Genera total from Dataset, excluding Bangiaceae
 
 ```{r}
-tax_ncbi <- read.csv("../data/ncbi_taxonomy.csv")
-tax_summary_ncbi <- apply(tax_ncbi, 2, function(x)length(unique(x)))
+tax_summary_ncbi <- apply(tax_ncbi[which(tax_ncbi$class == "Florideophyceae"),1:4], 2, function(x)length(unique(x)))
 ```
 
 The below table gives the results of how many classes, orders, families, genera and species are in the dataset (excluding the 7 genera in the previous section that NCBI doesn't have complete taxonomy data on).
@@ -205,7 +207,7 @@ tax_bins <- function(x,y,z){
 ```
 
 
-First, Orders, Families and Genera per Class
+First, Orders, Families and Genera per Class in Dataset
 ```{r}
 tax_bins("order", "class", data_ncbi)
 tax_bins("family", "class", data_ncbi)
@@ -216,7 +218,7 @@ class_children_dataset <- cbind(order_per_class, n_family = family_per_class$n_f
 ```
 
 
-Next, Families and Genera per Order
+Next, Families and Genera per Order in Dataset
 ```{r}
 tax_bins("family", "order", data_ncbi)
 tax_bins("genus", "order", data_ncbi)
@@ -226,14 +228,14 @@ order_children_dataset <- cbind(family_per_order, n_genus = genus_per_order$n_ge
 ```
 
 
-Finally, Genera per Family
+Finally, Genera per Family in Dataset
 ```{r}
 tax_bins("genus", "family", data_ncbi)
 tax_bins("species", "family", data_ncbi)
 family_children_dataset <- cbind(genus_per_family, n_species = species_per_family$n_species)
 ```
 
-### How many children total (globally) in Florideophyceae from each taxonomy level
+### Querying the global Rhodophyta dataset from NCBI - all children of Rhodophyta class Florideophyceae
 
 Here I'm getting the total number of children for each Class, Order, Family and Genus. This way we can determine how much coverage we have over all families - for example, do we have 100% sampling at the Order level, 80% coverage at the Family level? 60% at the genus level? How representative is our phylogeny and our isotope dataset?
 
@@ -301,17 +303,70 @@ Here I'm getting the total number of children for each Class, Order, Family and 
 write.csv(df_c2s, file = "../data/ncbi_global_Rhodophyta_tax.csv", row.names = FALSE)
 ```
 
-Putting the NCBI dataset together from Order to Genus
+
+### Formatting global NCBI dataset for using tax_bins function
 
 ```{r}
 df <- read.csv("../data/ncbi_global_Rhodophyta_tax.csv")
 df <- filter(df, childtaxa_rank %in% c("order", "family", "genus")) %>% distinct(childtaxa_name) 
-genus <- filter(df, parent_rank == "family") %>% select(childtaxa_id, childtaxa_name, childtaxa_rank, parent, source)
-colnames(genus) <- c("childtaxa_id", "childtaxa_name", "childtaxa_rank", "family", "source")
+global_genus <- filter(df, parent_rank == "family") %>% select(childtaxa_id, childtaxa_name, childtaxa_rank, parent, source)
+colnames(global_genus) <- c("childtaxa_id", "childtaxa_name", "childtaxa_rank", "family", "source")
 family <- filter(df, parent_rank == "order")
 class <- filter(df, parent_rank == "class")
-genus$order <- family$parent[match(genus$family, family$childtaxa_name)]
-genus$class <- class$parent[match(genus$order, class$childtaxa_name)]
+global_genus$order <- family$parent[match(global_genus$family, family$childtaxa_name)]
+global_genus$class <- class$parent[match(global_genus$order, class$childtaxa_name)]
+colnames(global_genus) <- c("childtaxa_id", "genus", "childtaxa_rank", "family", "source", "order", "class")
+```
+
+### How many Orders, Families and Genera total from Flordeophyceae children
+
+```{r}
+tax_summary_ncbi_global <- apply(global_genus, 2, function(x)length(unique(x)))
+tax_summary_ncbi_global <- tax_summary_ncbi_global[c("class", "order", "family", "genus")]
+```
+
+The below table gives the results of how many classes, orders, families, genera and species are in the dataset (excluding the 7 genera in the previous section that NCBI doesn't have complete taxonomy data on).
+
+`r tax_summary_ncbi_global`
+
+
+### How many children total (globally) in Florideophyceae from each taxonomy level
+
+First, Orders, Families and Genera per Class Globally 
+```{r}
+tax_bins("order", "class", global_genus)
+tax_bins("family", "class", global_genus)
+tax_bins("genus", "class", global_genus)
+tax_bins("species", "class", global_genus)
+
+class_children_global <- cbind(order_per_class, n_family = family_per_class$n_family, n_genus = genus_per_class$n_genus, n_species = species_per_class$n_species)
+```
+
+
+Next, Families and Genera per Order Globally 
+```{r}
+tax_bins("family", "order", global_genus)
+tax_bins("genus", "order", global_genus)
+tax_bins("species", "order", global_genus)
+
+order_children_global <- cbind(family_per_order, n_genus = genus_per_order$n_genus, n_species = species_per_order$n_species)
+```
+
+
+Finally, Genera per Family Globally 
+```{r}
+tax_bins("genus", "family", data_ncbi)
+tax_bins("species", "family", data_ncbi)
+family_children_global <- cbind(genus_per_family, n_species = species_per_family$n_species)
+```
+
+### Comparing Global Children vs Our Dataset
+
+```{r}
+dataset_coverage <- rbind(tax_summary_ncbi[2:4], tax_summary_ncbi_global[2:4])
+rownames(dataset_coverage) <- c("Dataset Coverage", "All Florideophyceae Children")
+Fraction_Coverage <- dataset_coverage[1,]/dataset_coverage[2,]
+ncbi_coverage <- rbind(dataset_coverage, Fraction_Coverage)
 ```
 
 ## BOLD taxonomy
