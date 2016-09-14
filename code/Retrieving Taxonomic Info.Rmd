@@ -67,7 +67,7 @@ Reporting results for BOLD (this many genera missing - only 2 I think)
 
 Next steps are:
 
-0. Make code to subset my current isotope dataset by the actualy number of taxa we get gene sequences for (currently, I'm assuming that we get 100% of taxa represented from scraping GenBank)
+0. Make code to subset my current isotope dataset by the actualy number of taxa we get gene sequences for (currently, I'm assuming that we get 100% of taxa represented from scraping GenBank). Only a subset of species we have isotope data for will also have DNA seqence data
 1. Evaluate functions in reformatted NCBI global Rhodophyta dataset - genera per family, family per order, etc. (update code to reflect source global dataset) and compare to my dataset - create plots, ID key areas of low coverage (might be more appropriate for basic Dataset Stats file)
 2. Pipeline for BOLD - 1st get genera IDs
 3. Use IDs to get higher level taxonomy from BOLD
