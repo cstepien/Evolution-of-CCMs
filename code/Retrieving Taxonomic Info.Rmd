@@ -38,10 +38,10 @@ I want so see which databases have the best red algal coverage.
 There are a number of different taxonomy databases: 
 
 * high coverage: Barcode of Life Data Systems (BOLD) <- taxize package
-* not yet assessed: Encyclopedia of Life (EOL) <- taxize package
-* incomplete: Integrated Taxonomic Information Service (ITIS) <- taxize package
 * high coverage: National Center for Biotechnology Information (NCBI) <- taxize package
+* incomplete: Integrated Taxonomic Information Service (ITIS) <- taxize package
 * too outdated: World Register of Marine Species (WoRMS) <- taxizesoap package 
+* not yet assessed: Encyclopedia of Life (EOL) <- taxize package
 
 ## How many Families per Order
 
@@ -127,7 +127,7 @@ ITIS terms:
 ### Initial query at genus and species level
 
 ```{r, message=FALSE, warning=FALSE}
-taxreturn_s <- classification(species_list, db = 'ncbi')
+#taxreturn_s <- classification(species_list, db = 'ncbi')
 #taxreturn_g <- classification(genus_list, db = 'ncbi')
 
 #tax_ncbi <- data.frame(class = character(), order = character(), family = character(), genus = character(), rownames <- c(), #stringsAsFactors = FALSE)
@@ -243,7 +243,7 @@ Here I'm getting the total number of children for each Class, Order, Family and 
 
 ```{r, eval = FALSE}
 
-#ncbi_downstream <- function(startertaxa){
+ncbi_downstream <- function(startertaxa){
   df <- ncbi_children(name = startertaxa, ancestor = "Rhodophyta")[1][[1]] %>% filter(childtaxa_rank == "order") %>% arrange(childtaxa_name)
   df$parent <- startertaxa
   df$parent_rank <- "class"
@@ -337,9 +337,8 @@ First, Orders, Families and Genera per Class Globally
 tax_bins("order", "class", global_genus)
 tax_bins("family", "class", global_genus)
 tax_bins("genus", "class", global_genus)
-tax_bins("species", "class", global_genus)
 
-class_children_global <- cbind(order_per_class, n_family = family_per_class$n_family, n_genus = genus_per_class$n_genus, n_species = species_per_class$n_species)
+class_children_global <- cbind(order_per_class, n_family = family_per_class$n_family, n_genus = genus_per_class$n_genus)
 ```
 
 
@@ -347,9 +346,8 @@ Next, Families and Genera per Order Globally
 ```{r}
 tax_bins("family", "order", global_genus)
 tax_bins("genus", "order", global_genus)
-tax_bins("species", "order", global_genus)
 
-order_children_global <- cbind(family_per_order, n_genus = genus_per_order$n_genus, n_species = species_per_order$n_species)
+order_children_global <- cbind(family_per_order, n_genus = genus_per_order$n_genus)
 ```
 
 
@@ -357,7 +355,7 @@ Finally, Genera per Family Globally
 ```{r}
 tax_bins("genus", "family", data_ncbi)
 tax_bins("species", "family", data_ncbi)
-family_children_global <- cbind(genus_per_family, n_species = species_per_family$n_species)
+family_children_global <- cbind(genus_per_family)
 ```
 
 ### Comparing Global Children vs Our Dataset
