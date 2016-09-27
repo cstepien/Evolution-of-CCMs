@@ -79,20 +79,25 @@ img {
 
 <div id="TOC">
 <ul>
-<li><a href="#file-goals"><span class="toc-section-number">1</span> File goals</a></li>
-<li><a href="#next-steps"><span class="toc-section-number">2</span> Next steps</a></li>
-<li><a href="#analysis"><span class="toc-section-number">3</span> Analysis</a><ul>
-<li><a href="#data-setup-and-packages"><span class="toc-section-number">3.1</span> Data setup and packages</a></li>
-<li><a href="#genus-counts"><span class="toc-section-number">3.2</span> Genus Counts</a><ul>
-<li><a href="#histogram-of-taxa-count-by-genus-in-the-dataset"><span class="toc-section-number">3.2.1</span> Histogram of taxa count by genus in the dataset</a></li>
-<li><a href="#list-of-genera-with-only-1-representative-in-the-dataset"><span class="toc-section-number">3.2.2</span> List of genera with only 1 representative in the dataset</a></li>
+<li><a href="#file-status"><span class="toc-section-number">1</span> File status</a></li>
+<li><a href="#file-goals"><span class="toc-section-number">2</span> File goals</a></li>
+<li><a href="#next-steps"><span class="toc-section-number">3</span> Next steps</a></li>
+<li><a href="#analysis"><span class="toc-section-number">4</span> Analysis</a><ul>
+<li><a href="#data-setup-and-packages"><span class="toc-section-number">4.1</span> Data setup and packages</a></li>
+<li><a href="#genus-counts"><span class="toc-section-number">4.2</span> Genus Counts</a><ul>
+<li><a href="#histogram-of-taxa-count-by-genus-in-the-dataset"><span class="toc-section-number">4.2.1</span> Histogram of taxa count by genus in the dataset</a></li>
+<li><a href="#list-of-genera-with-only-1-representative-in-the-dataset"><span class="toc-section-number">4.2.2</span> List of genera with only 1 representative in the dataset</a></li>
 </ul></li>
 </ul></li>
 </ul>
 </div>
 
+<div id="file-status" class="section level1">
+<h1><span class="header-section-number">1</span> File status</h1>
+<p>Current</p>
+</div>
 <div id="file-goals" class="section level1">
-<h1><span class="header-section-number">1</span> File goals</h1>
+<h1><span class="header-section-number">2</span> File goals</h1>
 <p>Goals of this file are to get basic statistics on the dataset that we used to search for sequence data. Initial goals include number and names of genera with only 1 representative in the dataset.</p>
 <p>This information will help us ID taxa who lack DNA sequence but are monotypic genera in this dataset. These taxa are candidates for using congeneric DNA sequence to represent them at the genus level in our phylogeny.</p>
 <p>Additionally:</p>
@@ -102,10 +107,10 @@ img {
 <li>histogram of taxa by order</li>
 <li>histogram of taxa by class</li>
 </ul>
-<p>Class, Order and Family data will be reported using 5 different taxonomy sources: BOLD, NCBI, EOL, WoRMS, and ITIS.</p>
+<p>Class, Order and Family data will be reported using 3 different taxonomy sources: BOLD, NCBI and AlgaeBase.</p>
 </div>
 <div id="next-steps" class="section level1">
-<h1><span class="header-section-number">2</span> Next steps</h1>
+<h1><span class="header-section-number">3</span> Next steps</h1>
 <p>Next steps are:</p>
 <ol style="list-style-type: decimal">
 <li>wait on family, order, class data from taxize to calculate histogram by these data</li>
@@ -114,27 +119,27 @@ img {
 </ol>
 </div>
 <div id="analysis" class="section level1">
-<h1><span class="header-section-number">3</span> Analysis</h1>
+<h1><span class="header-section-number">4</span> Analysis</h1>
 <div id="data-setup-and-packages" class="section level2">
-<h2><span class="header-section-number">3.1</span> Data setup and packages</h2>
+<h2><span class="header-section-number">4.1</span> Data setup and packages</h2>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(dplyr)
 <span class="kw">library</span>(ggplot2)
 <span class="kw">library</span>(grid)
 data &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;../data/mean_13c_per_species.csv&quot;</span>)</code></pre>
 </div>
 <div id="genus-counts" class="section level2">
-<h2><span class="header-section-number">3.2</span> Genus Counts</h2>
+<h2><span class="header-section-number">4.2</span> Genus Counts</h2>
 <div id="histogram-of-taxa-count-by-genus-in-the-dataset" class="section level3">
-<h3><span class="header-section-number">3.2.1</span> Histogram of taxa count by genus in the dataset</h3>
+<h3><span class="header-section-number">4.2.1</span> Histogram of taxa count by genus in the dataset</h3>
 <pre class="sourceCode r"><code class="sourceCode r">genus_count &lt;-<span class="st"> </span>data %&gt;%<span class="st"> </span><span class="kw">group_by</span>(genus) %&gt;%<span class="st"> </span><span class="kw">summarize</span>(<span class="kw">n</span>())
 genus_count &lt;-<span class="st"> </span><span class="kw">data.frame</span>(genus_count)
 <span class="kw">colnames</span>(genus_count) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;genus&quot;</span>, <span class="st">&quot;n_taxa&quot;</span>)
 genus_hist &lt;-<span class="st"> </span>genus_count %&gt;%<span class="st"> </span><span class="kw">group_by</span>(n_taxa) %&gt;%<span class="st"> </span><span class="kw">summarize</span>(<span class="kw">n</span>())
 genus_hist &lt;-<span class="st"> </span><span class="kw">data.frame</span>(genus_hist)
 <span class="kw">colnames</span>(genus_hist) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;n_taxa&quot;</span>, <span class="st">&quot;genera_with_n_taxa&quot;</span>)</code></pre>
-<p>There are 150 genera in the dataset, with 1 to 11 taxa in each genus. 100 genera have only 1 species in the dataset, while the remaining 50 genera have 2 to 11 species per genus (see distribution in the table below).</p>
+<p>There are 149 genera in the dataset, with 1 to 11 taxa in each genus. 99 genera have only 1 species in the dataset, while the remaining 50 genera have 2 to 11 species per genus (see distribution in the table below).</p>
 <pre><code>##   n_taxa genera_with_n_taxa
-## 1      1                100
+## 1      1                 99
 ## 2      2                 28
 ## 3      3                  7
 ## 4      4                  4
@@ -154,11 +159,11 @@ genus_hist &lt;-<span class="st"> </span><span class="kw">data.frame</span>(genu
 <p><img src="Basic_Dataset_Stats_files/figure-html/unnamed-chunk-4-1.png" /><!-- --></p>
 </div>
 <div id="list-of-genera-with-only-1-representative-in-the-dataset" class="section level3">
-<h3><span class="header-section-number">3.2.2</span> List of genera with only 1 representative in the dataset</h3>
+<h3><span class="header-section-number">4.2.2</span> List of genera with only 1 representative in the dataset</h3>
 <pre class="sourceCode r"><code class="sourceCode r">congener_candidates &lt;-<span class="st"> </span><span class="kw">filter</span>(genus_count, n_taxa ==<span class="st"> </span><span class="dv">1</span>) %&gt;%<span class="st"> </span><span class="kw">select</span>(genus)
 <span class="kw">write.csv</span>(congener_candidates, <span class="dt">file =</span> <span class="st">&quot;../data/taxa names for sequence search/congener_candidates.csv&quot;</span>, <span class="dt">row.names =</span> <span class="ot">FALSE</span>)</code></pre>
-<p>Below is the list of the 100 genera in the dataset with only 1 species:</p>
-<p>Acanthophora, Acrosorium, Acrotylus, Actinotrichia, Aglaothamnion, Ahnfeltia, Amansia, Anotrichium, Apophlaea, Audouinella, Ballia, Bellotia, Bonnemaisonia, Bornetia, Botryocladia, Catenella, Champia, Chylocladia, Craspedocarpus, Cumagloia, Cystoclonium, Dichotomaria, Dictyomenia, Digenea, Dumontia, Endocladia, Furcellaria, Georgiella, Gibsmithia, Gloiocladia, Gloiopeltis, Gloiosaccion, Gloiosiphonia, Gracilariopsis, Gymnogongrus, Halicnide, Halopeltis, Halopithys, Halopitys, Haloplegma, Halosaccion, Halurus, Hemineura, Hildenbrandia, Hydrolithon, Hymenocladia, Iridaea, Jeannerettia, Kallymenia, Lemanea, Lenormandia, Liagora, Liagoropsis, Lophocladia, Martensia, Mastophoropsis, Membranoptera, Metamastophora, Microcladia, Mychodea, Neogoniolithon, Neorhodomela, Neuroglossum, Odonthalia, Opuntiella, Osmundaria, Pachymenia, Palisada, Parviphycus, Peyssonnelia, Phacelocarpus, Phymatolithon, Plumaria, Pollexfenia, Polycoelia, Polyides, Polyopes, Portieria, Pterocladiella, Ptilophora, Rhodothamniella, Rytiphlaea, Schizoseris, Schottera, Scinaia, Solieria, Sonderopelta, Sphaerococcus, Spongoclonium, Stenogramma, Symphyocladia, Thamnoclonium, Trematocarpus, Tricleocarpa, Tylotus, Vertebrata, Weeksia, Wrightiella, Yamadaella, Yuzurua</p>
+<p>Below is the list of the 99 genera in the dataset with only 1 species:</p>
+<p>Acanthophora, Acrosorium, Acrotylus, Actinotrichia, Aglaothamnion, Ahnfeltia, Amansia, Anotrichium, Apophlaea, Audouinella, Ballia, Bonnemaisonia, Bornetia, Botryocladia, Catenella, Champia, Chylocladia, Craspedocarpus, Cumagloia, Cystoclonium, Dichotomaria, Dictyomenia, Digenea, Dumontia, Endocladia, Furcellaria, Georgiella, Gibsmithia, Gloiocladia, Gloiopeltis, Gloiosaccion, Gloiosiphonia, Gracilariopsis, Gymnogongrus, Halicnide, Halopeltis, Halopithys, Halopitys, Haloplegma, Halosaccion, Halurus, Hemineura, Hildenbrandia, Hydrolithon, Hymenocladia, Iridaea, Jeannerettia, Kallymenia, Lemanea, Lenormandia, Liagora, Liagoropsis, Lophocladia, Martensia, Mastophoropsis, Membranoptera, Metamastophora, Microcladia, Mychodea, Neogoniolithon, Neorhodomela, Neuroglossum, Odonthalia, Opuntiella, Osmundaria, Pachymenia, Palisada, Parviphycus, Peyssonnelia, Phacelocarpus, Phymatolithon, Plumaria, Pollexfenia, Polycoelia, Polyides, Polyopes, Portieria, Pterocladiella, Ptilophora, Rhodothamniella, Rytiphlaea, Schizoseris, Schottera, Scinaia, Solieria, Sonderopelta, Sphaerococcus, Spongoclonium, Stenogramma, Symphyocladia, Thamnoclonium, Trematocarpus, Tricleocarpa, Tylotus, Vertebrata, Weeksia, Wrightiella, Yamadaella, Yuzurua</p>
 </div>
 </div>
 </div>

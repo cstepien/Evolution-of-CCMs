@@ -79,49 +79,359 @@ img {
 
 <div id="TOC">
 <ul>
-<li><a href="#file-goals"><span class="toc-section-number">1</span> File goals</a></li>
-<li><a href="#next-steps"><span class="toc-section-number">2</span> Next steps</a></li>
-<li><a href="#analysis"><span class="toc-section-number">3</span> Analysis</a><ul>
-<li><a href="#data-setup-and-packages"><span class="toc-section-number">3.1</span> Data setup and packages</a></li>
-<li><a href="#genus-list"><span class="toc-section-number">3.2</span> Genus List</a></li>
+<li><a href="#file-status"><span class="toc-section-number">1</span> File status</a></li>
+<li><a href="#file-goals"><span class="toc-section-number">2</span> File goals</a><ul>
+<li><a href="#learning-to-use-taxize"><span class="toc-section-number">2.1</span> Learning to use Taxize</a></li>
+<li><a href="#assessing-the-response-of-various-apis"><span class="toc-section-number">2.2</span> Assessing the response of various APIs</a></li>
+<li><a href="#how-many-families-per-order"><span class="toc-section-number">2.3</span> How many Families per Order</a></li>
+<li><a href="#comparing-algaebase-ncbi-and-bold"><span class="toc-section-number">2.4</span> Comparing AlgaeBase, NCBI, and BOLD</a></li>
+</ul></li>
+<li><a href="#last-completed-steps"><span class="toc-section-number">3</span> Last completed steps</a></li>
+<li><a href="#next-steps"><span class="toc-section-number">4</span> Next steps</a><ul>
+<li><a href="#improving-functions-and-code"><span class="toc-section-number">4.1</span> Improving functions and code</a></li>
+</ul></li>
+<li><a href="#analysis"><span class="toc-section-number">5</span> Analysis</a><ul>
+<li><a href="#data-setup-and-packages"><span class="toc-section-number">5.1</span> Data setup and packages</a></li>
+<li><a href="#genus-list-and-species-list"><span class="toc-section-number">5.2</span> Genus List and Species List</a></li>
+<li><a href="#itis-taxonomy---inadequate"><span class="toc-section-number">5.3</span> ITIS taxonomy - inadequate</a></li>
+<li><a href="#ncbi-taxonomy---better-than-itis"><span class="toc-section-number">5.4</span> NCBI taxonomy - better than ITIS</a><ul>
+<li><a href="#initial-query-at-genus-and-species-level"><span class="toc-section-number">5.4.1</span> Initial query at genus and species level</a></li>
+<li><a href="#add-higher-taxonomy-information-to-isotope-dataset"><span class="toc-section-number">5.4.2</span> Add higher taxonomy information to isotope dataset</a></li>
+<li><a href="#dataset-species-and-genus-coverage-from-ncbi"><span class="toc-section-number">5.4.3</span> Dataset Species and Genus Coverage from NCBI</a></li>
+<li><a href="#how-many-orders-families-and-genera-total-from-dataset-excluding-bangiaceae"><span class="toc-section-number">5.4.4</span> How many Orders, Families and Genera total from Dataset, excluding Bangiaceae</a></li>
+<li><a href="#genera-per-family-families-per-order-orders-per-class-from-dataset"><span class="toc-section-number">5.4.5</span> Genera per Family, Families per Order, Orders per Class from Dataset</a></li>
+<li><a href="#querying-the-global-rhodophyta-dataset-from-ncbi---all-children-of-rhodophyta-class-florideophyceae"><span class="toc-section-number">5.4.6</span> Querying the global Rhodophyta dataset from NCBI - all children of Rhodophyta class Florideophyceae</a></li>
+<li><a href="#formatting-global-ncbi-dataset-for-using-tax_bins-function"><span class="toc-section-number">5.4.7</span> Formatting global NCBI dataset for using tax_bins function</a></li>
+<li><a href="#how-many-orders-families-and-genera-total-from-flordeophyceae-children"><span class="toc-section-number">5.4.8</span> How many Orders, Families and Genera total from Flordeophyceae children</a></li>
+<li><a href="#how-many-children-total-globally-in-florideophyceae-from-each-taxonomy-level"><span class="toc-section-number">5.4.9</span> How many children total (globally) in Florideophyceae from each taxonomy level</a></li>
+<li><a href="#comparing-global-children-vs-our-dataset"><span class="toc-section-number">5.4.10</span> Comparing Global Children vs Our Dataset</a></li>
+</ul></li>
+<li><a href="#bold-taxonomy"><span class="toc-section-number">5.5</span> BOLD taxonomy</a><ul>
+<li><a href="#initial-query-at-genus-and-species-level-1"><span class="toc-section-number">5.5.1</span> Initial query at genus and species level</a></li>
+<li><a href="#filter-out-non-algal-taxa-at-genus-level"><span class="toc-section-number">5.5.2</span> Filter out non-algal taxa at Genus Level</a></li>
+<li><a href="#species-and-genus-coverage-from-bold"><span class="toc-section-number">5.5.3</span> Species and Genus Coverage from BOLD</a></li>
+<li><a href="#get-higher-taxonomy-info-by-id"><span class="toc-section-number">5.5.4</span> Get higher taxonomy info by ID</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </div>
 
+<div id="file-status" class="section level1">
+<h1><span class="header-section-number">1</span> File status</h1>
+<p>Current</p>
+</div>
 <div id="file-goals" class="section level1">
-<h1><span class="header-section-number">1</span> File goals</h1>
-<p>We will use the packages taxize and myTAI to get higher-level taxonomy for my genera, so we can table basic stats about the number of taxa per family, order and class.</p>
-<p>We will use a number of different taxonomy databases:</p>
+<h1><span class="header-section-number">2</span> File goals</h1>
+<p>In this file, I learned how to use taxize for Rhodophyta, and found that the large databases that the taxize package interfaces with were largely inaccurate for algal species with some Databases. I am using both higher taxonomy data from AlgaeBase and Class/Order/Family data from the better databases with taxize (BOLD and NCBI) to compare and see how different each of them are.</p>
+<p>I also want to determine how many Orders, Families and Genera there are (and Families/Order, Genera/Family) so we can generate a table of how our dataset sampling compares to overall diversity levels in Florideophyceae.</p>
+<div id="learning-to-use-taxize" class="section level2">
+<h2><span class="header-section-number">2.1</span> Learning to use Taxize</h2>
+<p>Learn how to use the packages taxize and myTAI to get higher-level taxonomy for my genera, so we can table basic stats about the number of taxa per family, order and class.</p>
+<p><a href="https://github.com/ropensci/taxize">taxize package github link</a> for tutorials and source code</p>
+<p><a href="https://github.com/ropensci/taxizesoap">taxizesoap package github link</a> for tutorials and source code</p>
+</div>
+<div id="assessing-the-response-of-various-apis" class="section level2">
+<h2><span class="header-section-number">2.2</span> Assessing the response of various APIs</h2>
+<p>I want so see which databases have the best red algal coverage.</p>
+<p>There are a number of different taxonomy databases:</p>
 <ul>
-<li>Barcode of Life Data Systems (BOLD) &lt;- taxize package</li>
-<li>Encyclopedia of Life (EOL) &lt;- taxize package</li>
-<li>Integrated Taxonomic Information Service (ITIS) &lt;- taxize package</li>
-<li>National Center for Biotechnology Information (NCBI) &lt;- taxize package</li>
-<li>World Register of Marine Species (WoRMS) &lt;- taxizesoap package</li>
+<li>high coverage: Barcode of Life Data Systems (BOLD) &lt;- taxize package</li>
+<li>high coverage: National Center for Biotechnology Information (NCBI) &lt;- taxize package</li>
+<li>incomplete: Integrated Taxonomic Information Service (ITIS) &lt;- taxize package</li>
+<li>too outdated: World Register of Marine Species (WoRMS) &lt;- taxizesoap package</li>
+<li>not yet assessed: Encyclopedia of Life (EOL) &lt;- taxize package</li>
 </ul>
-<p><a href="https://github.com/ropensci/taxize">taxize package github link</a> for tutorials</p>
-<p><a href="https://github.com/ropensci/taxizesoap">taxizesoap package github link</a> for tutorials</p>
+</div>
+<div id="how-many-families-per-order" class="section level2">
+<h2><span class="header-section-number">2.3</span> How many Families per Order</h2>
+<p>I want to investigate the coverage our tree will have compared to all possible families and orders (maybe genera too)</p>
+</div>
+<div id="comparing-algaebase-ncbi-and-bold" class="section level2">
+<h2><span class="header-section-number">2.4</span> Comparing AlgaeBase, NCBI, and BOLD</h2>
+<p>Lastly, I want to compare these different databases to see what kinds of differences there are in taxonomy - Rhodophyta is constantly changing taxonomy.</p>
+</div>
+</div>
+<div id="last-completed-steps" class="section level1">
+<h1><span class="header-section-number">3</span> Last completed steps</h1>
+<p>Compare my dataset to global NCBI dataset - what kind of coverage do we have at each level? Reformat NCBI global taxonomy dataset Get all children for each Class, Order, Family, Genus in NCBI Function for getting genera per family, family per order, etc. in the dataset Function for reformatting NCBI list data as dataframe How to transform data to appropriate format - making function in NCBI Exclude non-Protists and NAs in BOLD system Reporting results for BOLD (this many genera missing - only 2 I think)</p>
 </div>
 <div id="next-steps" class="section level1">
-<h1><span class="header-section-number">2</span> Next steps</h1>
+<h1><span class="header-section-number">4</span> Next steps</h1>
 <p>Next steps are:</p>
+<ol start="0" style="list-style-type: decimal">
+<li>Make code to subset my current isotope dataset by the actualy number of taxa we get gene sequences for (currently, I’m assuming that we get 100% of taxa represented from scraping GenBank). Only a subset of species we have isotope data for will also have DNA seqence data</li>
+<li>Evaluate functions in reformatted NCBI global Rhodophyta dataset - genera per family, family per order, etc. (update code to reflect source global dataset) and compare to my dataset - create plots, ID key areas of low coverage (might be more appropriate for basic Dataset Stats file)</li>
+<li>Pipeline for BOLD - 1st get genera IDs</li>
+<li>Use IDs to get higher level taxonomy from BOLD</li>
+<li>reformat taxonomy data in BOLD. BOLD is easier to recast the data</li>
+<li>finding all genera in a family, all species in a genus, etc. for BOLD</li>
+</ol>
+<div id="improving-functions-and-code" class="section level2">
+<h2><span class="header-section-number">4.1</span> Improving functions and code</h2>
+<p>My functions work but are clunky - fix the following functions:</p>
 <ol style="list-style-type: decimal">
-<li>get a genus list (use code from previous page)</li>
-<li>figure out how to use taxise and taxisesoap to get higher-level taxonomy info</li>
+<li>tax_bins - could use aggregate to make it better, apply over a list</li>
+<li>ncbi_downstream - make it generalizable to any level taxonomy, enter taxonomy name and level (eg. “Rhodomelaceae”, “order”) and it will return every taxa downstream of that, down to species</li>
+<li>Adding new lines before and after print statements (especially “Missing Ballia genera children due to …”)</li>
 </ol>
 </div>
+</div>
 <div id="analysis" class="section level1">
-<h1><span class="header-section-number">3</span> Analysis</h1>
+<h1><span class="header-section-number">5</span> Analysis</h1>
 <div id="data-setup-and-packages" class="section level2">
-<h2><span class="header-section-number">3.1</span> Data setup and packages</h2>
+<h2><span class="header-section-number">5.1</span> Data setup and packages</h2>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(taxize)
 <span class="kw">library</span>(taxizesoap)
 <span class="kw">library</span>(dplyr)
+<span class="kw">library</span>(lazyeval)
+<span class="kw">library</span>(tidyr)
+<span class="kw">library</span>(knitr)
 data &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;../data/mean_13c_per_species.csv&quot;</span>)</code></pre>
 </div>
-<div id="genus-list" class="section level2">
-<h2><span class="header-section-number">3.2</span> Genus List</h2>
-<pre class="sourceCode r"><code class="sourceCode r">genus_list &lt;-<span class="st"> </span>data %&gt;%<span class="st"> </span><span class="kw">distinct</span>(genus) %&gt;%<span class="st"> </span><span class="kw">select</span>(genus)</code></pre>
+<div id="genus-list-and-species-list" class="section level2">
+<h2><span class="header-section-number">5.2</span> Genus List and Species List</h2>
+<pre class="sourceCode r"><code class="sourceCode r">genus_list &lt;-<span class="st"> </span>data %&gt;%<span class="st"> </span><span class="kw">distinct</span>(genus) %&gt;%<span class="st"> </span><span class="kw">select</span>(genus)
+genus_list &lt;-<span class="st"> </span><span class="kw">as.character</span>(genus_list$genus)
+genus_count &lt;-<span class="st"> </span><span class="kw">data.frame</span>(data %&gt;%<span class="st"> </span><span class="kw">group_by</span>(genus) %&gt;%<span class="st"> </span><span class="kw">summarize</span>(<span class="dt">taxa =</span> <span class="kw">n</span>()))
+
+species_list &lt;-<span class="st"> </span>data %&gt;%<span class="st"> </span><span class="kw">distinct</span>(truetaxa) %&gt;%<span class="st"> </span><span class="kw">select</span>(truetaxa)
+species_list &lt;-<span class="st"> </span><span class="kw">as.character</span>(species_list$truetaxa)</code></pre>
+</div>
+<div id="itis-taxonomy---inadequate" class="section level2">
+<h2><span class="header-section-number">5.3</span> ITIS taxonomy - inadequate</h2>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co">#taxreturn_s &lt;- classification(species_list, db = &#39;itis&#39;)</span>
+<span class="co">#taxreturn_g &lt;- classification(genus_list, db = &#39;itis&#39;)</span></code></pre>
+<p>Querying ITIS at the species level leaves the majority of taxa unidentified because there are very few seaweed species in the database. Querying at the genus level is also dodgy - and the reported results aren’t consistent (the list returned has incorrect names connected to certain taxa search - eg taxonomy for Ballia, but it is linked to Bostrychia in the returned data). You also must choose the correct taxa if there are multiple taxa with the same genus name (red algae and insect taxa frequently share the same genus name), and there is no information about which Acanthophora is the red algae and which is the invert, other than “accepted” versus “valid.”</p>
+<p>ITIS terms:</p>
+<ul>
+<li>Accepted = Plantae, Chromista and Fungi taxa name (pick this one!)</li>
+<li>Valid = Animalia, Protozoa, Bacteria or Archaea taxa name (don’t pick this one!)</li>
+</ul>
+</div>
+<div id="ncbi-taxonomy---better-than-itis" class="section level2">
+<h2><span class="header-section-number">5.4</span> NCBI taxonomy - better than ITIS</h2>
+<div id="initial-query-at-genus-and-species-level" class="section level3">
+<h3><span class="header-section-number">5.4.1</span> Initial query at genus and species level</h3>
+<pre class="sourceCode r"><code class="sourceCode r">taxreturn_s &lt;-<span class="st"> </span><span class="kw">classification</span>(species_list, <span class="dt">db =</span> <span class="st">&#39;ncbi&#39;</span>)
+<span class="co">#taxreturn_g &lt;- classification(genus_list, db = &#39;ncbi&#39;)</span>
+
+<span class="co">#tax_ncbi &lt;- data.frame(class = character(), order = character(), family = character(), genus = character(), rownames &lt;- c(), #stringsAsFactors = FALSE)</span>
+
+<span class="co">#format_ncbi &lt;- function(x){</span>
+<span class="co">#  for (j in 1:length(x)){</span>
+<span class="co">#    if (!is.na(x[j])){</span>
+<span class="co">#      if (length(which(x[j][[1]]$rank %in% c(&quot;class&quot;, &quot;order&quot;, &quot;family&quot;, &quot;genus&quot;))) == 4) {</span>
+<span class="co">#             tax_ncbi &lt;&lt;- rbind(tax_ncbi, data.frame(setNames(as.list(x[j][[1]]$name[which(x[j][[1]]$rank %in% c(&quot;class&quot;, #&quot;order&quot;, &quot;family&quot;, &quot;genus&quot;))]), names(tax_ncbi)))) </span>
+<span class="co">#      }</span>
+<span class="co">#    }</span>
+<span class="co">#  }</span>
+<span class="co">#  rownames(tax_ncbi) &lt;- c()</span>
+<span class="co">#}</span>
+
+<span class="co">#write.csv(tax_ncbi, file = &quot;../data/ncbi_taxonomy.csv&quot;, row.names = FALSE)</span></code></pre>
+<p>Like ITIS, you must choose the correct genus if there are multiple taxa with the same genus name (red algae and insect taxa frequently share the same genus name), so assessing the API response at the genus level must be manually updated (below). But the interface for choosing which taxa is the correct one is much better in NCBI vs ITIS, mostly because NCBI actually gives you the taxa division membership to help you choose (red algae, stick insect, etc.). This still means that the process can’t be done completely automatically, as the user must choose everytime there is a problem.</p>
+</div>
+<div id="add-higher-taxonomy-information-to-isotope-dataset" class="section level3">
+<h3><span class="header-section-number">5.4.2</span> Add higher taxonomy information to isotope dataset</h3>
+<pre class="sourceCode r"><code class="sourceCode r">tax_ncbi &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;../data/ncbi__dataset_taxonomy.csv&quot;</span>)
+data_ncbi &lt;-<span class="st"> </span>data
+data_ncbi$class &lt;-<span class="st"> </span>tax_ncbi$class[<span class="kw">match</span>(data_ncbi$genus, tax_ncbi$genus)]
+data_ncbi$order &lt;-<span class="st"> </span>tax_ncbi$order[<span class="kw">match</span>(data_ncbi$genus, tax_ncbi$genus)]
+data_ncbi$family &lt;-<span class="st"> </span>tax_ncbi$family[<span class="kw">match</span>(data_ncbi$genus, tax_ncbi$genus)]</code></pre>
+</div>
+<div id="dataset-species-and-genus-coverage-from-ncbi" class="section level3">
+<h3><span class="header-section-number">5.4.3</span> Dataset Species and Genus Coverage from NCBI</h3>
+<p>The NCBI database is way better than ITIS, and returns things in the correct scheme. Only 7 genera are missing out of 149 genera for the genus level dataset as of last query on Sun Aug 14 2016, a 95% coverage rate - super cool! There is also one genus missing family-level data - Opuntiella family membership is listed as ‘no rank’, ‘unclassified Gigartinales’</p>
+<p>Missing red algal genera in NCBI:</p>
+<p>“Bonnemaisonia” “Bornetia” “Dictyomenia” “Echinothamnion” “Halicnide” “Halopitys” “Jeannerettia” “Opuntiella” &lt;- missing family (‘unclassified Gigartinales’)</p>
+<p>For species, 55 species are missing out of 266 genera for the genus level dataset. 79.3233083% species coverage in NCBI, so clearly genus level is the way to go when assessing results.</p>
+</div>
+<div id="how-many-orders-families-and-genera-total-from-dataset-excluding-bangiaceae" class="section level3">
+<h3><span class="header-section-number">5.4.4</span> How many Orders, Families and Genera total from Dataset, excluding Bangiaceae</h3>
+<pre class="sourceCode r"><code class="sourceCode r">tax_summary_ncbi &lt;-<span class="st"> </span><span class="kw">apply</span>(tax_ncbi[<span class="kw">which</span>(tax_ncbi$class ==<span class="st"> &quot;Florideophyceae&quot;</span>),<span class="dv">1</span>:<span class="dv">4</span>], <span class="dv">2</span>, function(x)<span class="kw">length</span>(<span class="kw">unique</span>(x)))</code></pre>
+<p>The below table gives the results of how many classes, orders, families, genera and species are in the dataset (excluding the 7 genera in the previous section that NCBI doesn’t have complete taxonomy data on).</p>
+<pre class="sourceCode r"><code class="sourceCode r">tax_summary_ncbi</code></pre>
+<pre><code>##  class  order family  genus 
+##      1     18     48    148</code></pre>
+</div>
+<div id="genera-per-family-families-per-order-orders-per-class-from-dataset" class="section level3">
+<h3><span class="header-section-number">5.4.5</span> Genera per Family, Families per Order, Orders per Class from Dataset</h3>
+<p>Now let’s see how many data points for each lineage I have.</p>
+<p>Let’s make a function to determine the number of x in higher taxonomy y in the dataset z. I chose to use the dplyr package, but I also could have made a function with aggregate, aggregating by different taxonomy levels (by a list of taxonomy levels to automate it) and then binding those data frames together. This way I learned some new things about dplyr - notably the underscored group_by, which is used when you have variable inputs.</p>
+<pre class="sourceCode r"><code class="sourceCode r">tax_bins &lt;-<span class="st"> </span>function(x,y,z){
+  data &lt;-<span class="st"> </span><span class="kw">data.frame</span>(z %&gt;%<span class="st"> </span><span class="kw">filter</span>(!<span class="kw">is.na</span>(class)) %&gt;%<span class="st"> </span><span class="kw">group_by_</span>(y) %&gt;%<span class="st"> </span><span class="kw">summarize_</span>(<span class="dt">n_uniq=</span><span class="kw">interp</span>(~<span class="kw">n_distinct</span>(v), <span class="dt">v =</span> <span class="kw">as.name</span>(x))))
+  <span class="co">#print(data)</span>
+  <span class="kw">colnames</span>(data) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="kw">as.character</span>(y), <span class="kw">paste</span>(<span class="st">&quot;n_&quot;</span>, <span class="kw">as.name</span>(x), <span class="dt">sep =</span> <span class="st">&quot;&quot;</span>))
+  <span class="co">#print(colnames(data))</span>
+  <span class="co">#print(data)</span>
+  <span class="kw">assign</span>(<span class="kw">paste</span>(<span class="kw">as.name</span>(x), <span class="st">&quot;_per_&quot;</span>, <span class="kw">as.name</span>(y), <span class="dt">sep =</span> <span class="st">&quot;&quot;</span>), data, <span class="dt">envir =</span> .GlobalEnv)
+  <span class="kw">print</span>(<span class="kw">paste</span>(<span class="kw">as.name</span>(x), <span class="st">&quot;_per_&quot;</span>, <span class="kw">as.name</span>(y), <span class="dt">sep =</span> <span class="st">&quot;&quot;</span>))
+}
+
+<span class="co">#Example usage: tax_bins(&quot;order&quot;, &quot;class&quot;, tax_ncbi) would give classes PER order in the dataset tax_ncbi</span></code></pre>
+<p>First, Orders, Families and Genera per Class in Dataset</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;order&quot;</span>, <span class="st">&quot;class&quot;</span>, data_ncbi)</code></pre>
+<pre><code>## [1] &quot;order_per_class&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;family&quot;</span>, <span class="st">&quot;class&quot;</span>, data_ncbi)</code></pre>
+<pre><code>## [1] &quot;family_per_class&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;genus&quot;</span>, <span class="st">&quot;class&quot;</span>, data_ncbi)</code></pre>
+<pre><code>## [1] &quot;genus_per_class&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;species&quot;</span>, <span class="st">&quot;class&quot;</span>, data_ncbi)</code></pre>
+<pre><code>## [1] &quot;species_per_class&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">class_children_dataset &lt;-<span class="st"> </span><span class="kw">cbind</span>(order_per_class, <span class="dt">n_family =</span> family_per_class$n_family, <span class="dt">n_genus =</span> genus_per_class$n_genus, <span class="dt">n_species =</span> species_per_class$n_species)</code></pre>
+<p>Next, Families and Genera per Order in Dataset</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;family&quot;</span>, <span class="st">&quot;order&quot;</span>, data_ncbi)</code></pre>
+<pre><code>## [1] &quot;family_per_order&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;genus&quot;</span>, <span class="st">&quot;order&quot;</span>, data_ncbi)</code></pre>
+<pre><code>## [1] &quot;genus_per_order&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;species&quot;</span>, <span class="st">&quot;order&quot;</span>, data_ncbi)</code></pre>
+<pre><code>## [1] &quot;species_per_order&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">order_children_dataset &lt;-<span class="st"> </span><span class="kw">cbind</span>(family_per_order, <span class="dt">n_genus =</span> genus_per_order$n_genus, <span class="dt">n_species =</span> species_per_order$n_species)</code></pre>
+<p>Finally, Genera per Family in Dataset</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;genus&quot;</span>, <span class="st">&quot;family&quot;</span>, data_ncbi)</code></pre>
+<pre><code>## [1] &quot;genus_per_family&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;species&quot;</span>, <span class="st">&quot;family&quot;</span>, data_ncbi)</code></pre>
+<pre><code>## [1] &quot;species_per_family&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">family_children_dataset &lt;-<span class="st"> </span><span class="kw">cbind</span>(genus_per_family, <span class="dt">n_species =</span> species_per_family$n_species)</code></pre>
+</div>
+<div id="querying-the-global-rhodophyta-dataset-from-ncbi---all-children-of-rhodophyta-class-florideophyceae" class="section level3">
+<h3><span class="header-section-number">5.4.6</span> Querying the global Rhodophyta dataset from NCBI - all children of Rhodophyta class Florideophyceae</h3>
+<p>Here I’m getting the total number of children for each Class, Order, Family and Genus. This way we can determine how much coverage we have over all families - for example, do we have 100% sampling at the Order level, 80% coverage at the Family level? 60% at the genus level? How representative is our phylogeny and our isotope dataset?</p>
+<p><em>clean this function up to use apply</em> - I could use apply, start with any taxa, just enter the taxa, and the taxa rank as the arguments, then I can get everything downstream.</p>
+<pre class="sourceCode r"><code class="sourceCode r">ncbi_downstream &lt;-<span class="st"> </span>function(startertaxa){
+  df &lt;-<span class="st"> </span><span class="kw">ncbi_children</span>(<span class="dt">name =</span> startertaxa, <span class="dt">ancestor =</span> <span class="st">&quot;Rhodophyta&quot;</span>)[<span class="dv">1</span>][[<span class="dv">1</span>]] %&gt;%<span class="st"> </span><span class="kw">filter</span>(childtaxa_rank ==<span class="st"> &quot;order&quot;</span>) %&gt;%<span class="st"> </span><span class="kw">arrange</span>(childtaxa_name)
+  df$parent &lt;-<span class="st"> </span>startertaxa
+  df$parent_rank &lt;-<span class="st"> &quot;class&quot;</span>
+  <span class="kw">print</span>(df)
+  df_c2f &lt;-<span class="st"> </span>df
+  
+  for (i in <span class="dv">1</span>:<span class="kw">nrow</span>(df)){
+    family &lt;-<span class="st"> </span><span class="kw">ncbi_children</span>(<span class="dt">name =</span> df$childtaxa_name[i], <span class="dt">ancestor =</span> <span class="st">&quot;Rhodophyta&quot;</span>)[<span class="dv">1</span>][[<span class="dv">1</span>]] <span class="co">#%&gt;% filter(childtaxa_rank == &quot;family&quot;)</span>
+    family$parent &lt;-<span class="st"> </span>df$childtaxa_name[i]
+    family$parent_rank &lt;-<span class="st"> &quot;order&quot;</span>
+    <span class="kw">print</span>(family)
+    df_c2f &lt;-<span class="st"> </span><span class="kw">rbind</span>(df_c2f, family)
+  }
+  
+  ncbi_order &lt;-<span class="st"> </span><span class="kw">filter</span>(df_c2f, childtaxa_rank ==<span class="st"> &quot;order&quot;</span>) %&gt;%<span class="st"> </span><span class="kw">arrange</span>(childtaxa_name)
+  
+  ncbi_family &lt;-<span class="st"> </span><span class="kw">filter</span>(df_c2f, childtaxa_rank ==<span class="st"> &quot;family&quot;</span>) %&gt;%<span class="st"> </span><span class="kw">arrange</span>(childtaxa_name)
+  
+  df_c2g &lt;-<span class="st"> </span>df_c2f
+  missing_families &lt;-<span class="st"> </span><span class="kw">c</span>()
+  
+  for (j in <span class="dv">1</span>:<span class="kw">nrow</span>(ncbi_family)){
+    genus &lt;-<span class="st"> </span><span class="kw">ncbi_children</span>(<span class="dt">name =</span> ncbi_family$childtaxa_name[j], <span class="dt">ancestor =</span> <span class="st">&quot;Florideophyceae&quot;</span>)[<span class="dv">1</span>][[<span class="dv">1</span>]] <span class="co">#%&gt;% filter(childtaxa_rank == &quot;genus&quot;)</span>
+    if (<span class="kw">nrow</span>(genus) &gt;<span class="st"> </span><span class="dv">0</span>) {
+      genus$parent &lt;-<span class="st"> </span>ncbi_family$childtaxa_name[j]
+      genus$parent_rank &lt;-<span class="st"> &quot;family&quot;</span>
+      <span class="kw">print</span>(genus)
+      df_c2g &lt;-<span class="st"> </span><span class="kw">rbind</span>(df_c2g, genus) 
+    }
+    else {
+      missing_families &lt;-<span class="st"> </span><span class="kw">append</span>(missing_families, ncbi_family$childtaxa_name[j])
+      <span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">&quot;Missing &quot;</span>, <span class="kw">as.character</span>(ncbi_family$childtaxa_name[j]), <span class="st">&quot; family children due to API query error&quot;</span>, <span class="dt">sep=</span> <span class="st">&quot;&quot;</span>))
+    }
+  }
+  
+  ncbi_genus &lt;&lt;-<span class="st"> </span><span class="kw">filter</span>(df_c2g, childtaxa_rank ==<span class="st"> &quot;genus&quot;</span>) %&gt;%<span class="st"> </span><span class="kw">arrange</span>(childtaxa_name)
+  
+  df_c2s &lt;-<span class="st"> </span>df_c2g
+  missing_genera &lt;-<span class="st"> </span><span class="kw">c</span>()
+  
+  for (k in <span class="dv">1</span>:<span class="kw">nrow</span>(ncbi_genus)){
+  species &lt;-<span class="st"> </span><span class="kw">ncbi_children</span>(<span class="dt">name =</span> ncbi_genus$childtaxa_name[k], <span class="dt">ancestor =</span> <span class="st">&quot;Florideophyceae&quot;</span>)[<span class="dv">1</span>][[<span class="dv">1</span>]] <span class="co">#%&gt;% filter(childtaxa_rank == &quot;genus&quot;)</span>
+    if (<span class="kw">nrow</span>(species) &gt;<span class="st"> </span><span class="dv">0</span>) {
+      species$parent &lt;-<span class="st"> </span>ncbi_genus$childtaxa_name[k]
+      species$parent_rank &lt;-<span class="st"> &quot;genus&quot;</span>
+      <span class="kw">print</span>(species)
+      df_c2s &lt;-<span class="st"> </span><span class="kw">rbind</span>(df_c2s, species)
+    }
+    else {
+      missing_genera &lt;-<span class="st"> </span><span class="kw">append</span>(missing_genera, ncbi_genus$childtaxa_name[k])
+      <span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">&quot;Missing &quot;</span>, <span class="kw">as.character</span>(ncbi_genus$childtaxa_name[k]), <span class="st">&quot; genus children due to API query error&quot;</span>, <span class="dt">sep=</span> <span class="st">&quot;&quot;</span>))
+    }
+  }
+  
+  ncbi_species &lt;&lt;-<span class="st"> </span><span class="kw">filter</span>(df_c2s, childtaxa_rank ==<span class="st"> &quot;species&quot;</span>) %&gt;%<span class="st"> </span><span class="kw">arrange</span>(childtaxa_name)
+  
+<span class="kw">write.csv</span>(df_c2s, <span class="dt">file =</span> <span class="st">&quot;../data/ncbi_global_Rhodophyta_tax.csv&quot;</span>, <span class="dt">row.names =</span> <span class="ot">FALSE</span>)</code></pre>
+</div>
+<div id="formatting-global-ncbi-dataset-for-using-tax_bins-function" class="section level3">
+<h3><span class="header-section-number">5.4.7</span> Formatting global NCBI dataset for using tax_bins function</h3>
+<pre class="sourceCode r"><code class="sourceCode r">df &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;../data/ncbi_global_Rhodophyta_tax.csv&quot;</span>)
+df &lt;-<span class="st"> </span><span class="kw">filter</span>(df, childtaxa_rank %in%<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;order&quot;</span>, <span class="st">&quot;family&quot;</span>, <span class="st">&quot;genus&quot;</span>)) %&gt;%<span class="st"> </span><span class="kw">distinct</span>(childtaxa_name) 
+global_genus &lt;-<span class="st"> </span><span class="kw">filter</span>(df, parent_rank ==<span class="st"> &quot;family&quot;</span>) %&gt;%<span class="st"> </span><span class="kw">select</span>(childtaxa_id, childtaxa_name, childtaxa_rank, parent, source)
+<span class="kw">colnames</span>(global_genus) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;childtaxa_id&quot;</span>, <span class="st">&quot;childtaxa_name&quot;</span>, <span class="st">&quot;childtaxa_rank&quot;</span>, <span class="st">&quot;family&quot;</span>, <span class="st">&quot;source&quot;</span>)
+family &lt;-<span class="st"> </span><span class="kw">filter</span>(df, parent_rank ==<span class="st"> &quot;order&quot;</span>)
+class &lt;-<span class="st"> </span><span class="kw">filter</span>(df, parent_rank ==<span class="st"> &quot;class&quot;</span>)
+global_genus$order &lt;-<span class="st"> </span>family$parent[<span class="kw">match</span>(global_genus$family, family$childtaxa_name)]
+global_genus$class &lt;-<span class="st"> </span>class$parent[<span class="kw">match</span>(global_genus$order, class$childtaxa_name)]
+<span class="kw">colnames</span>(global_genus) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;childtaxa_id&quot;</span>, <span class="st">&quot;genus&quot;</span>, <span class="st">&quot;childtaxa_rank&quot;</span>, <span class="st">&quot;family&quot;</span>, <span class="st">&quot;source&quot;</span>, <span class="st">&quot;order&quot;</span>, <span class="st">&quot;class&quot;</span>)</code></pre>
+</div>
+<div id="how-many-orders-families-and-genera-total-from-flordeophyceae-children" class="section level3">
+<h3><span class="header-section-number">5.4.8</span> How many Orders, Families and Genera total from Flordeophyceae children</h3>
+<pre class="sourceCode r"><code class="sourceCode r">tax_summary_ncbi_global &lt;-<span class="st"> </span><span class="kw">apply</span>(global_genus, <span class="dv">2</span>, function(x)<span class="kw">length</span>(<span class="kw">unique</span>(x)))
+tax_summary_ncbi_global &lt;-<span class="st"> </span>tax_summary_ncbi_global[<span class="kw">c</span>(<span class="st">&quot;class&quot;</span>, <span class="st">&quot;order&quot;</span>, <span class="st">&quot;family&quot;</span>, <span class="st">&quot;genus&quot;</span>)]</code></pre>
+<p>The below table gives the results of how many classes, orders, families, genera and species are in the dataset (excluding the 7 genera in the previous section that NCBI doesn’t have complete taxonomy data on).</p>
+<pre class="sourceCode r"><code class="sourceCode r">tax_summary_ncbi_global</code></pre>
+<pre><code>##  class  order family  genus 
+##      1     25     83    547</code></pre>
+</div>
+<div id="how-many-children-total-globally-in-florideophyceae-from-each-taxonomy-level" class="section level3">
+<h3><span class="header-section-number">5.4.9</span> How many children total (globally) in Florideophyceae from each taxonomy level</h3>
+<p>First, Orders, Families and Genera per Class Globally</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;order&quot;</span>, <span class="st">&quot;class&quot;</span>, global_genus)</code></pre>
+<pre><code>## [1] &quot;order_per_class&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;family&quot;</span>, <span class="st">&quot;class&quot;</span>, global_genus)</code></pre>
+<pre><code>## [1] &quot;family_per_class&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;genus&quot;</span>, <span class="st">&quot;class&quot;</span>, global_genus)</code></pre>
+<pre><code>## [1] &quot;genus_per_class&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">class_children_global &lt;-<span class="st"> </span><span class="kw">cbind</span>(order_per_class, <span class="dt">n_family =</span> family_per_class$n_family, <span class="dt">n_genus =</span> genus_per_class$n_genus)</code></pre>
+<p>Next, Families and Genera per Order Globally</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;family&quot;</span>, <span class="st">&quot;order&quot;</span>, global_genus)</code></pre>
+<pre><code>## [1] &quot;family_per_order&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;genus&quot;</span>, <span class="st">&quot;order&quot;</span>, global_genus)</code></pre>
+<pre><code>## [1] &quot;genus_per_order&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">order_children_global &lt;-<span class="st"> </span><span class="kw">cbind</span>(family_per_order, <span class="dt">n_genus =</span> genus_per_order$n_genus)</code></pre>
+<p>Finally, Genera per Family Globally</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;genus&quot;</span>, <span class="st">&quot;family&quot;</span>, data_ncbi)</code></pre>
+<pre><code>## [1] &quot;genus_per_family&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tax_bins</span>(<span class="st">&quot;species&quot;</span>, <span class="st">&quot;family&quot;</span>, data_ncbi)</code></pre>
+<pre><code>## [1] &quot;species_per_family&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">family_children_global &lt;-<span class="st"> </span><span class="kw">cbind</span>(genus_per_family)</code></pre>
+</div>
+<div id="comparing-global-children-vs-our-dataset" class="section level3">
+<h3><span class="header-section-number">5.4.10</span> Comparing Global Children vs Our Dataset</h3>
+<pre class="sourceCode r"><code class="sourceCode r">dataset_coverage &lt;-<span class="st"> </span><span class="kw">rbind</span>(tax_summary_ncbi[<span class="dv">2</span>:<span class="dv">4</span>], tax_summary_ncbi_global[<span class="dv">2</span>:<span class="dv">4</span>])
+<span class="kw">rownames</span>(dataset_coverage) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Dataset Coverage&quot;</span>, <span class="st">&quot;All Florideophyceae Children&quot;</span>)
+Fraction_Coverage &lt;-<span class="st"> </span>dataset_coverage[<span class="dv">1</span>,]/dataset_coverage[<span class="dv">2</span>,]
+ncbi_coverage &lt;-<span class="st"> </span><span class="kw">rbind</span>(dataset_coverage, Fraction_Coverage)</code></pre>
+</div>
+</div>
+<div id="bold-taxonomy" class="section level2">
+<h2><span class="header-section-number">5.5</span> BOLD taxonomy</h2>
+<div id="initial-query-at-genus-and-species-level-1" class="section level3">
+<h3><span class="header-section-number">5.5.1</span> Initial query at genus and species level</h3>
+<pre class="sourceCode r"><code class="sourceCode r">taxreturn_s &lt;-<span class="st"> </span><span class="kw">bold_search</span>(<span class="dt">name =</span> species_list, <span class="dt">includeTree =</span> <span class="ot">TRUE</span>)
+taxreturn_g &lt;-<span class="st"> </span><span class="kw">bold_search</span>(<span class="dt">name =</span> genus_list, <span class="dt">includeTree =</span> <span class="ot">TRUE</span>)</code></pre>
+<p>The BOLD database returns a dataframe initially, as opposed to a list of dataframes from the ITIS and NCBI databases. It also doesn’t require choosing the correct taxa if there are multiple taxa with the same genus name (red algae and insect taxa frequently share the same genus name), but rather just reports them both. This means we can filter out the non-algal taxa easily with dplyr.</p>
+</div>
+<div id="filter-out-non-algal-taxa-at-genus-level" class="section level3">
+<h3><span class="header-section-number">5.5.2</span> Filter out non-algal taxa at Genus Level</h3>
+<pre class="sourceCode r"><code class="sourceCode r">taxreturn &lt;-<span class="st"> </span>taxreturn_g %&gt;%<span class="st"> </span><span class="kw">filter</span>(tax_division ==<span class="st"> &quot;Protists&quot;</span>, !<span class="kw">is.na</span>(taxon))</code></pre>
+</div>
+<div id="species-and-genus-coverage-from-bold" class="section level3">
+<h3><span class="header-section-number">5.5.3</span> Species and Genus Coverage from BOLD</h3>
+<p>Only 3 genera are missing out of 149 genera for the genus level dataset - super cool! 97.9865772% genus coverage in BOLD.</p>
+<p>Missing red algal genera in BOLD:</p>
+<pre class="sourceCode r"><code class="sourceCode r">taxreturn_g$input[(<span class="kw">which</span>(<span class="kw">is.na</span>(taxreturn_g$taxon)))]</code></pre>
+<pre><code>## [1] &quot;Halopitys&quot;    &quot;Jeannerettia&quot; &quot;Rytiphlaea&quot;</code></pre>
+<p>For species, 61 species are missing out of 266 genera for the genus level dataset -77.0676692% species coverage in BOLD. So clearly genus level is the way to go.</p>
+</div>
+<div id="get-higher-taxonomy-info-by-id" class="section level3">
+<h3><span class="header-section-number">5.5.4</span> Get higher taxonomy info by ID</h3>
+</div>
 </div>
 </div>
 

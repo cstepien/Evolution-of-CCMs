@@ -2,14 +2,16 @@
 title: "Retrieving Taxonomic Info"
 author: "Courtney Stepien"
 date: "August 4, 2016"
-output: 
- html_document:
-    toc: true
-    number_sections: true
-    theme: cerulean
-    highlight: pygments
+output:
+  html_document:
     fig_caption: yes
-    self_contained: false
+    highlight: pygments
+    number_sections: yes
+    self_contained: no
+    theme: cerulean
+    toc: yes
+  pdf_document:
+    toc: yes
 ---
 
 # File status
@@ -93,6 +95,7 @@ library(taxizesoap)
 library(dplyr)
 library(lazyeval)
 library(tidyr)
+library(knitr)
 data <- read.csv("../data/mean_13c_per_species.csv")
 ```
 
@@ -127,7 +130,7 @@ ITIS terms:
 ### Initial query at genus and species level
 
 ```{r, message=FALSE, warning=FALSE}
-#taxreturn_s <- classification(species_list, db = 'ncbi')
+taxreturn_s <- classification(species_list, db = 'ncbi')
 #taxreturn_g <- classification(genus_list, db = 'ncbi')
 
 #tax_ncbi <- data.frame(class = character(), order = character(), family = character(), genus = character(), rownames <- c(), #stringsAsFactors = FALSE)
@@ -147,7 +150,7 @@ ITIS terms:
 
 ```
 
-Like ITIS, you must choose the correct genus if there are multiple taxa with the same genus name (red algae and insect taxa frequently share the same genus name), so assessing the API response must be manually updated (below). But the interface for choosing which taxa is the correct one is much better in NCBI vs ITIS, mostly because NCBI actually gives you the taxa division membership to help you choose (red algae, stick insect, etc.). This still means that the process can't be done completely automatically, as the user must choose everytime there is a problem. 
+Like ITIS, you must choose the correct genus if there are multiple taxa with the same genus name (red algae and insect taxa frequently share the same genus name), so assessing the API response at the genus level must be manually updated (below). But the interface for choosing which taxa is the correct one is much better in NCBI vs ITIS, mostly because NCBI actually gives you the taxa division membership to help you choose (red algae, stick insect, etc.). This still means that the process can't be done completely automatically, as the user must choose everytime there is a problem. 
 
 ### Add higher taxonomy information to isotope dataset
 
@@ -174,7 +177,8 @@ Missing red algal genera in NCBI:
 "Jeannerettia"
 "Opuntiella" <- missing family ('unclassified Gigartinales')
 
-For species, `r length(names(which(is.na(taxreturn_s))))` species are missing out of `r length(species_list)` genera for the genus level dataset. ` r 100*length(names(which(!is.na(taxreturn_s))))/length(species_list)`% species coverage in NCBI, so clearly genus level is the way to go.
+For species, `r length(names(which(is.na(taxreturn_s))))` species are missing out of `r length(species_list)` genera for the genus level dataset. 
+`r 100*length(names(which(!is.na(taxreturn_s))))/length(species_list)`% species coverage in NCBI, so clearly genus level is the way to go when assessing results.
 
 ### How many Orders, Families and Genera total from Dataset, excluding Bangiaceae
 
@@ -184,7 +188,9 @@ tax_summary_ncbi <- apply(tax_ncbi[which(tax_ncbi$class == "Florideophyceae"),1:
 
 The below table gives the results of how many classes, orders, families, genera and species are in the dataset (excluding the 7 genera in the previous section that NCBI doesn't have complete taxonomy data on).
 
-`r tax_summary_ncbi`
+```{r}
+tax_summary_ncbi
+```
 
 ### Genera per Family, Families per Order, Orders per Class from Dataset
 
@@ -327,8 +333,9 @@ tax_summary_ncbi_global <- tax_summary_ncbi_global[c("class", "order", "family",
 
 The below table gives the results of how many classes, orders, families, genera and species are in the dataset (excluding the 7 genera in the previous section that NCBI doesn't have complete taxonomy data on).
 
-`r tax_summary_ncbi_global`
-
+```{r}
+tax_summary_ncbi_global
+```
 
 ### How many children total (globally) in Florideophyceae from each taxonomy level
 
@@ -386,13 +393,15 @@ taxreturn <- taxreturn_g %>% filter(tax_division == "Protists", !is.na(taxon))
 
 ### Species and Genus Coverage from BOLD
 
-Only `r length(which(is.na(taxreturn_g$taxon)))` genera are missing out of `r length(genus_list)` genera for the genus level dataset - super cool! ` r 100*nrow(taxreturn)/length(genus_list)`% genus coverage in BOLD. 
+Only `r length(which(is.na(taxreturn_g$taxon)))` genera are missing out of `r length(genus_list)` genera for the genus level dataset - super cool! `r 100*nrow(taxreturn)/length(genus_list)`% genus coverage in BOLD. 
 
 Missing red algal genera in BOLD:
 
-`r taxreturn_g$input[(which(is.na(taxreturn_g$taxon)))]`
+```{r}
+taxreturn_g$input[(which(is.na(taxreturn_g$taxon)))]
+```
 
-For species, `r length(which(is.na(taxreturn_s$taxon)))` species are missing out of `r length(species_list)` genera for the genus level dataset -` r 100*length(which(!is.na(taxreturn_s$taxon)))/length(species_list)`% species coverage in BOLD. So clearly genus level is the way to go. 
+For species, `r length(which(is.na(taxreturn_s$taxon)))` species are missing out of `r length(species_list)` genera for the genus level dataset -`r 100*length(which(!is.na(taxreturn_s$taxon)))/length(species_list)`% species coverage in BOLD. So clearly genus level is the way to go. 
 
 
 ### Get higher taxonomy info by ID
